@@ -6,7 +6,7 @@ Minha jornada com tecnologia começou aos 12 anos, quando dei aulas para realiza
 
 A ausência de prática me distanciou dessa área, então os planos mudaram e passei a focar em outras coisas. Fiz faculdade de administração e pós em docência superior.  
 
-Este ano comecei a investir meu tempo livre em cursos na área de tecnologia e acordei uma paixão adormecida. Comecei um curso de HTML Web Developer, na DIO e estou aprofundando no assunto com tutoriais no Youtube.  
+Comecei um curso de HTML Web Developer, na DIO, e estou me aprofundando no assunto com tutoriais no Youtube. Inclusive, sobre Github.  
 
 > Let's code!
 
