@@ -12,4 +12,9 @@ Comecei um curso de HTML Web Developer, na DIO e estou aprofundando no assunto c
 
 Tudo que vejo de novo é um gatilho para aprender mais, me acompanhe e veja minha evolução!  
 
-Meu nome é Andrea e, em 2021, eu tenho 34 anos.
+Meu nome é Andrea e, em 2021, eu tenho 34 anos.  
+
+# Digital Innovation One
+
+- Introdução a HTML e CSS: [Ver](https://andreadcsousa.github.io/introducao_html_css/)
+- Desafio Instagram: [Ver](
