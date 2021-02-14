@@ -14,5 +14,8 @@ Comecei um curso de HTML Web Developer, na DIO, e estou me aprofundando no assun
 
 *Bootcamp - HTML Web Developer*  
 
-- Introdução a HTML e CSS: [Ver](https://andreadcsousa.github.io/introducao_html_css/)
-- Desafio Instagram: [Ver](https://andreadcsousa.github.io/desafio_instagram/)
+- Introdução ao HTML 5 e ao CSS 3: [Ver](https://andreadcsousa.github.io/introducao_html_css/)
+- Recriando a página inicial do Instagram: [Ver](https://andreadcsousa.github.io/desafio_instagram/)
+- Introdução ao JavaScript: [Ver](https://andreadcsousa.github.io/introducao_javascript/)
+- Desafio Visita na feira: [Em breve]
+- Recriando a interface da Netflix: [Em breve]
