@@ -12,7 +12,7 @@ Este ano comecei a investir meu tempo livre em cursos na área de tecnologia e a
 
 ### Digital Innovation One
 
-Bootcamp - HTML Web Developer  
+*Bootcamp - HTML Web Developer*  
 
 - Introdução a HTML e CSS: [Ver](https://andreadcsousa.github.io/introducao_html_css/)
 - Desafio Instagram: [Ver](https://andreadcsousa.github.io/desafio_instagram/)
