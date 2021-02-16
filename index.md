@@ -10,9 +10,9 @@ Comecei um curso de HTML Web Developer, na DIO, e estou me aprofundando no assun
 
 > Let's code!
 
-### Digital Innovation One
+### Bootcamp - HTML Web Developer
 
-*Bootcamp - HTML Web Developer*  
+*Digital Innovation One*  
 
 - Introdução ao HTML 5 e ao CSS 3: [Ver](https://andreadcsousa.github.io/introducao_html_css/)
 - Recriando a página inicial do Instagram: [Ver](https://andreadcsousa.github.io/desafio_instagram/)
