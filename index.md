@@ -19,3 +19,4 @@ Comecei um curso de HTML Web Developer, na DIO, e estou me aprofundando no assun
 - Introdução a programação com JavaScript: [Ver](https://andreadcsousa.github.io/introducao_javascript/)
 - Recriando a interface da Netflix: [Ver](https://andreadcsousa.github.io/desafio_netflix/)
 - Construindo web pages com o Bootstrap: [Ver](https://andreadcsousa.github.io/introducao_bootstrap/)
+- Recriando o Snake Game com JavaScript: [Ver](https://andreadcsousa.github.io/desafio_snake/)
