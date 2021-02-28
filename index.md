@@ -38,3 +38,4 @@ Comecei um curso de HTML Web Developer, na DIO, e estou me aprofundando no assun
 - Mais de HTML e CSS
 - Conceitos básicos de Javascript
 - Dicas de carreira e próximos passos
+- Site Responsivo 'Ada Lovelace': [Ver](https://andreadcsousa.github.io/frontend_programaria/)
