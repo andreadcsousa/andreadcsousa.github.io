@@ -26,3 +26,15 @@ Comecei um curso de HTML Web Developer, na DIO, e estou me aprofundando no assun
 *Reprograma*
 
 - Criação de web page com HTML e CSS: [Ver](https://andreadcsousa.github.io/oficina_reprograma/)
+
+### Eu ProgrAmo - 5ª Turma
+
+*PrograMaria*
+
+- Todes a bordo!
+- Esquentando os motores!
+- Conceitos básicos em HTML
+- Conceitos básicos de CSS
+- Mais de HTML e CSS
+- Conceitos básicos de Javascript
+- Dicas de carreira e próximos passos
