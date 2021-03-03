@@ -31,4 +31,4 @@ Comecei um curso de HTML Web Developer, na DIO, e estou me aprofundando no assun
 
 *PrograMaria*
 
-- Site Responsivo 'Ada Lovelace': [Ver](https://andreadcsousa.github.io/frontend_programaria/)
+- Criação de web page com HTML e CSS: [Ver](https://andreadcsousa.github.io/frontend_programaria/)
