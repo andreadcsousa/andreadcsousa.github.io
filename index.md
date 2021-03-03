@@ -31,11 +31,4 @@ Comecei um curso de HTML Web Developer, na DIO, e estou me aprofundando no assun
 
 *PrograMaria*
 
-- Todes a bordo!
-- Esquentando os motores!
-- Conceitos básicos em HTML
-- Conceitos básicos de CSS
-- Mais de HTML e CSS
-- Conceitos básicos de Javascript
-- Dicas de carreira e próximos passos
 - Site Responsivo 'Ada Lovelace': [Ver](https://andreadcsousa.github.io/frontend_programaria/)
