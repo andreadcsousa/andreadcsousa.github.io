@@ -4,7 +4,7 @@
 
 > Let's code!
 
-### [FEVEREIRO] Bootcamp - HTML Web Developer
+### Bootcamp - HTML Web Developer
 
 *Digital Innovation One*  
 
@@ -15,25 +15,25 @@
 - Construindo web pages com o Bootstrap: [Ver](https://andreadcsousa.github.io/introducao_bootstrap/)
 - Recriando o Snake Game com JavaScript: [Ver](https://andreadcsousa.github.io/desafio_snake/)
 
-### [MARÇO] Oficina - Todas em Tech
+### Oficina - Todas em Tech
 
 *Reprograma*
 
 - Criação de web page com HTML e CSS: [Ver](https://andreadcsousa.github.io/oficina_reprograma/)
 
-### [MARÇO] Eu ProgrAmo - 5ª Turma
+### Eu ProgrAmo - 5ª Turma
 
 *PrograMaria*
 
 - Criação de web page com HTML e CSS: [Ver](https://andreadcsousa.github.io/frontend_programaria/)
 
-### [MARÇO] Start na Carreira de Programação
+### Start na Carreira de Programação
 
 *OneBitCode*  
 
 - Criação de Formulário com HTML, CSS e Javascript: [Ver](https://andreadcsousa.github.io/start_onebitcode/)
 
-### [MARÇO] Desenvolvimento Web (20 projetos)
+### Desenvolvimento Web (20 projetos)
 
 *Udemy*
 
