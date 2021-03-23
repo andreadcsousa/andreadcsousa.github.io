@@ -8,7 +8,7 @@
 
 ### Basic HTML and CSS
 
-[Reprograma](https://andreadcsousa.github.io/oficina_reprograma/) | [PrograMaria](https://andreadcsousa.github.io/frontend_programaria/) | [OneBitCode - Javascript Form](https://andreadcsousa.github.io/start_onebitcode/) | [Escalator Site Test with Flexbox](https://andreadcsousa.github.io/codeby_test/)
+[Workshop Reprograma](https://andreadcsousa.github.io/oficina_reprograma/) | [Astronaut PrograMaria](https://andreadcsousa.github.io/frontend_programaria/) | [OneBitCode Calculator](https://andreadcsousa.github.io/start_onebitcode/) | [Site with Flexbox](https://andreadcsousa.github.io/codeby_test/)
 
 ### Dev Immersion - Challenges by Alura
 
