@@ -20,4 +20,4 @@
 
 ### Contatos
 
-[Github](https://github.com/andreadcsousa) | [Behance](https://www.freecodecamp.org/andreadcsousa) | [Linkedin](https://www.linkedin.com/in/andrea-dcsousa/) | [E-mail](mailto:andrea.dcsousa@gmail.com) | [Instagram](https://www.instagram.com/pinklovesxtina/) | [Facebook](https://www.facebook.com/pinkLOVESxtina) | [DIO](https://web.digitalinnovation.one/users/andrea_dcsousa?tab=achievements) | [freeCodeCamp](https://www.freecodecamp.org/andreadcsousa)
+[Linkedin](https://www.linkedin.com/in/andrea-dcsousa/) | [E-mail](mailto:andrea.dcsousa@gmail.com) | [Github](https://github.com/andreadcsousa) | [Behance](https://www.freecodecamp.org/andreadcsousa) | [Instagram](https://www.instagram.com/pinklovesxtina/) | [Facebook](https://www.facebook.com/pinkLOVESxtina) | [DIO](https://web.digitalinnovation.one/users/andrea_dcsousa?tab=achievements) | [freeCodeCamp](https://www.freecodecamp.org/andreadcsousa)
