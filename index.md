@@ -2,7 +2,7 @@
 
 # Olá, pessoas!
 
-Meu nome é Andrea e aqui está o meu portfólio.  
+Meu nome é Andrea e aqui está meu Github Pages.  
 Comecei a investir na área de tecnologia em 02/2021.  
 Todos os links abaixo (antes dos contatos) são de estudos.
 
