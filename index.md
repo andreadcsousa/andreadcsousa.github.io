@@ -20,10 +20,10 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 | [Light-years to Km Converter](https://andreadcsousa.github.io/alura_conversorjs/) |
 
-### Desenvolvimento Web - Courses on Udemy
+### Web Development - Courses on Udemy
 
 | [HTML Website Design](https://andreadcsousa.github.io/projeto-unes/) |
 
-### Contatos
+### Contacts
 
 [Linkedin](https://www.linkedin.com/in/andrea-dcsousa/) | [E-mail](mailto:andrea.dcsousa@gmail.com) | [Github](https://github.com/andreadcsousa) | [Behance](https://www.freecodecamp.org/andreadcsousa) | [Instagram](https://www.instagram.com/pinklovesxtina/) | [Facebook](https://www.facebook.com/pinkLOVESxtina)
