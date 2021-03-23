@@ -4,7 +4,7 @@
 
 Meu nome é Andrea e aqui está o meu portfólio.  
 Comecei a investir na área de tecnologia em 02/2021.  
-Todos os links abaixo (antes dos contatos) são estudos.
+Todos os links abaixo (antes dos contatos) são de estudos.
 
 Espero, em breve, iniciar meu primeiro projeto profissional!
 
