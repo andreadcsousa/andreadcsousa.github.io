@@ -1,14 +1,12 @@
 > Let's code!
 
-### Bootcamp - HTML Web Developer
-
-*Digital Innovation One*  
+### Bootcamp - HTML Web Developer by DIO 
 
 [My First Page](https://andreadcsousa.github.io/introducao_html_css/) | [Clone Instragram Login Page](https://andreadcsousa.github.io/desafio_instagram/) | [Clone Netflix Interface](https://andreadcsousa.github.io/desafio_netflix/) | [Introduction to Bootstrap](https://andreadcsousa.github.io/introducao_bootstrap/) | [Snake Game](https://andreadcsousa.github.io/desafio_snake/)
 
-### Basic HTML and CSS
+### Basic HTML, CSS & JavaScript
 
-[Workshop Reprograma](https://andreadcsousa.github.io/oficina_reprograma/) | [Astronaut PrograMaria](https://andreadcsousa.github.io/frontend_programaria/) | [OneBitCode Calculator](https://andreadcsousa.github.io/start_onebitcode/) | [Site with Flexbox](https://andreadcsousa.github.io/codeby_test/)
+[Workshop Reprograma](https://andreadcsousa.github.io/oficina_reprograma/) | [Astronaut PrograMaria](https://andreadcsousa.github.io/frontend_programaria/) | [OneBitCode Calculator](https://andreadcsousa.github.io/start_onebitcode/) | [Challenge by Codeby](https://andreadcsousa.github.io/codeby_test/)
 
 ### Dev Immersion - Challenges by Alura
 
