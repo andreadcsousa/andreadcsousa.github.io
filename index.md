@@ -1,52 +1,47 @@
-# Contatos
-
-[Github](https://github.com/andreadcsousa) / [Behance](https://www.freecodecamp.org/andreadcsousa) / [Linkedin](https://www.linkedin.com/in/andrea-dcsousa/) / [E-mail](mailto:andrea.dcsousa@gmail.com) / [Instagram](https://www.instagram.com/pinklovesxtina/) / [Facebook](https://www.facebook.com/pinkLOVESxtina) / [DIO](https://web.digitalinnovation.one/users/andrea_dcsousa?tab=achievements) / [freeCodeCamp](https://www.freecodecamp.org/andreadcsousa)
-
 > Let's code!
 
 ### Bootcamp - HTML Web Developer
 
 *Digital Innovation One*  
 
-- Introdução ao HTML 5 e ao CSS 3: [Ver](https://andreadcsousa.github.io/introducao_html_css/)
-- Recriando a página inicial do Instagram: [Ver](https://andreadcsousa.github.io/desafio_instagram/)
-- Introdução a programação com JavaScript: [Ver](https://andreadcsousa.github.io/introducao_javascript/)
-- Recriando a interface da Netflix: [Ver](https://andreadcsousa.github.io/desafio_netflix/)
-- Construindo web pages com o Bootstrap: [Ver](https://andreadcsousa.github.io/introducao_bootstrap/)
-- Recriando o Snake Game com JavaScript: [Ver](https://andreadcsousa.github.io/desafio_snake/)
+[First page](https://andreadcsousa.github.io/introducao_html_css/) | [Clone Instragram Login](https://andreadcsousa.github.io/desafio_instagram/) | [Clone Netflix Interface](https://andreadcsousa.github.io/desafio_netflix/) | [Introduction to Bootstrap](https://andreadcsousa.github.io/introducao_bootstrap/) | [Snake Game](https://andreadcsousa.github.io/desafio_snake/)
 
 ### Oficina - Todas em Tech
 
 *Reprograma*
 
-- Criação de web page com HTML e CSS: [Ver](https://andreadcsousa.github.io/oficina_reprograma/)
+[Basic HTML and CSS](https://andreadcsousa.github.io/oficina_reprograma/)
 
 ### Eu ProgrAmo - 5ª Turma
 
 *PrograMaria*
 
-- Criação de web page com HTML e CSS: [Ver](https://andreadcsousa.github.io/frontend_programaria/)
+[Basic HTML and CSS](https://andreadcsousa.github.io/frontend_programaria/)
 
 ### Start na Carreira de Programação
 
 *OneBitCode*  
 
-- Criação de Formulário com HTML, CSS e Javascript: [Ver](https://andreadcsousa.github.io/start_onebitcode/)
+[Javascript Form](https://andreadcsousa.github.io/start_onebitcode/)
 
 ### Escalator Site Teste
 
 *Codeby*
 
-- Criação de site com flexbox a partir de layout: [Ver](https://andreadcsousa.github.io/codeby_test/)
+[Testing Layout with Flexbox](https://andreadcsousa.github.io/codeby_test/)
 
 ### Imersão Dev - Desafios
 
 *Alura*
 
-- Criação de conversor de anos-luz em km: [Ver](https://andreadcsousa.github.io/alura_conversorjs/)
+[Light-years to Km Converter](https://andreadcsousa.github.io/alura_conversorjs/)
 
 ### Desenvolvimento Web (20 projetos)
 
 *Udemy*
 
-- Criação de site apenas em HTML5: [Ver](https://andreadcsousa.github.io/projeto-unes/)
+[HTML Website Design](https://andreadcsousa.github.io/projeto-unes/)
+
+### Contatos
+
+[Github](https://github.com/andreadcsousa) / [Behance](https://www.freecodecamp.org/andreadcsousa) / [Linkedin](https://www.linkedin.com/in/andrea-dcsousa/) / [E-mail](mailto:andrea.dcsousa@gmail.com) / [Instagram](https://www.instagram.com/pinklovesxtina/) / [Facebook](https://www.facebook.com/pinkLOVESxtina) / [DIO](https://web.digitalinnovation.one/users/andrea_dcsousa?tab=achievements) / [freeCodeCamp](https://www.freecodecamp.org/andreadcsousa)
