@@ -1,4 +1,4 @@
-<img src="https://media.giphy.com/media/LPgFwCQg4HQBvPihcn/giphy.gif" width="250px" align="right">
+<img src="https://media.giphy.com/media/LPgFwCQg4HQBvPihcn/giphy.gif" width="200px" align="right">
 
 # Olá, pessoas!
 
