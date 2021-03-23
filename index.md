@@ -1,4 +1,12 @@
-> Let's code!
+<img src="https://media.giphy.com/media/LPgFwCQg4HQBvPihcn/giphy.gif" width="250px" align="right">
+
+# Olá, pessoas!
+
+Meu nome é Andrea e aqui está o meu portfólio.  
+Comecei a investir na área de tecnologia em fevereiro de 2021.  
+Todos os links abaixo (antes dos contatos) são estudos.
+
+> Espero, em breve, iniciar meu primeiro projeto profissional!
 
 ### Bootcamp - HTML Web Developer by DIO 
 
