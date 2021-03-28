@@ -18,7 +18,7 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 ### Dev Immersion - Challenges by Alura
 
-| [Light-years to Km Converter](https://andreadcsousa.github.io/alura_conversorjs/) | [Country Flags Quiz](https://andreadcsousa.github.io/alura_quizjs/)
+| [Formação Front-End](https://andreadcsousa.github.io/alura_frontend/) | [Light-years to Km Converter](https://andreadcsousa.github.io/alura_conversorjs/) | [Country Flags Quiz](https://andreadcsousa.github.io/alura_quizjs/)
 
 ### Web Development - Courses on Udemy
 
