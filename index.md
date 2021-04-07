@@ -18,7 +18,7 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 ### Formação Front-End & Imersão Dev (Alura)
 
-| [Formação Front-End](https://andreadcsousa.github.io/alura_frontend/) | [Conversor de Distância](https://andreadcsousa.github.io/alura_conversorjs/) | [Layout Responsivo](https://andreadcsousa.github.io/alura_responsivo/) | [Arquitetura CSS](https://andreadcsousa.github.io/alura_arquiteturaCSS/) |
+| [Barbearia Alura](https://andreadcsousa.github.io/alura_frontend/) | [Conversor de Distância](https://andreadcsousa.github.io/alura_conversorjs/) | [Layout Responsivo](https://andreadcsousa.github.io/alura_responsivo/) | [Arquitetura CSS](https://andreadcsousa.github.io/alura_arquiteturaCSS/) |
 
 ### Desenvolvimento Web com 20 Cursos (Udemy)
 
