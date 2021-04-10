@@ -10,23 +10,23 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 ### HTML Web Developer (DIO)
 
-| [Primeira Página](https://andreadcsousa.github.io/introducao_html_css/) | [Clone Instagram](https://andreadcsousa.github.io/desafio_instagram/) | [Clone Netflix](https://andreadcsousa.github.io/desafio_netflix/) | [Introdução ao Bootstrap](https://andreadcsousa.github.io/introducao_bootstrap/) | [Snake Game](https://andreadcsousa.github.io/desafio_snake/) |
+| [Primeira Página](https://andreadcsousa.github.io/introducao_html_css/) | [Instagram Login](https://andreadcsousa.github.io/desafio_instagram/) | [Interface Netflix](https://andreadcsousa.github.io/desafio_netflix/) | [Global Labs](https://andreadcsousa.github.io/introducao_bootstrap/) | [Snake Game](https://andreadcsousa.github.io/desafio_snake/) |
 
 ### Desafios Front-End
 
-| [Workshop Reprograma](https://andreadcsousa.github.io/oficina_reprograma/) | [Astronauta PrograMaria](https://andreadcsousa.github.io/frontend_programaria/) | [Calculadora OneBitCode](https://andreadcsousa.github.io/start_onebitcode/) | [Desafio da Codeby](https://andreadcsousa.github.io/codeby_test/) |
+| [Reprograma](https://andreadcsousa.github.io/oficina_reprograma/) | [Programaria](https://andreadcsousa.github.io/frontend_programaria/) | [OneBitCode](https://andreadcsousa.github.io/start_onebitcode/) | [Escalator Codeby](https://andreadcsousa.github.io/codeby_test/) |
 
 ### Formação Front-End (Alura)
 
-| [Barbearia Alura](https://andreadcsousa.github.io/alura_frontend/) | [Layout Responsivo](https://andreadcsousa.github.io/alura_responsivo/) | [Arquitetura CSS](https://andreadcsousa.github.io/alura_arquiteturaCSS/) | [Flexbox Alurinha](https://andreadcsousa.github.io/alura_flexbox/) | [Grid Store](https://andreadcsousa.github.io/alura_grid/) |
+| [Barbearia Alura](https://andreadcsousa.github.io/alura_frontend/) | [Apeperia](https://andreadcsousa.github.io/alura_responsivo/) | [Fruta & Fruto](https://andreadcsousa.github.io/alura_arquiteturaCSS/) | [Alurinha](https://andreadcsousa.github.io/alura_flexbox/) | [Alura Store](https://andreadcsousa.github.io/alura_grid/) |
 
 ### Imersão Dev (Alura)
 
-| [Conversor de Distância](https://andreadcsousa.github.io/alura_conversorjs/) |
+| [Dia 1 Conversor](https://andreadcsousa.github.io/alura_conversorjs/) |
 
 ### Desenvolvimento Web (Udemy)
 
-| [Site em HTML](https://andreadcsousa.github.io/projeto-unes/) |
+| [Site UNES](https://andreadcsousa.github.io/projeto-unes/) |
 
 ### Contatos
 
