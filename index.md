@@ -18,7 +18,7 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 ### Formação Front-End (Alura)
 
-| [Barbearia Alura](https://andreadcsousa.github.io/alura_frontend/) | [Apeperia](https://andreadcsousa.github.io/alura_responsivo/) | [Fruta & Fruto](https://andreadcsousa.github.io/alura_arquiteturaCSS/) | [Alurinha](https://andreadcsousa.github.io/alura_flexbox/) | [Alura Store](https://andreadcsousa.github.io/alura_grid/) |
+| [Barbearia Alura](https://andreadcsousa.github.io/alura_frontend/) | [Apeperia](https://andreadcsousa.github.io/alura_responsivo/) | [Fruta & Fruto](https://andreadcsousa.github.io/alura_arquiteturaCSS/) | [Alurinha](https://andreadcsousa.github.io/alura_flexbox/) | [Alura Store](https://andreadcsousa.github.io/alura_grid/) | [Ceep](https://andreadcsousa.github.io/alura_dom_javascript/) |
 
 ### Imersão Dev (Alura)
 
