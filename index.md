@@ -32,4 +32,4 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 ### Contatos
 
-| [Linkedin](https://www.linkedin.com/in/andrea-dcsousa/) | [E-mail](mailto:andrea.dcsousa@gmail.com) | [Github](https://github.com/andreadcsousa) | [Behance](https://www.freecodecamp.org/andreadcsousa) | [Instagram](https://www.instagram.com/pinklovesxtina/) | [Facebook](https://www.facebook.com/pinkLOVESxtina) |
+| [Linkedin](https://www.linkedin.com/in/andrea-dcsousa/) | [E-mail](mailto:andrea.dcsousa@gmail.com) | [Behance](https://www.freecodecamp.org/andreadcsousa) | [Instagram](https://www.instagram.com/pinklovesxtina/) | [Instagram DEV](https://www.instagram.com/insight.content/) | [Facebook](https://www.facebook.com/pinkLOVESxtina) |
