@@ -26,7 +26,7 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 | [Dia 1 Conversor](https://andreadcsousa.github.io/alura_imersao_dia1/) |
 
-### Desenvolvimento Web (Udemy)
+### Web Developer (Udemy)
 
 | [Site UNES](https://andreadcsousa.github.io/udemy_projetoUnes/) |
 
