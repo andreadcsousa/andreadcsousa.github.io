@@ -22,6 +22,8 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 | [Alura Store](https://andreadcsousa.github.io/alura_webpage_grid/) | [Ceep Notes](https://andreadcsousa.github.io/alura_array_javascript/) | [Casa Verde](https://andreadcsousa.github.io/alura_webpage_emmet/) | [Gatito](https://andreadcsousa.github.io/alura_paralaxe_carrossel/) |
 
+| [Pet Shop](https://andreadcsousa.github.io/alura_webpage_sass/) |
+
 ### Imersão Dev (Alura)
 
 | [Dia 1 Conversor](https://andreadcsousa.github.io/alura_imersao_dia1/) |
