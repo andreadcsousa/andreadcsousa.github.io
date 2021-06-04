@@ -14,7 +14,7 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 ### Desafios Front-End
 
-| [Reprograma](https://andreadcsousa.github.io/reprograma_oficina/) | [Programaria](https://andreadcsousa.github.io/programaria_frontend/) | [OneBitCode](https://andreadcsousa.github.io/onebitcode_calculadora/) | [Escalator Codeby](https://andreadcsousa.github.io/codeby_escalator/) |
+| [Reprograma](https://andreadcsousa.github.io/reprograma_oficina/) | [Programaria](https://andreadcsousa.github.io/programaria_frontend/) | [OneBitCode](https://andreadcsousa.github.io/onebitcode_calculadora/) | [Escalator Codeby](https://andreadcsousa.github.io/codeby_escalator/) | [Collab Design](https://andreadcsousa.github.io/collab_design/)
 
 ### Formação Front-End (Alura)
 
