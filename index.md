@@ -18,9 +18,9 @@ Espero, em breve, iniciar meu primeiro projeto profissional!
 
 ### Formação Front-End (Alura)
 
-| [Barbearia](https://andreadcsousa.github.io/alura_webpage_barbearia/) | [Fruta&Fruto](https://andreadcsousa.github.io/alura_arquitetura_css/) | [Apeperia](https://andreadcsousa.github.io/alura_layout_responsivo/) | [Alurinha](https://andreadcsousa.github.io/alura_webpage_flexbox/) | [Gatito](https://andreadcsousa.github.io/alura_paralaxe_carrossel/) |
+| [Barbearia](https://andreadcsousa.github.io/alura_webpage_barbearia/) | [Fruta&Fruto](https://andreadcsousa.github.io/alura_arquitetura_css/) | [Apeperia](https://andreadcsousa.github.io/alura_layout_responsivo/) | [Alurinha](https://andreadcsousa.github.io/alura_webpage_flexbox/) | [Pet Shop](https://andreadcsousa.github.io/alura_webpage_sass/) |
 
-| [Alura Store](https://andreadcsousa.github.io/alura_webpage_grid/) | [CEEP Notes](https://andreadcsousa.github.io/alura_array_javascript/) | [Casa Verde](https://andreadcsousa.github.io/alura_webpage_emmet/) | [Pet Shop](https://andreadcsousa.github.io/alura_webpage_sass/) | [AluraConf](https://andreadcsousa.github.io/alura_projeto_final/) |
+| [Alura Store](https://andreadcsousa.github.io/alura_webpage_grid/) | [CEEP Notes](https://andreadcsousa.github.io/alura_array_javascript/) | [Casa Verde](https://andreadcsousa.github.io/alura_webpage_emmet/) | [Gatito](https://andreadcsousa.github.io/alura_paralaxe_carrossel/) | [AluraConf](https://andreadcsousa.github.io/alura_projeto_final/) |
 
 ### HTML Web Developer (DIO)
 
