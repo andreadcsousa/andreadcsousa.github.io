@@ -1,0 +1,50 @@
+#s-skills {
+  width: 100%;
+  height: auto;
+  background-color: $bg-main;
+  color: $color-white;
+  padding: 120px 20px;
+
+  h2 {
+    font-size: 4.8rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: $font-secondary;
+
+    @include responsive-tablet {
+      font-size: 4rem;
+    }
+  }
+
+  .technologies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    gap: 48px 24px;
+
+    div {
+      width: 13%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+      @include responsive-tablet {
+        width: 18%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 16px;
+      }
+    }
+  }
+}

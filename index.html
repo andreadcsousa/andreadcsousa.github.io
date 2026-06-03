@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="" />
+    <meta name="copyright" content="" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:image" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Andrea Sousa - Portfólio</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="grid-layout">
+        <nav>
+          <h1>Andrea Sousa</h1>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="#s-home">Início</a>
+            </li>
+            <li>
+              <a href="#s-about">Sobre mim</a>
+            </li>
+            <li>
+              <a href="#s-projects">Projetos</a>
+            </li>
+            <li>
+              <a href="#s-skills">Habilidades</a>
+            </li>
+            <li>
+              <a href="#s-contact">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="s-home">
+        <div class="grid-layout">
+          <div id="home">
+            <div id="home-container-text">
+              <p>Olá, eu sou</p>
+              <h2>Andrea Sousa</h2>
+              <p>Analista de Dados</p>
+
+              <a href="#s-contact" rel="noopener"/>Entrar em contato</a>
+            </div>
+
+            <div id="home-container-image">
+              <img
+                src="assets/image/illustration.svg"
+                alt=""
+                id="logo"
+                width="500px"
+                height="500px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-about">
+        <div class="grid-layout">
+          <div>
+            <div id="creator-photo">
+
+              <div class="social-media">
+                <a href="https://www.linkedin.com/in/andrea-dcsousa/" target="_blank">
+                  <img src="./assets/image/linkedin.svg" alt="" />
+                </a>
+
+                <a href="https://github.com/andreadcsousa" target="_blank">
+                  <img src="./assets/image/github.svg" alt="" />
+                </a>
+
+                <a href="https://www.facebook.com/pinkLOVESxtina" target="_blank">
+                  <img src="./assets/image/facebook.svg" alt="" />
+                </a>
+
+                <a href="https://www.instagram.com/pinklovesxtina/" target="_blank">
+                  <img src="./assets/image/instagram.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="container-text-resume">
+              <h2 id="heading">Resumo</h2>
+
+              <div id="content">
+                <p>
+                  Bacharela em Administração, com início de carreira na área de
+                  vendas e experiência em administração financeira e recursos
+                  humanos, posteriormente migrando para tecnologia.
+                </p>
+
+                <p>
+                  Atualmente, atuando com Análise de Dados, contribuindo para a
+                  equipe do Observatório FIESC com habilidades técnicas e
+                  analíticas.
+                </p>
+                <p>
+                  Apaixonada por jogos, séries, filmes, signos, boxe, pizza, doritos e xtina.
+                </p>
+              </div>
+
+              <a id="download-link" href="assets\image\Andrea Sousa.pdf" target="_blank" download>
+                <img src="./assets/image/download.svg" alt="" />
+                Baixar currículo
+              </a>
+
+              <div class="indicators">
+                <span class="dot active" onclick="showContent(1)"></span>
+                <span class="dot" onclick="showContent(2)"></span>
+                <span class="dot" onclick="showContent(3)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-projects">
+        <div class="grid-layout">
+          <h2>Meus projetos</h2>
+
+          <div>
+            <img src="#" alt="" />
+
+            <div>
+              <h2>Nome do projeto</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                curae.
+              </p>
+
+              <span>
+                <p>JavaScript</p>
+                <p>JavaScript</p>
+                <p>JavaScript</p>
+                <p>JavaScript</p>
+                <p>JavaScript</p>
+                <p>JavaScript</p>
+                <p>JavaScript</p>
+              </span>
+
+              <a href="#" rel="noopener" target="_blank">Acessar o projeto</a>
+            </div>
+          </div>
+
+          <div class="project-inverse">
+            <div>
+              <h2>Dashboard: Comunicação de Acidentes de Trabalho (CAT)</h2>
+
+              <p>
+                Realizando ETL para analisar os dados da CAT. Extração manual dos dados, tratamento e padronização das colunas e criação de dicionários para substituição de informações incompletas. Visualização dos dados no Power BI.
+              </p>
+
+              <span>
+                <p>Python</p>
+                <p>Pandas</p>
+                <p>Google Colab</p>
+                <p>Power BI</p>
+                <p>CATWEB</p>
+                <p>Dashboard</p>
+                <p>JavaScript</p>
+              </span>
+
+              <a href="https://github.com/andreadcsousa/projeto_acidentes-trabalho_python_pbi" rel="noopener" target="_blank">Acessar o projeto</a>
+            </div>
+
+            <img src="assets/image/pagina1.jpg" alt="" />
+          </div>
+
+          <div>
+            <img src="assets/image/1695162481294.jpeg" alt="" />
+
+            <div>
+              <h2>Script: Da Web aos Insights - Coleta e Análise de Dados Públicos</h2>
+
+              <p>
+                Usando Python para navegar pelas etapas essenciais de coleta, processamento e visualização de dados a partir de dados do comércio exterior. Workshop em dados realizado na PrograMaria Summit de 2023.
+              </p>
+
+              <span>
+                <p>Python</p>
+                <p>Pandas</p>
+                <p>Google Colab</p>
+                <p>COMEX</p>
+                <p>Scraping</p>
+                <p>PrograMaria</p>
+                <p>Workshop</p>
+              </span>
+
+              <a href="#" rel="noopener" target="_blank">Acessar o projeto</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-skills">
+        <div class="grid-layout">
+          <h2>Habilidades</h2>
+
+          <div class="technologies">
+
+            <div>
+              <img src="./assets/image/python.svg" alt="Logo" />
+              <h3>Python</h3>
+            </div>
+            
+            <div>
+              <img src="./assets/image/databricks.svg" alt="Logo" />
+              <h3>Databricks</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/rstudioide.svg" alt="Logo" />
+              <h3>RStudio</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/sqlserver.svg" alt="Logo" />
+              <h3>SQL Server</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/powerbi.svg" alt="Logo" />
+              <h3>Power BI</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/excel.svg" alt="Logo" />
+              <h3>Excel</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/pandas.svg" alt="Logo" />
+              <h3>Pandas</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/apachespark.svg" alt="Logo" />
+              <h3>PySpark</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/r.svg" alt="Logo" />
+              <h3>R</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/sql.svg" alt="Logo" />
+              <h3>SQL</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/looker.svg" alt="Logo" />
+              <h3>Looker</h3>
+            </div>
+
+            <div>
+              <img src="./assets/image/googlesheets.svg" alt="Logo" />
+              <h3>Sheets</h3>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="s-contact">
+        <div class="grid-layout">
+          <h2>Entre em contato</h2>
+
+          <div>
+            <h3>andrea.dcsousa@gmail.com</h3>
+            <h3>(48) 98880-1574</h3>
+          </div>
+
+          <p>Astronauta da <a href="https://www.programaria.org/">PrograMaria</a> e tutora no curso de <a href="https://www.programaria.org/cursos-programaria/analise-dados-primeiros-passos-python/">Análise de Dados</a>.</p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="grid-layout">
+          <p>Feito com muito amor e café</p>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script>
+      const contents = [
+        {
+          heading: "Resumo",
+          paragraphs: `
+      <p>
+        Bacharela em Administração, com início de carreira na área de
+        vendas e experiência em administração financeira e recursos
+        humanos, posteriormente migrando para tecnologia.
+      </p>
+      <p>
+        Atualmente, atuando com Análise de Dados, contribuindo para a
+        equipe do Observatório FIESC com habilidades técnicas e
+        analíticas.
+      </p>
+      <p>
+        Apaixonada por jogos, séries, filmes, signos, boxe, pizza, doritos e Christina Aguilera.
+      </p>
+    `,
+          showLink: true,
+        },
+        {
+          heading: "Experiência",
+          paragraphs: `
+      <p>
+        Tutora de Dados na PrograMaria, 08/2024 – atual <br> (Google Sheets, Python, SQL, DBeaver, Looker)
+      </p>
+      <p>
+        Analista de Dados no IEL de Santa Catarina, 04/2023 – atual <br> (PySpark, R, DAX, ETL, Databricks, Power BI, Azure Devops, Excel)
+      </p>
+      <p>
+        Analista de Desenvolvimento na Neotrust, 11/2021 – 05/2022 <br> (SQL Server, Visual Studio, Power BI, ETL, Excel, Azure Devops)
+      </p>
+      <p>
+        Desenvolvedora SQL na Carambola, 07/2021 – 10/2021 <br> (SQL Server, Visual Studio, Excel, Sharepoint, Azure Devops)
+      </p>
+    `,
+          showLink: false,
+        },
+        {
+          heading: "Educação",
+          paragraphs: `
+      <p>
+        Academy Accreditation - Databricks Fundamentals <br> Certificação na Databricks, 07/2024
+      </p>
+      <p>
+        Trilha de Dados - Programa Desenvolve 2023 <br> Grupo Boticário e Alura, 01/2023 – 07/2023
+      </p>
+      <p>
+        Especialização em Docência do Ensino Superior <br> Pós-graduação na Unifacs, 09/2020 - 08/2021
+      </p>
+      <p>
+        Bacharelado em Administração <br> Graduação na UniFTC, 02/2015 - 06/2019
+      </p>
+    `,
+          showLink: false,
+        },
+      ];
+
+      function showContent(index) {
+        const heading = document.getElementById("heading");
+        const contentDiv = document.getElementById("content");
+        const downloadLink = document.getElementById("download-link");
+        const dots = document.getElementsByClassName("dot");
+
+        const currentContent = contents[index - 1];
+
+        heading.textContent = currentContent.heading;
+        contentDiv.innerHTML = currentContent.paragraphs;
+
+        if (currentContent.showLink) {
+          downloadLink.style.display = "flex";
+        } else {
+          downloadLink.style.display = "none";
+        }
+
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        dots[index - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

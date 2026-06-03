@@ -1,0 +1,92 @@
+#s-home {
+  padding: 0px 50px;
+  background-color: $bg-secondary;
+  position: relative;
+
+  @include responsive-tablet {
+    padding: 100px 20px 0px 20px;
+  }
+
+  .grid-layout {
+    #home {
+      display: flex;
+      align-items: center;
+      min-height: 90vh;
+      padding: 200px 0px;
+      overflow: hidden;
+      width: 100%;
+
+      @include responsive-tablet {
+        padding: 0px;
+      }
+
+      #home-container-text {
+        width: 60%;
+        flex-direction: column;
+
+        @include responsive-tablet {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          text-align: center;
+          padding: 0px;
+        }
+
+        h2 {
+          font-family: $font-secondary;
+          color: $color-main;
+          max-width: 650px;
+          line-height: 140%;
+
+          font: {
+            size: 4.8rem;
+            weight: 500;
+          }
+
+          @include responsive-tablet {
+            font-size: 4rem;
+          }
+        }
+
+        p {
+          color: $color-white;
+          font-size: 2.4rem;
+          max-width: 600px;
+          margin: 8px 0px;
+          font-weight: 400;
+          line-height: 160%;
+        }
+
+        a {
+          @include flexbox-center;
+          background: $color-main;
+          color: $bg-main;
+          padding: 20px 32px;
+          max-width: 300px;
+          border-radius: 4px;
+          transition: all 0.4s ease;
+          margin-top: 48px;
+
+          font: {
+            size: 18px;
+            weight: 600;
+          }
+
+          &:hover {
+            padding: 20px 45px;
+            max-width: 325px;
+          }
+        }
+      }
+
+      #home-container-image {
+        width: 40%;
+
+        @include responsive-tablet {
+          display: none;
+        }
+      }
+    }
+  }
+}
