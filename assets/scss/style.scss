@@ -1,6 +1,0 @@
-@import "./variables", "./reset", "./menu", "./home", "./about", "./projects",
-  "./skills", "./contact", "./footer";
-
-.grid-layout {
-  @include grid-layout();
-}

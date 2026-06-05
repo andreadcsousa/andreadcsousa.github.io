@@ -1,393 +1,1193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="" />
-    <meta name="copyright" content="" />
-    <meta http-equiv="content-language" content="pt-br" />
-    <meta property="og:image" content="" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2351e5ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 16 4-4-4-4'/%3E%3Cpath d='m6 8-4 4 4 4'/%3E%3Cpath d='m14.5 4-5 16'/%3E%3C/svg%3E"
+    />
+    <title>Andrea Sousa - Portfólio</title>
+    <!-- Fontes do Projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Red+Hat+Display:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Folha de Estilo Principal -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Andrea Sousa - Portfólio</title>
   </head>
 
   <body>
     <header>
       <div class="grid-layout">
         <nav>
-          <h1>Andrea Sousa</h1>
+          <h1>&lt; Andrea Sousa /&gt;</h1>
           <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
           <ul class="nav-list">
-            <li>
-              <a href="#s-home">Início</a>
-            </li>
-            <li>
-              <a href="#s-about">Sobre mim</a>
-            </li>
-            <li>
-              <a href="#s-projects">Projetos</a>
-            </li>
-            <li>
-              <a href="#s-skills">Habilidades</a>
-            </li>
-            <li>
-              <a href="#s-contact">Contato</a>
-            </li>
+            <li><a href="#s-home">Início</a></li>
+            <li><a href="#s-about">Perfil</a></li>
+            <li><a href="#s-projects">Projetos</a></li>
+            <li><a href="#s-stack">Stack</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
+      <!-- ==================== SEÇÃO 1: INÍCIO / DESTAQUE ==================== -->
       <section id="s-home">
         <div class="grid-layout">
           <div id="home">
             <div id="home-container-text">
-              <p>Olá, eu sou</p>
-              <h2>Andrea Sousa</h2>
-              <p>Analista de Dados</p>
-
-              <a href="#s-contact" rel="noopener"/>Entrar em contato</a>
+              <h2 class="main-hero-title">
+                Da Complexidade dos <span>Dados</span><br />
+                à Clareza da <span>Decisão</span>.
+              </h2>
+              <div class="hero-description-box">
+                <p>
+                  Olá! Sou <strong>Andrea Sousa</strong>, especialista em
+                  traduzir grandes volumes de dados brutos em inteligência de
+                  mercado e KPIs estratégicos.
+                </p>
+                <p>
+                  Unindo minha bagagem em Análise de Dados, BI e Engenharia de
+                  Dados, desenvolvo soluções robustas em Python e SQL que
+                  otimizam processos, identificam oportunidades de negócio e
+                  automatizam fluxos de informação.
+                </p>
+              </div>
             </div>
-
             <div id="home-container-image">
               <img
                 src="assets/image/illustration.svg"
-                alt=""
-                id="logo"
-                width="500px"
-                height="500px"
+                alt="Ilustração de dados"
               />
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ==================== SEÇÃO 2: PERFIL PROFISSIONAL ==================== -->
       <section id="s-about">
         <div class="grid-layout">
-          <div>
-            <div id="creator-photo">
-
-              <div class="social-media">
-                <a href="https://www.linkedin.com/in/andrea-dcsousa/" target="_blank">
-                  <img src="./assets/image/linkedin.svg" alt="" />
-                </a>
-
-                <a href="https://github.com/andreadcsousa" target="_blank">
-                  <img src="./assets/image/github.svg" alt="" />
-                </a>
-
-                <a href="https://www.facebook.com/pinkLOVESxtina" target="_blank">
-                  <img src="./assets/image/facebook.svg" alt="" />
-                </a>
-
-                <a href="https://www.instagram.com/pinklovesxtina/" target="_blank">
-                  <img src="./assets/image/instagram.svg" alt="" />
-                </a>
-              </div>
+          <div class="about-section-header">
+            <h2>Perfil Profissional</h2>
+            <p class="section-subtitle">
+              Visão detalhada sobre minhas competências técnicas, trajetória na
+              área de dados e formação acadêmica.
+            </p>
+          </div>
+          <div class="browser-window">
+            <!-- Abas -->
+            <div class="browser-header-tabs">
+              <button
+                class="browser-tab-btn active"
+                onclick="changeSectionTab(event, 'sec-sobre')"
+              >
+                Resumo
+              </button>
+              <button
+                class="browser-tab-btn"
+                onclick="changeSectionTab(event, 'sec-competencias')"
+              >
+                Competências
+              </button>
+              <button
+                class="browser-tab-btn"
+                onclick="changeSectionTab(event, 'sec-experiencia')"
+              >
+                Experiência
+              </button>
+              <button
+                class="browser-tab-btn"
+                onclick="changeSectionTab(event, 'sec-educacao')"
+              >
+                Educação
+              </button>
             </div>
-            <div class="container-text-resume">
-              <h2 id="heading">Resumo</h2>
 
-              <div id="content">
-                <p>
-                  Bacharela em Administração, com início de carreira na área de
-                  vendas e experiência em administração financeira e recursos
-                  humanos, posteriormente migrando para tecnologia.
-                </p>
+            <div class="browser-body-content">
+              <!-- [ABA 1]: RESUMO -->
+              <div id="sec-sobre" class="browser-pane active">
+                <div class="tab-sobre-layout">
+                  <div class="sidebar-profile">
+                    <div class="photo-placeholder-vertical">
+                      <img src="assets/image/perfil.png" alt="Foto de perfil" />
+                    </div>
+                    <div class="profile-social-icons">
+                      <a
+                        href="mailto:andrea.dcsousa@gmail.com"
+                        class="social-icon-btn"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z"
+                          />
+                          <path
+                            d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z"
+                          />
+                          <path d="M16 4l-4 4l-4 -4" />
+                          <path d="M4 6.5l8 7.5l8 -7.5" /></svg
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/andrea-dcsousa/"
+                        class="social-icon-btn"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                          />
+                          <path d="M8 11l0 5" />
+                          <path d="M8 8l0 .01" />
+                          <path d="M12 16l0 -5" />
+                          <path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg
+                      ></a>
+                      <a
+                        href="https://github.com/andreadcsousa"
+                        class="social-icon-btn"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://wa.me/5548988801574"
+                        class="social-icon-btn"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"
+                          />
+                          <path
+                            d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+                          /></svg
+                      ></a>
+                    </div>
+                  </div>
 
-                <p>
-                  Atualmente, atuando com Análise de Dados, contribuindo para a
-                  equipe do Observatório FIESC com habilidades técnicas e
-                  analíticas.
-                </p>
-                <p>
-                  Apaixonada por jogos, séries, filmes, signos, boxe, pizza, doritos e xtina.
-                </p>
+                  <div class="text-profile-content">
+                    <h2>Sobre mim</h2>
+                    <p>
+                      Profissional com sólida experiência em análise
+                      exploratória, modelagem de dados e inteligência de
+                      negócios. Atuo de ponta a ponta: desde a extração, limpeza
+                      e estruturação de bases complexas (ETL/ELT) até a criação
+                      de dashboards interativos de alto padrão visual.
+                    </p>
+                    <p>
+                      Além da visão técnica voltada para Python, SQL e
+                      ferramentas de BI, trago uma forte bagagem em
+                      gerenciamento técnico de projetos. Isso significa que não
+                      apenas escrevo código eficiente, mas sei gerenciar prazos,
+                      documentar processos e traduzir métricas complexas para
+                      tomadores de decisão de forma clara e corporativa.
+                    </p>
+                    <p>
+                      Acredito que o verdadeiro valor dos dados está na sua
+                      capacidade de responder a perguntas estratégicas; por
+                      isso, empenho-me em construir a base técnica necessária
+                      para que o negócio possa planejar o futuro com segurança.
+                    </p>
+                    <div class="container-btn-right">
+                      <a
+                        class="btn-cv-inverse"
+                        href="https://docs.google.com/document/d/1c90tiVy4G8YJYizITBdFzDrABWYtBab0e4YUPN7XOcg"
+                        target="_blank"
+                        >Ver currículo</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <a id="download-link" href="assets\image\Andrea Sousa.pdf" target="_blank" download>
-                <img src="./assets/image/download.svg" alt="" />
-                Baixar currículo
-              </a>
+              <!-- [ABA 2]: COMPETÊNCIAS -->
+              <div id="sec-competencias" class="browser-pane">
+                <div class="skills-grid-container">
+                  <!-- Bloco 1 -->
+                  <div class="skill-card-box">
+                    <h3>⚡ PIPELINES ETL/ELT</h3>
+                    <p>
+                      Construção e otimização de rotinas de ingestão, limpeza e
+                      transformação de dados em larga escala.
+                    </p>
+                    <div class="tools-tag-wrapper">
+                      <span class="tool-tag">Python</span>
+                      <span class="tool-tag">SQL Server</span>
+                      <span class="tool-tag">Databricks</span>
+                      <span class="tool-tag">Spark</span>
+                    </div>
+                  </div>
+                  <!-- Bloco 2 -->
+                  <div class="skill-card-box">
+                    <h3>📊 MODELAGEM & ANALYTICS BI</h3>
+                    <p>
+                      Estruturação de bancos de dados relacionais e criação de
+                      dashboards executivos focados em KPIs de negócio.nais e
+                      criação de dashboards executivos de alto padrão.
+                    </p>
+                    <div class="tools-tag-wrapper">
+                      <span class="tool-tag">Power BI</span>
+                      <span class="tool-tag">Tableau</span>
+                      <span class="tool-tag">Looker</span>
+                      <span class="tool-tag">Métricas</span>
+                    </div>
+                  </div>
+                  <!-- Bloco 3 -->
+                  <div class="skill-card-box">
+                    <h3>🛠️ AUTOMAÇÃO & SCRAPING</h3>
+                    <p>
+                      Desenvolvimento de scripts em Python para extração de
+                      dados via APIs e raspagem web, eliminando processos
+                      manuais.
+                    </p>
+                    <div class="tools-tag-wrapper">
+                      <span class="tool-tag">Pandas</span>
+                      <span class="tool-tag">APIs</span>
+                      <span class="tool-tag">BeautifulSoup</span>
+                      <span class="tool-tag">Git</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-action-container">
+                  <a href="#s-projects" class="btn-skills-cta"
+                    >Visualizar Projetos Práticos</a
+                  >
+                </div>
+              </div>
 
-              <div class="indicators">
-                <span class="dot active" onclick="showContent(1)"></span>
-                <span class="dot" onclick="showContent(2)"></span>
-                <span class="dot" onclick="showContent(3)"></span>
+              <!-- [ABA 3]: EXPERIÊNCIA -->
+              <div id="sec-experiencia" class="browser-pane">
+                <h2 class="timeline-section-title">Trajetória Profissional</h2>
+                <div class="horizontal-timeline-container">
+                  <!-- Nó 1 -->
+                  <div class="horizontal-timeline-node">
+                    <div class="node-marker"></div>
+                    <div class="node-date">07/2024 - atual</div>
+                    <div class="node-info">
+                      <h3>TUTORA EM DADOS</h3>
+                      <p>PrograMaria</p>
+                      <span
+                        class="open-modal-link"
+                        onclick="openExpModal('modal-programaria')"
+                        >Ver detalhes</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Nó 2 -->
+                  <div class="horizontal-timeline-node">
+                    <div class="node-marker"></div>
+                    <div class="node-date">04/2023 - 08/2025</div>
+                    <div class="node-info">
+                      <h3>ANALISTA DE DADOS</h3>
+                      <p>IEL de Santa Catarina</p>
+                      <span
+                        class="open-modal-link"
+                        onclick="openExpModal('modal-fiesc')"
+                        >Ver detalhes</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Nó 3 -->
+                  <div class="horizontal-timeline-node">
+                    <div class="node-marker"></div>
+                    <div class="node-date">11/2021 - 05/2022</div>
+                    <div class="node-info">
+                      <h3>ANALISTA DE DESENV.</h3>
+                      <p>Neotrust</p>
+                      <span
+                        class="open-modal-link"
+                        onclick="openExpModal('modal-neotrust')"
+                        >Ver detalhes</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Nó 4 -->
+                  <div class="horizontal-timeline-node">
+                    <div class="node-marker"></div>
+                    <div class="node-date">07/2021 - 10/2021</div>
+                    <div class="node-info">
+                      <h3>DESENVOLVEDORA SQL</h3>
+                      <p>Carambola</p>
+                      <span
+                        class="open-modal-link"
+                        onclick="openExpModal('modal-carambola')"
+                        >Ver detalhes</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- [ABA 4]: EDUCAÇÃO -->
+              <div id="sec-educacao" class="browser-pane">
+                <div class="education-grid-split">
+                  <div class="education-column">
+                    <h2>Formação Acadêmica</h2>
+                    <ul class="education-list-items">
+                      <li>
+                        Pós em Ciência de Dados e Big Data (PUC Minas, 10/2026)
+                      </li>
+                      <li>
+                        Pós em Docência do Ensino Superior (UNIFACS, 08/2021)
+                      </li>
+                      <li>Bacharelado em Administração (UNIFTC, 06/2019)</li>
+                    </ul>
+                    <h2 class="languages-spacing-title">Idiomas</h2>
+                    <ul class="education-list-items">
+                      <li>
+                        <strong>Inglês:</strong> Leitura (B1) / Compreensão Oral
+                        (A2)
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="education-column">
+                    <h2>Cursos e Certificações</h2>
+                    <ul class="certifications-list-items">
+                      <li>
+                        Google Data Analytics Professional (Coursera, 2026)
+                      </li>
+                      <li>Python, SQL, Power BI e Spark (Alura, 2022-2025)</li>
+                      <li>Academy Accreditation (Databricks, 2024)</li>
+                      <li>Excel e Power BI para Análise (Preditiva, 2023)</li>
+                      <li>
+                        Trilha de Dados: Programa Desenvolve (Alura, 2023)
+                      </li>
+                      <li>Big Data Fundamentos (Data Science Academy, 2022)</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ==================== SEÇÃO 3: PROJETOS EM DADOS ==================== -->
       <section id="s-projects">
         <div class="grid-layout">
-          <h2>Meus projetos</h2>
+          <h2>Meus Projetos</h2>
+          <p class="section-subtitle">
+            Vitrine das soluções de dados, análises estatísticas e automações
+            que desenvolvi.
+          </p>
 
-          <div>
-            <img src="#" alt="" />
+          <div class="project-filters">
+            <button
+              class="filter-btn active"
+              onclick="filterProjects('all', event)"
+            >
+              Todos
+            </button>
+            <button class="filter-btn" onclick="filterProjects('bi', event)">
+              Dashboards & BI
+            </button>
+            <button
+              class="filter-btn"
+              onclick="filterProjects('python', event)"
+            >
+              Python & Analytics
+            </button>
+          </div>
 
-            <div>
-              <h2>Nome do projeto</h2>
+          <div class="projects-grid">
+            <div class="project-card" data-type="bi">
+              <div class="project-img-wrapper">
+                <img src="assets/image/pagina1.jpg" alt="Dashboard CAT" />
+              </div>
+              <div class="project-card-content">
+                <h3>Comunicação de Acidentes de Trabalho (CAT)</h3>
+                <p>
+                  Realização de ETL para tratamento, padronização e criação de
+                  dicionários de dados. Visualização estratégica e análise de
+                  tendências no Power BI.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>Pandas</span>
+                  <span>Power BI</span>
+                  <span>ETL</span>
+                </div>
+                <a
+                  href="https://github.com/andreadcsousa/projeto_acidentes-trabalho_python_pbi"
+                  rel="noopener"
+                  target="_blank"
+                  class="project-link"
+                >
+                  Acessar Projeto
+                </a>
+              </div>
+            </div>
 
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae.
-              </p>
-
-              <span>
-                <p>JavaScript</p>
-                <p>JavaScript</p>
-                <p>JavaScript</p>
-                <p>JavaScript</p>
-                <p>JavaScript</p>
-                <p>JavaScript</p>
-                <p>JavaScript</p>
-              </span>
-
-              <a href="#" rel="noopener" target="_blank">Acessar o projeto</a>
+            <div class="project-card" data-type="python">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/image/1695162481294.jpeg"
+                  alt="Workshop PrograMaria"
+                />
+              </div>
+              <div class="project-card-content">
+                <h3>Python para Coleta e Análise de Dados Públicos</h3>
+                <p>
+                  Script focado em automação, coleta (web scraping),
+                  processamento e análise descritiva de dados públicos do
+                  comércio exterior (COMEX).
+                </p>
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>Pandas</span>
+                  <span>Scraping</span>
+                  <span>Colab</span>
+                </div>
+                <a href="#" rel="noopener" target="_blank" class="project-link">
+                  Acessar Projeto
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="project-inverse">
-            <div>
-              <h2>Dashboard: Comunicação de Acidentes de Trabalho (CAT)</h2>
-
-              <p>
-                Realizando ETL para analisar os dados da CAT. Extração manual dos dados, tratamento e padronização das colunas e criação de dicionários para substituição de informações incompletas. Visualização dos dados no Power BI.
-              </p>
-
-              <span>
-                <p>Python</p>
-                <p>Pandas</p>
-                <p>Google Colab</p>
-                <p>Power BI</p>
-                <p>CATWEB</p>
-                <p>Dashboard</p>
-                <p>JavaScript</p>
-              </span>
-
-              <a href="https://github.com/andreadcsousa/projeto_acidentes-trabalho_python_pbi" rel="noopener" target="_blank">Acessar o projeto</a>
-            </div>
-
-            <img src="assets/image/pagina1.jpg" alt="" />
-          </div>
-
-          <div>
-            <img src="assets/image/1695162481294.jpeg" alt="" />
-
-            <div>
-              <h2>Script: Da Web aos Insights - Coleta e Análise de Dados Públicos</h2>
-
-              <p>
-                Usando Python para navegar pelas etapas essenciais de coleta, processamento e visualização de dados a partir de dados do comércio exterior. Workshop em dados realizado na PrograMaria Summit de 2023.
-              </p>
-
-              <span>
-                <p>Python</p>
-                <p>Pandas</p>
-                <p>Google Colab</p>
-                <p>COMEX</p>
-                <p>Scraping</p>
-                <p>PrograMaria</p>
-                <p>Workshop</p>
-              </span>
-
-              <a href="#" rel="noopener" target="_blank">Acessar o projeto</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="s-skills">
-        <div class="grid-layout">
-          <h2>Habilidades</h2>
-
-          <div class="technologies">
-
-            <div>
-              <img src="./assets/image/python.svg" alt="Logo" />
-              <h3>Python</h3>
-            </div>
-            
-            <div>
-              <img src="./assets/image/databricks.svg" alt="Logo" />
-              <h3>Databricks</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/rstudioide.svg" alt="Logo" />
-              <h3>RStudio</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/sqlserver.svg" alt="Logo" />
-              <h3>SQL Server</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/powerbi.svg" alt="Logo" />
-              <h3>Power BI</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/excel.svg" alt="Logo" />
-              <h3>Excel</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/pandas.svg" alt="Logo" />
-              <h3>Pandas</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/apachespark.svg" alt="Logo" />
-              <h3>PySpark</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/r.svg" alt="Logo" />
-              <h3>R</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/sql.svg" alt="Logo" />
-              <h3>SQL</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/looker.svg" alt="Logo" />
-              <h3>Looker</h3>
-            </div>
-
-            <div>
-              <img src="./assets/image/googlesheets.svg" alt="Logo" />
-              <h3>Sheets</h3>
-            </div>
-
+          <div class="see-more-container">
+            <a href="#" class="btn-see-more" rel="noopener" target="_blank">
+              Ver repositório completo no Notion
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="s-contact">
+      <!-- ==================== SEÇÃO 4: STACK & FERRAMENTAS ==================== -->
+      <section id="s-stack">
         <div class="grid-layout">
-          <h2>Entre em contato</h2>
-
-          <div>
-            <h3>andrea.dcsousa@gmail.com</h3>
-            <h3>(48) 98880-1574</h3>
+          <div class="stack-section-header">
+            <h2>Tech Stack & Ferramentas</h2>
+            <p class="section-subtitle">
+              O ecossistema técnico e as metodologias que utilizo para
+              transformar dados brutos em ativos de negócios.
+            </p>
           </div>
 
-          <p>Astronauta da <a href="https://www.programaria.org/">PrograMaria</a> e tutora no curso de <a href="https://www.programaria.org/cursos-programaria/analise-dados-primeiros-passos-python/">Análise de Dados</a>.</p>
+          <div class="stack-container">
+            <div class="stack-list-grid">
+              <div
+                class="stack-item"
+                data-name="Python"
+                data-desc="Linguagem core utilizada para automação de processos, engenharia de dados, criação de scripts de raspagem de dados (Web Scraping) e análises estatísticas robustas."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" />
+                  <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" />
+                  <path
+                    d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4"
+                  />
+                  <circle cx="11" cy="6" r="0.5" fill="currentColor" />
+                  <circle cx="13" cy="18" r="0.5" fill="currentColor" />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="PySpark"
+                data-desc="Utilizado para processamento distribuído de grandes volumes de dados (Big Data), otimizando transformações complexas e pesadas em clusters de computação."
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                  <path
+                    fill="#a3a3a3"
+                    d="M57.646.004c-2.269.064-4.51 1.143-6.384 3.223-1.03 1.146-1.905 2.51-2.63 3.855-1.89 3.54-2.262 7.547-2.962 11.43l-3.852 21.81c-.148.856-.532 1.21-1.3 1.455l-28.268 8.98c-2.06.673-4.125 1.543-5.947 2.7-5.558 3.53-6.38 9.338-2.207 14.438 1.842 2.256 4.216 3.843 6.85 4.996l17.603 7.843c.147.08.304.132.463.162l3.717 2.682s-3.7 40.948 3.246 43.781c-.061-.01-.41-.082-.41-.082s.704.761 2.603.537c1.454.27 1.262.226.074-.01 2.583-.334 7.337-2.497 15.578-10.784a47.396 47.396 0 0 0 1.776-1.676l17.8-19.217 4.163 1.465c.15.207.367.34.714.443l19.823 6.031c2.709.836 5.389 1.448 8.277 1.026 5.156-.755 8.951-5 8.9-10.192-.02-2.28-.82-4.339-1.87-6.324l-13.128-24.898c-.418-.787-.405-1.296.196-2l22.054-25.922c1.428-1.703 2.717-3.529 3.465-5.645 1.643-4.67-.482-8.382-5.33-9.289-2.229-.398-4.427-.188-6.6.385l-31.597 8.395c-.93.25-1.39.075-1.895-.772l-12.9-21.434c-.975-1.615-2.14-3.194-3.477-4.527C62.212.89 59.915-.059 57.646.004zm.944 19.736c.51.358.768.727 1.01 1.125l13.88 23.13c.382.628.725.85 1.485.648l24.443-6.497 5.885-1.54c-.087.493-.302.79-.537 1.068l-20.16 23.672c-.57.688-.623 1.17-.194 1.976l12.743 24.16.585 1.237-.015.02-22.727-6.264-.006-.018-4.298-1.205-25.493 28.256 4.663-37.15-4.184-1.82.008-.007-23.674-9.4c.454-.413.86-.585 1.285-.717l28.777-9.096c.676-.21 1.061-.47 1.125-1.242l.403-2.355 3.875-21.807 1.12-6.174z"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="SQL"
+                data-desc="Linguagem essencial para extração, manipulação e análise de dados diretamente em bancos relacionais através de joins, agregações e subqueries."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1 -4 0v-4a2 2 0 0 1 2 -2z"
+                  />
+                  <path d="M17 8v8h4" />
+                  <path d="M13 15l1 1" />
+                  <path
+                    d="M3 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="BigQuery"
+                data-desc="Data Warehouse serverless e altamente escalável do Google Cloud utilizado para armazenamento e execução de consultas SQL analíticas ultra rápidas em volumes massivos."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#a3a3a3"
+                >
+                  <path d="M6.73,10.83v2.63A4.91,4.91,0,0,0,8.44,15.2V10.83Z" />
+                  <path
+                    d="M9.89,8.41v7.53A7.62,7.62,0,0,0,11,16,8,8,0,0,0,12,16V8.41Z"
+                  />
+                  <path d="M13.64,11.86v3.29a5,5,0,0,0,1.7-1.82V11.86Z" />
+                  <path
+                    d="M17.74,16.32l-1.42,1.42a.42.42,0,0,0,0,.6l3.54,3.54a.42.42,0,0,0,.59,0l1.43-1.43a.42.42,0,0,0,0-.59l-3.54-3.54a.42.42,0,0,0-.6,0"
+                  />
+                  <path
+                    d="M11,2a9,9,0,1,0,9,9,9,9,0,0,0-9-9m0,15.69A6.68,6.68,0,1,1,17.69,11,6.68,6.68,0,0,1,11,17.69"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Databricks"
+                data-desc="Plataforma de análise unificada em nuvem, utilizada para criar ambientes de engenharia de dados, notebooks colaborativos e execução de pipelines complexos."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M3 17l9 5l9 -5v-3l-9 5l-9 -5v-3l9 5l9 -5v-3l-9 5l-9 -5l9 -5l5.418 3.01"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Azure"
+                data-desc="Ambiente de computação em nuvem utilizado para hospedar infraestruturas modernas de dados, bancos na nuvem e repositórios analíticos."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 7.5l-4 9.5h4l6 -15z" />
+                  <path d="M22 20l-7 -15l-3 7l4 5l-8 3z" />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Banco de Dados"
+                data-desc="Domínio técnico na administração, consulta e manipulação de estruturas de dados modernas. Experiência prática consolidada na arquitetura de bancos de dados relacionais e NoSQL, garantindo integridade, otimização de queries, indexação e segurança no armazenamento dos ativos de informação."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3v-14" />
+                  <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Azure DevOps"
+                data-desc="Utilizado para gerenciamento do ciclo de vida das soluções, controle de repositórios Git, CI/CD automatizado de scripts e organização ágil de entregas de dados."
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                  <path
+                    fill="#a3a3a3"
+                    d="M120.89 28.445v69.262l-28.445 23.324-44.09-16.07v15.93L23.395 88.25l72.746 5.688V31.574ZM96.64 31.93 55.82 7.11v16.285L18.348 34.418 7.109 48.852v32.785l16.075 7.11V46.718Zm0 0"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Pipelines ETL/ELT"
+                data-desc="Desenho e construção de fluxos automatizados de ingestão com foco em garantir integridade, limpeza profunda, padronização e governança do dado desde a origem."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 12h18M3 12l4-4m-4 4l4 4M21 12l-4-4m4 4l-4 4" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Web Scraping"
+                data-desc="Desenvolvimento de robôs e scripts inteligentes para extração, mineração e estruturação de grandes volumes de dados públicos diretamente da web."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#a3a3a3"
+                >
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12Zm0 1.113c6.003 0 10.887 4.884 10.887 10.887S18.003 22.887 12 22.887 1.113 18.003 1.113 12 5.997 1.113 12 1.113Zm7.03 5.201c-.536-.002-1.28.304-2.255 1.098-1.052.858-3.814 3.045-3.814 3.045l1.025 1.3c4.694-2.558 6.19-3.167 6.116-4.294-.042-.634-.384-1.146-1.073-1.149Zm-.507.752c.147 0 .266.106.266.239 0 .132-.119.238-.266.238-.146 0-.265-.106-.265-.238 0-.171.162-.239.265-.239zm-1.58 1.489c0 .131-.118.238-.265.238-.147 0-.264-.107-.264-.238 0-.128.11-.234.24-.24.13-.006.29.077.29.24zm-2.109 1.01c.147 0 .266.106.266.238s-.12.238-.266.238c-.146 0-.266-.106-.266-.238 0-.148.139-.239.266-.239zm-2.445.972c-1.502.225-5.807.992-8.01 2.672l3.574 5.387s4.706-2.932 5.863-6.244z"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Integração de APIs"
+                data-desc="Construção de conectores em Python para realizar requisições, consumir e trafegar dados estruturados em JSON/XML de sistemas externos e plataformas SaaS de forma assíncrona."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 13h5" />
+                  <path d="M12 16v-8h3a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-3" />
+                  <path d="M20 8v8" />
+                  <path d="M9 16v-5.5a2.5 2.5 0 0 0 -5 0v5.5" />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Modelagem de Dados"
+                data-desc="Estruturação avançada de bancos analíticos relacionais através de abordagens eficientes como esquemas Star Schema e Snowflake, visando máxima performance de leitura."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="6" height="5" rx="1" />
+                  <rect x="15" y="3" width="6" height="5" rx="1" />
+                  <rect x="9" y="16" width="6" height="5" rx="1" />
+                  <path d="M6 8v4h3M18 8v4h-3M12 12v4" />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Power BI"
+                data-desc="Modelagem de dados integrada, cálculos analíticos avançados performados em DAX e concepção de visuais focados em Storytelling, clareza métrica e adoção pelo usuário final."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#a3a3a3"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 8 7 C 4.69 7 2 9.69 2 13 L 2 33 C 2 35.97 4.16 38.440156 7 38.910156 L 7 36.869141 C 5.27 36.429141 4 34.86 4 33 L 4 13 C 4 10.79 5.79 9 8 9 L 41 9 C 43.21 9 45 10.79 45 13 L 45 33 C 45 34.86 43.73 36.429141 42 36.869141 L 42 38.910156 C 44.84 38.440156 47 35.97 47 33 L 47 13 C 47 9.69 44.31 7 41 7 L 8 7 z M 36.5 15 C 35.119 15 34 16.119 34 17.5 L 34 41.5 C 34 42.881 35.119 44 36.5 44 C 37.881 44 39 42.881 39 41.5 L 39 17.5 C 39 16.119 37.881 15 36.5 15 z M 20.5 21 C 19.119 21 18 22.119 18 23.5 L 18 41.5 C 18 42.881 19.119 44 20.5 44 C 21.881 44 23 42.881 23 41.5 L 23 23.5 C 23 22.119 21.881 21 20.5 21 z M 28.5 25 C 27.119 25 26 26.119 26 27.5 L 26 41.5 C 26 42.881 27.119 44 28.5 44 C 29.881 44 31 42.881 31 41.5 L 31 27.5 C 31 26.119 29.881 25 28.5 25 z M 12.5 30 C 11.119 30 10 31.119 10 32.5 L 10 41.5 C 10 42.881 11.119 44 12.5 44 C 13.881 44 15 42.881 15 41.5 L 15 32.5 C 15 31.119 13.881 30 12.5 30 z"
+                  ></path>
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Data Studio"
+                data-desc="Criação ágil de relatórios, conexões rápidas via ecossistema Google e consolidação de visualizações operacionais diretas para suporte na tomada de decisão imediata."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#a3a3a3"
+                >
+                  <path
+                    d="M11.9475 0c-1.1598.0021-2.0982.944-2.096 2.1038a2.1 2.1 0 00.356 1.166l.895-.8959a.884.884 0 11.565.564l-.895.895c.9593.6478 2.2621.3953 2.91-.564.6478-.9593.3953-2.262-.564-2.91A2.096 2.096 0 0011.9475 0zm-.835 6.1128a3.2629 3.2629 0 00-.653-1.965l-1.164 1.162a1.667 1.667 0 01-.318 2.012l.632 1.5449a3.2819 3.2819 0 001.503-2.754zm-3.2499 1.666h-.03c-.9217.0009-1.6697-.7455-1.6707-1.6673-.001-.9217.7454-1.6697 1.6672-1.6707a1.669 1.669 0 01.9195.275l1.152-1.152c-1.4069-1.141-3.4724-.9257-4.6135.4811s-.9257 3.4723.481 4.6135a3.2799 3.2799 0 002.7275.6652l-.633-1.5439v-.001zm4.1279 1.3359c-.728 0-1.452.106-2.15.315l.922 2.2519c2.6872-.6819 5.4184.9438 6.1002 3.631.6818 2.6873-.9439 5.4184-3.6311 6.1002s-5.4184-.9439-6.1002-3.631c-.5682-2.2394.4655-4.5774 2.5041-5.6643l-.91-2.2449c-3.6908 1.808-5.2173 6.2657-3.4093 9.9567l.0005.001c1.808 3.6909 6.2657 5.2173 9.9567 3.4093l.001-.0005c3.6913-1.8071 5.2187-6.2645 3.4116-9.9558a7.4417 7.4417 0 00-6.6865-4.1696h-.008l-.001.001z"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Tableau"
+                data-desc="Plataforma robusta corporativa utilizada para mapeamento visual, exploração profunda de bases de dados complexas e distribuição segura de visuais analíticos."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#a3a3a3"
+                >
+                  <path
+                    d="M11.654.174V2.377H9.682v.58h1.972V5.16h.696V2.957h1.97v-.58h-1.97V.174h-.348zm6.03 2.262l-.002 1.623v1.623h-2.957v.927h2.957v3.188H18.725l.011-1.582.02-1.576 1.465-.02 1.46-.01v-.927H18.728V2.436h-.522zm-12.407.06V5.686H2.291v.925H5.277V9.801h.985V6.61h3.013v-.925H6.262V2.496H5.77zm6.086 5.27v3.593H8.06v1.188h3.304v3.596h1.28v-3.596H15.953v-1.188H12.643V7.766h-.637zm9.721 1.55v2.221h-2.012v.811h2.012v2.261h.887v-2.261H24v-.811h-2.029V9.317h-.422zm-19.111.131V11.621H0v.621H1.973v2.194H2.64v-2.194h2v-.62H2.609V9.446h-.318zm15.709 4.516v3.254h-3.016v.927h3.016v3.217h1.072v-3.216H21.74v-.928H18.754v-3.254h-.533zm-12.463.008v3.246H2.262v.928h2.957v3.189H6.32v-3.189h2.955v-.928H6.32V13.97h-.55zm6.316 4.578l.002 1.103v1.1H9.566v.812h1.971v2.262h.928l.012-1.119.017-1.143H14.463v-.812h-2V18.549h-.465z"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Streamlit"
+                data-desc="Framework moderno em Python voltado para a prototipação rápida, desenvolvimento de interfaces web para scripts de dados e criação de ferramentas analíticas internas."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 50 50"
+                  fill="#a3a3a3"
+                >
+                  <path
+                    d="M49.42 15.55c0 0-6.18 18.8-6.2 18.83L35 20.22l12.25-6.54c.57-.3 1.22-.22 1.7.19C49.44 14.28 49.62 14.94 49.42 15.55zM40.18 33.14L17.37 19.46l6.29-10.22c.27-.46.76-.73 1.28-.74.48 0 1.02.25 1.3.69L40.18 33.14zM40.22 35.5H9.81c-1.07 0-2.03-.68-2.4-1.69L.6 15.6c-.23-.6-.06-1.28.42-1.71.48-.43 1.15-.51 1.72-.21L40.22 35.5z"
+                  ></path>
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Excel/Sheets"
+                data-desc="Uso operacional focado na validação veloz de dados estruturados ad-hoc, conciliação ágil de tabelas e atendimento flexível a demandas de negócio de setores adjacentes."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                  <path
+                    d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
+                  />
+                  <path d="M8 11h8v7h-8z" />
+                  <path d="M8 15h8" />
+                  <path d="M11 11v7" />
+                </svg>
+              </div>
+
+              <div
+                class="stack-item"
+                data-name="Scrum/Kanban"
+                data-desc="Cultura e metodologias ágeis utilizadas ativamente no direcionamento de backlogs de engenharia, priorização de entregas em sprints semanais e transparência de fluxos."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 4l6 0M14 4l6 0" />
+                  <path
+                    d="M4 8m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+                  />
+                  <path
+                    d="M14 8m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="stack-inspector">
+              <div class="inspector-default" id="inspector-default">
+                <div class="inspector-pulse"></div>
+                <p>
+                  Selecione ou passe o mouse sobre uma tecnologia para
+                  inspecionar os detalhes de aplicação.
+                </p>
+              </div>
+              <div
+                class="inspector-content"
+                id="inspector-content"
+                style="display: none"
+              >
+                <div class="inspector-tag-header">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <span class="inspector-tech-title" id="tech-title"
+                    >Ferramenta</span
+                  >
+                </div>
+                <div class="inspector-body">
+                  <p id="tech-description">Descrição da tecnologia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-
-      <footer>
-        <div class="grid-layout">
-          <p>Feito com muito amor e café</p>
-        </div>
-      </footer>
     </main>
 
-    <script type="module" src="assets/js/main.js"></script>
-    <script>
-      const contents = [
-        {
-          heading: "Resumo",
-          paragraphs: `
-      <p>
-        Bacharela em Administração, com início de carreira na área de
-        vendas e experiência em administração financeira e recursos
-        humanos, posteriormente migrando para tecnologia.
-      </p>
-      <p>
-        Atualmente, atuando com Análise de Dados, contribuindo para a
-        equipe do Observatório FIESC com habilidades técnicas e
-        analíticas.
-      </p>
-      <p>
-        Apaixonada por jogos, séries, filmes, signos, boxe, pizza, doritos e Christina Aguilera.
-      </p>
-    `,
-          showLink: true,
-        },
-        {
-          heading: "Experiência",
-          paragraphs: `
-      <p>
-        Tutora de Dados na PrograMaria, 08/2024 – atual <br> (Google Sheets, Python, SQL, DBeaver, Looker)
-      </p>
-      <p>
-        Analista de Dados no IEL de Santa Catarina, 04/2023 – atual <br> (PySpark, R, DAX, ETL, Databricks, Power BI, Azure Devops, Excel)
-      </p>
-      <p>
-        Analista de Desenvolvimento na Neotrust, 11/2021 – 05/2022 <br> (SQL Server, Visual Studio, Power BI, ETL, Excel, Azure Devops)
-      </p>
-      <p>
-        Desenvolvedora SQL na Carambola, 07/2021 – 10/2021 <br> (SQL Server, Visual Studio, Excel, Sharepoint, Azure Devops)
-      </p>
-    `,
-          showLink: false,
-        },
-        {
-          heading: "Educação",
-          paragraphs: `
-      <p>
-        Academy Accreditation - Databricks Fundamentals <br> Certificação na Databricks, 07/2024
-      </p>
-      <p>
-        Trilha de Dados - Programa Desenvolve 2023 <br> Grupo Boticário e Alura, 01/2023 – 07/2023
-      </p>
-      <p>
-        Especialização em Docência do Ensino Superior <br> Pós-graduação na Unifacs, 09/2020 - 08/2021
-      </p>
-      <p>
-        Bacharelado em Administração <br> Graduação na UniFTC, 02/2015 - 06/2019
-      </p>
-    `,
-          showLink: false,
-        },
-      ];
+    <!-- ==================== MODAIS DE ATIVIDADES ==================== -->
+    <div
+      id="modal-programaria"
+      class="custom-modal-overlay"
+      onclick="closeModalOnOutsideClick(event, 'modal-programaria')"
+    >
+      <div class="custom-modal-body">
+        <button
+          class="close-modal-x"
+          onclick="closeExpModal('modal-programaria')"
+        >
+          &times;
+        </button>
+        <h3>PrograMaria - Tutora em Dados</h3>
+        <p><strong>MEI desde 29/07/2024</strong></p>
+        <br />
+        <ul class="education-list-items">
+          <li>
+            Orientação prática em Python, SQL e Data Studio, com foco em suporte
+            técnico e correção de atividades para turmas de alto volume;
+          </li>
+          <li>
+            Facilitação de aulas ao vivo e sessões de revisão prática, abordando
+            desde lógica em planilhas até manipulação de dados com bibliotecas
+            Python;
+          </li>
+          <li>
+            Diagnóstico e solução de erros de código utilizando Google Colab e
+            DBeaver.
+          </li>
+        </ul>
+      </div>
+    </div>
 
-      function showContent(index) {
-        const heading = document.getElementById("heading");
-        const contentDiv = document.getElementById("content");
-        const downloadLink = document.getElementById("download-link");
-        const dots = document.getElementsByClassName("dot");
+    <div
+      id="modal-fiesc"
+      class="custom-modal-overlay"
+      onclick="closeModalOnOutsideClick(event, 'modal-fiesc')"
+    >
+      <div class="custom-modal-body">
+        <button class="close-modal-x" onclick="closeExpModal('modal-fiesc')">
+          &times;
+        </button>
+        <h3>IEL - Analista de Dados</h3>
+        <p><strong>06/04/2023 a 28/08/2025</strong></p>
+        <br />
+        <ul class="education-list-items">
+          <li>
+            Modernização da infraestrutura do Observatório FIESC, integrando
+            Databricks e Power BI para automação de mais de 50 painéis (fim do
+            processo manual);
+          </li>
+          <li>
+            Desenvolvimento de rotinas de ingestão de dados via APIs e Web
+            Scraping, migrando e validando processos legados de R para PySpark;
+          </li>
+          <li>
+            Manutenção de indicadores socioeconômicos, validando os dados para
+            garantir a precisão em plataformas como o Cidade Única.
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        const currentContent = contents[index - 1];
+    <div
+      id="modal-neotrust"
+      class="custom-modal-overlay"
+      onclick="closeModalOnOutsideClick(event, 'modal-neotrust')"
+    >
+      <div class="custom-modal-body">
+        <button class="close-modal-x" onclick="closeExpModal('modal-neotrust')">
+          &times;
+        </button>
+        <h3>Neotrust - Analista de Desenvolvimento</h3>
+        <p><strong>01/11/2021 a 09/05/2022</strong></p>
+        <br />
+        <ul class="education-list-items">
+          <li>
+            Monitoramento de jobs SQL em ambiente de alta disponibilidade
+            durante a operação de Black Friday (atualizações D+0);
+          </li>
+          <li>
+            Automação de ETL via SSIS (Visual Studio) e Stored Procedures (SQL
+            Server), otimizando a geração de relatórios estratégicos para o
+            varejo;
+          </li>
+          <li>
+            Manipulação de grandes volumes de dados garantindo conformidade em
+            relatórios estratégicos de varejo.
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        heading.textContent = currentContent.heading;
-        contentDiv.innerHTML = currentContent.paragraphs;
+    <div
+      id="modal-carambola"
+      class="custom-modal-overlay"
+      onclick="closeModalOnOutsideClick(event, 'modal-carambola')"
+    >
+      <div class="custom-modal-body">
+        <button
+          class="close-modal-x"
+          onclick="closeExpModal('modal-carambola')"
+        >
+          &times;
+        </button>
+        <h3>Carambola - Desenvolvedora SQL</h3>
+        <p><strong>14/07/2021 a 29/10/2021</strong></p>
+        <br />
+        <ul class="education-list-items">
+          <li>
+            Criação de Stored Procedures para cálculo de KPIs (Ticket Médio e
+            Market Share) e automação de relatórios via SSIS;
+          </li>
+          <li>
+            Atuação em ambiente ágil (Scrum) via Azure DevOps para documentação
+            de Epics, Features e User Stories.
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        if (currentContent.showLink) {
-          downloadLink.style.display = "flex";
-        } else {
-          downloadLink.style.display = "none";
-        }
+    <footer class="main-footer">
+      <div class="grid-layout footer-container">
+        <div class="footer-credits">
+          <p>&copy; 2026 Andrea Sousa. Todos os direitos reservados.</p>
+          <span>
+            Feito com amor e café — v1 por
+            <a
+              href="https://www.instagram.com/iuricode/"
+              target="_blank"
+              rel="noopener"
+              class="credit-author-link"
+              >Iuri Silva</a
+            >
+          </span>
+        </div>
 
-        for (let i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
+        <div class="footer-socials">
+          <a
+            href="mailto:andrea.dcsousa@gmail.com"
+            class="footer-icon-btn"
+            title="E-mail"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
+              <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />
+              <path d="M16 4l-4 4l-4 -4" />
+              <path d="M4 6.5l8 7.5l8 -7.5" />
+            </svg>
+          </a>
 
-        dots[index - 1].className += " active";
-      }
-    </script>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="footer-icon-btn"
+            title="LinkedIn"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+              />
+              <path d="M8 11l0 5" />
+              <path d="M8 8l0 .01" />
+              <path d="M12 16l0 -5" />
+              <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+            </svg>
+          </a>
+
+          <a
+            href="https://github.com/andreadcsousa"
+            target="_blank"
+            class="footer-icon-btn"
+            title="GitHub"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://wa.me/5548988801574"
+            target="_blank"
+            class="footer-icon-btn"
+            title="WhatsApp"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path
+                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://docs.google.com/document/d/1c90tiVy4G8YJYizITBdFzDrABWYtBab0e4YUPN7XOcg"
+            target="_blank"
+            class="footer-icon-btn"
+            title="Currículo"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+              <path
+                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
+              />
+              <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+              <path d="M13 11l1.5 6l1.5 -6" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer-back-to-top">
+          <a
+            href="#"
+            class="btn-top"
+            title="Voltar ao início"
+            onclick="scrollToTop(event)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 15l-6-6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
