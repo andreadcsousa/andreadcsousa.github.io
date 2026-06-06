@@ -80,6 +80,7 @@ ul {
   width: 100%;
   background-color: rgba(23, 23, 23, 0.9);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-color);
   z-index: 999;
 }
@@ -130,9 +131,7 @@ ul {
    ========================================================================== */
 #s-home {
   padding: 140px 0 80px 0;
-  background-color: var(
-    --bg-dark
-  ); /* Fundo preto absoluto para contrastar com header */
+  background-color: var(--bg-dark); /* Transição zebrada: Preto absoluto */
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -191,7 +190,7 @@ ul {
    ========================================================================== */
 #s-about {
   padding: 100px 0;
-  background-color: var(--bg-light); /* Alternância zebrada: Fundo cinza */
+  background-color: var(--bg-light); /* Transição zebrada: Fundo cinza */
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -202,6 +201,7 @@ ul {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
 }
 
 .browser-header {
@@ -310,7 +310,7 @@ ul {
    ========================================================================== */
 #s-stack {
   padding: 100px 0;
-  background-color: var(--bg-dark); /* Alternância zebrada: Fundo preto */
+  background-color: var(--bg-dark); /* Transição zebrada: Fundo preto */
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -409,6 +409,7 @@ ul {
 }
 
 #inspector-content {
+  display: none; /* Controlado dinamicamente por JS */
   flex-direction: column;
   gap: 16px;
   animation: fadeIn 0.3s ease forwards;
@@ -431,7 +432,7 @@ ul {
    ========================================================================== */
 #s-projects {
   padding: 100px 0;
-  background-color: var(--bg-light); /* Alternância zebrada: Fundo cinza */
+  background-color: var(--bg-light); /* Transição zebrada: Fundo cinza */
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -439,6 +440,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  margin-top: 40px;
 }
 
 .project-card {
@@ -550,6 +552,7 @@ ul {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn-top:hover {
@@ -606,7 +609,7 @@ ul {
   .nav-list {
     position: fixed;
     top: 0;
-    right: -100%; /* Escondido fora da tela */
+    right: -100%; /* Escondido totalmente para fora da tela */
     width: 260px;
     height: 100vh;
     background-color: #161616;
@@ -620,7 +623,7 @@ ul {
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
   }
 
-  /* Estado ativado via JS */
+  /* Estado ativado via JavaScript */
   .nav-list.active {
     right: 0;
   }

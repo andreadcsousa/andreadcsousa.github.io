@@ -1,476 +1,239 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Andrea Sousa</title>
     <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2351e5ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 16 4-4-4-4'/%3E%3Cpath d='m6 8-4 4 4 4'/%3E%3Cpath d='m14.5 4-5 16'/%3E%3C/svg%3E"
-    />
-    <title>Andrea Sousa - Portfólio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2 family=Inter:wght@300;400;500;600;700&family=Red+Hat+Display:wght@400;500;700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header id="header">
-      <div class="grid-layout header-container">
-        <div class="header-logo">
-          <a href="#s-home">&lt; Andrea Sousa /&gt;</a>
-        </div>
-        <nav class="nav-menu">
-          <button class="hamburger" aria-label="Abrir menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-          <ul class="nav-list">
-            <li><a href="#s-home">Início</a></li>
-            <li><a href="#s-about">Perfil</a></li>
-            <li><a href="#s-stack">Stack</a></li>
-            <li><a href="#s-projects">Projetos</a></li>
-          </ul>
-        </nav>
+    <header class="header-container">
+      <div class="logo">
+        <a href="#s-home">&lt; Andrea Sousa /&gt;</a>
       </div>
+      <nav class="nav-menu">
+        <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#s-home">Início</a></li>
+          <li><a href="#s-about">Perfil</a></li>
+          <li><a href="#s-stack">Stack</a></li>
+          <li><a href="#s-projects">Projetos</a></li>
+          <li><a href="#s-contact">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="s-home">
-      <div class="grid-layout">
-        <div id="home">
-          <div id="home-container-text">
-            <h2 class="main-hero-title">
-              Da Complexidade dos <span>Dados</span><br />
-              à Clareza da <span>Decisão</span>.
-            </h2>
-            <div class="hero-description-box">
-              <p>
-                Olá! Sou <strong>Andrea Sousa</strong>, especialista em traduzir
-                grandes volumes de dados brutos em inteligência de mercado e
-                KPIs estratégicos.
-              </p>
-              <p>
-                Unindo minha bagagem em Análise de Dados, BI e Engenharia de
-                Dados, desenvolvo soluções robustas em Python e SQL que otimizam
-                processos, identificam oportunidades de negócio e automatizam
-                fluxos de informação.
-              </p>
-            </div>
-          </div>
-          <div id="home-container-image">
-            <img
-              src="assets/image/illustration.svg"
-              alt="Ilustração de dados"
-            />
+    <main>
+      <section id="s-home" class="hero-section">
+        <div class="hero-content">
+          <h1>
+            Da Complexidade dos <span class="highlight-blue">Dados</span> à
+            Clareza da <span class="highlight-blue">Decisão</span>.
+          </h1>
+          <p>
+            Olá! Sou <strong>Andrea Sousa</strong>, especialista em traduzir
+            grandes volumes de dados brutos em inteligência de mercado e KPIs
+            estratégicos.
+          </p>
+          <p>
+            Unindo minha bagagem em Análise de Dados, BI e Engenharia de Dados,
+            desenvolvo soluções robustas em Python e SQL que otimizam processos,
+            identificam oportunidades de negócio e automatizam fluxos de
+            informação.
+          </p>
+          <div class="hero-cta">
+            <a href="#s-projects" class="btn-primary">Ver Projetos</a>
+            <a href="#s-contact" class="btn-secondary">Fale Comigo</a>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="hero-image">
+          <img
+            src="./assets/img/hero-illustration.svg"
+            alt="Ilustração de Andrea analisando dados no notebook"
+          />
+        </div>
+      </section>
 
-    <section id="s-about">
-      <div class="grid-layout">
-        <div class="browser-mockup">
-          <div class="browser-header">
-            <div class="browser-dots">
+      <section id="s-about" class="about-section">
+        <h2 class="section-title">Perfil Profissional</h2>
+        <div class="about-container">
+          <div class="about-text">
+            <p>
+              Criação e sustentação de pipelines de dados eficientes,
+              transformação de dados complexos com dbt e Databricks, e modelagem
+              dimensional avançada (Star Schema).
+            </p>
+            <p>
+              Especialista na construção de dashboards executivos de alto
+              impacto no Power BI e Looker Studio, aplicando conceitos rigorosos
+              de Data Storytelling e UX/UI para direcionar tomadas de decisão
+              críticas.
+            </p>
+          </div>
+          <div class="about-metrics">
+            <div class="metric-card">
+              <h3>+3 anos</h3>
+              <p>Experiência em Tech</p>
+            </div>
+            <div class="metric-card">
+              <h3>99%</h3>
+              <p>Foco em Performance</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-stack" class="stack-section">
+        <h2 class="section-title">Tech Stack & Ferramentas</h2>
+        <p class="section-subtitle">
+          O ecossistema técnico e as metodologias que utilizo para transformar
+          dados brutos em ativos de negócios.
+        </p>
+
+        <div class="stack-grid-container">
+          <div class="stack-grid">
+            <div class="stack-item active" data-tech="python">
+              <i class="devicon-python-plain"></i>
+            </div>
+            <div class="stack-item" data-tech="sql">
+              <i class="devicon-sqlserver-plain"></i>
+            </div>
+            <div class="stack-item" data-tech="powerbi">
+              <i class="fa-solid fa-chart-bar"></i>
+            </div>
+            <div class="stack-item" data-tech="databricks">
+              <i class="devicon-databricks-plain"></i>
+            </div>
+            <div class="stack-item" data-tech="api">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div class="stack-item" data-tech="excel">
+              <i class="fa-solid fa-file-excel"></i>
+            </div>
+            <div class="stack-item" data-tech="scrum">
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+          </div>
+
+          <div class="stack-details-panel">
+            <div class="panel-header">
               <span class="dot red"></span>
               <span class="dot yellow"></span>
               <span class="dot green"></span>
+              <span class="panel-title" id="tech-title">Python</span>
             </div>
-            <div class="browser-tabs">
-              <button
-                class="browser-tab-btn active"
-                onclick="changeSectionTab(event, 'pane-trajectory')"
-              >
-                Trajetória
-              </button>
-              <button
-                class="browser-tab-btn"
-                onclick="changeSectionTab(event, 'pane-education')"
-              >
-                Formação
-              </button>
-              <button
-                class="browser-tab-btn"
-                onclick="changeSectionTab(event, 'pane-mentoring')"
-              >
-                Mentoria
-              </button>
-            </div>
-          </div>
-
-          <div class="browser-body">
-            <div id="pane-trajectory" class="browser-pane active">
-              <h3 class="pane-title">Minha Jornada com Dados</h3>
-              <p class="pane-text">
-                Construí minha carreira focada na intersecção entre tecnologia,
-                estatística e estratégia de negócios. Minha atuação vai desde a
-                estruturação e limpeza de bancos de dados até a modelagem
-                preditiva e criação de ecossistemas completos de business
-                intelligence. Sou movida pelo desafio de transformar caos
-                informacional em vantagens competitivas reais.
-              </p>
-            </div>
-            <div id="pane-education" class="browser-pane">
-              <h3 class="pane-title">Especialização Técnica</h3>
-              <p class="pane-text">
-                Pós-graduada em Ciência de Dados e Big Data, com sólido domínio
-                em linguagens de programação voltadas à análise estatística e
-                automações, como Python, SQL e R. Constantemente atualizada em
-                arquiteturas modernas de processamento de dados em nuvem.
-              </p>
-            </div>
-            <div id="pane-mentoring" class="browser-pane">
-              <h3 class="pane-title">Fomento à Comunidade Tech</h3>
-              <p class="pane-text">
-                Como tutora e instrutora nos programas de dados da PrograMaria,
-                atuo diretamente no desenvolvimento técnico e capacitação de
-                novas analistas. Acredito que a transferência de conhecimento e
-                o fomento à diversidade fortalecem e oxigenam o mercado de
-                engenharia e ciência de dados.
+            <div class="panel-body">
+              <p id="tech-desc">
+                Linguagem utilizada para automação de processos, engenharia de
+                dados (ETL), criação de scripts de raspagem de dados (Web
+                Scraping) e análises estatísticas robustas usando Pandas e
+                NumPy.
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="s-stack">
-      <div class="grid-layout">
-        <div class="stack-layout-grid">
-          <div class="stack-box-left">
-            <h3 class="section-badge-title">Hard Skills</h3>
-            <div class="stack-interactive-grid">
-              <div
-                class="stack-item"
-                data-name="Python"
-                data-desc="Desenvolvimento de scripts automatizados, pipelines de extração, limpeza (Wrangling) e manipulação estatística complexa utilizando bibliotecas como Pandas e NumPy."
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M12 2H9a4 4 0 0 0-4 4v3a1 1 0 0 0 1 1h6a1 1 0 0 1 1 1v3a2 2 0 0 0 2 2h3a4 4 0 0 0 4-4v-3a1 1 0 0 0-1-1h-6a1 1 0 0 1-1-1V4a2 2 0 0 0-2-2z"
-                  />
-                  <path
-                    d="M12 22h3a4 4 0 0 0 4-4v-3a1 1 0 0 0-1-1h-6a1 1 0 0 1-1-1v-3a2 2 0 0 0-2-2H6a4 4 0 0 0-4 4v3a1 1 0 0 0 1 1h6a1 1 0 0 1 1 1v5a2 2 0 0 0 2 2z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="stack-item"
-                data-name="SQL Server"
-                data-desc="Escrita de queries avançadas, subqueries, agregações, Joins otimizados, criação de Stored Procedures e gerenciamento de visões relacionais complexas."
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M12 22c5.523 0 10-2.239 10-5s-4.477-5-10-5-10 2.239-10 5 4.477 5 10 5z"
-                  />
-                  <path d="M22 11.5c0-2.761-4.477-5-10-5s-10 2.239-10 5" />
-                  <path d="M22 6.5c0-2.761-4.477-5-10-5s-10 2.239-10 5" />
-                </svg>
-              </div>
-              <div
-                class="stack-item"
-                data-name="R Studio"
-                data-desc="Análise exploratória de dados, modelagem estatística clássica, testes de hipótese e visualizações científicas customizadas utilizando a suíte Tidyverse."
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
-                  />
-                  <path d="M9 16V8h3a3 3 0 0 1 0 6H9" />
-                  <path d="M12 14l3 3" />
-                </svg>
-              </div>
-              <div
-                class="stack-item"
-                data-name="Databricks"
-                data-desc="Processamento analítico em larga escala utilizando Spark (PySpark), gerenciamento de clusters, execução de notebooks colaborativos e arquiteturas Lakehouse."
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
-              <div
-                class="stack-item"
-                data-name="Power BI"
-                data-desc="Modelagem Star Schema, criação de medidas calculadas em DAX, ETL avançado via Power Query e design de dashboards interativos baseados em Storytelling."
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="3" y="13" width="4" height="8" rx="1" />
-                  <rect x="10" y="7" width="4" height="14" rx="1" />
-                  <rect x="17" y="3" width="4" height="18" rx="1" />
-                </svg>
-              </div>
-              <div
-                class="stack-item"
-                data-name="Git & GitHub"
-                data-desc="Versionamento de código, gerenciamento de ramificações (Branches), commits semânticos, resolução de conflitos e documentação técnica avançada de repositórios."
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                  />
-                </svg>
-              </div>
-              <div
-                class="stack-item"
-                data-name="Banco de Dados"
-                data-desc="Domínio técnico na administração, consulta e manipulação de estruturas de dados modernas. Experiência prática consolidada na arquitetura de bancos de dados relacionais e NoSQL, garantindo integridade, otimização de queries, indexação e segurança no armazenamento dos ativos de informação."
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <ellipse cx="12" cy="5" rx="9" ry="3" />
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3v-14" />
-                  <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
-                </svg>
-              </div>
-              <div
-                class="stack-item"
-                data-name="Interfaces & Web"
-                data-desc="Construção de portais analíticos leves, manipulação dinâmica de elementos via DOM JavaScript, layout semântico estruturado e responsividade para visualização mobile."
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-              </div>
+      <section id="s-projects" class="projects-section">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="./assets/img/p1.jpg" alt="Preview do Projeto de ETL" />
             </div>
-          </div>
-
-          <div class="stack-box-right">
-            <div id="inspector-panel">
-              <div id="inspector-default">
-                <p class="blink-cursor">
-                  // Passe o mouse ou clique em um card para inspecionar_
-                </p>
+            <div class="project-info">
+              <h3>Pipeline ETL Automatizado</h3>
+              <p>
+                Extração de dados de e-commerce, transformação via Python/Pandas
+                e carga automatizada no SQL Server.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>SQL Server</span>
+                <span>ETL</span>
               </div>
-              <div id="inspector-content" style="display: none">
-                <h4 id="tech-title">Nome da Stack</h4>
-                <p id="tech-description">
-                  Descrição detalhada do conhecimento técnico.
-                </p>
-              </div>
+              <a href="#" class="project-link" target="_blank"
+                >Ver Repositório
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </article>
 
-    <section id="s-projects">
-      <div class="grid-layout">
-        <h3 class="section-badge-title" style="margin-bottom: 40px">
-          Projetos Piloto
-        </h3>
-        <div class="projects-layout-grid">
-          <div class="project-card">
-            <div class="project-card-header">
-              <span class="project-tag">Engenharia de Dados</span>
-            </div>
-            <h4 class="project-card-title">
-              Pipeline de Ingestão de Dados de Mercado
-            </h4>
-            <p class="project-card-desc">
-              Construção de um pipeline automatizado em Python para extração de
-              dados brutos de e-commerce, limpeza via Pandas e armazenamento
-              otimizado para análises futuras.
-            </p>
-          </div>
-          <div class="project-card">
-            <div class="project-card-header">
-              <span class="project-tag">Business Intelligence</span>
-            </div>
-            <h4 class="project-card-title">
-              Dashboard de Performance Comercial
-            </h4>
-            <p class="project-card-desc">
-              Modelagem dimensional (Star Schema) e desenvolvimento de painel
-              analítico no Power BI focado em KPIs de faturamento, margem e
-              metas corporativas.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="footer">
-      <div class="grid-layout footer-container">
-        <div class="footer-credits">
-          <p>&copy; 2026 Andrea Sousa. Todos os direitos reservados.</p>
-          <p class="credit-author">
-            Template original por
-            <a href="#" class="credit-author-link">Iuri Silva</a>
-          </p>
-        </div>
-
-        <div class="footer-socials">
-          <a
-            href="https://www.linkedin.com/in/andrea-dcsousa/"
-            class="footer-icon-btn"
-            target="_blank"
-            title="LinkedIn"
-            rel="noopener"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/img/p2.jpg"
+                alt="Preview do Dashboard de Vendas"
               />
-              <rect x="2" y="9" width="4" height="12" />
-              <circle cx="4" cy="4" r="2" />
-            </svg>
+            </div>
+            <div class="project-info">
+              <h3>Dashboard de Performance Comercial</h3>
+              <p>
+                Painel gerencial interativo em Power BI utilizando Star Schema e
+                métricas avançadas em DAX.
+              </p>
+              <div class="project-tags">
+                <span>Power BI</span>
+                <span>DAX</span>
+                <span>Storytelling</span>
+              </div>
+              <a href="#" class="project-link" target="_blank"
+                >Ver Dashboard
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="s-contact" class="contact-section">
+        <h2 class="section-title">Vamos Construir Algo Juntos?</h2>
+        <p class="contact-subtitle">
+          Seja para otimizar os fluxos da sua empresa, desenhar dashboards
+          estratégicos ou discutir soluções de dados.
+        </p>
+        <div class="contact-buttons">
+          <a href="mailto:andreadcsousa@gmail.com" class="btn-contact">
+            <i class="fa-solid fa-envelope"></i> E-mail
+          </a>
+          <a
+            href="https://linkedin.com/in/andrea-dcsousa"
+            target="_blank"
+            class="btn-contact"
+          >
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
           </a>
           <a
             href="https://github.com/andreadcsousa"
-            class="footer-icon-btn"
             target="_blank"
-            title="GitHub"
-            rel="noopener"
+            class="btn-contact"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-              />
-            </svg>
-          </a>
-          <a
-            href="#"
-            class="footer-icon-btn"
-            target="_blank"
-            title="Currículo"
-            rel="noopener"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-              <path
-                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
-              />
-              <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
-              <path d="M13 11l1.5 6l1.5 -6" />
-            </svg>
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
         </div>
+      </section>
+    </main>
 
-        <div class="footer-back-to-top">
-          <a
-            href="#"
-            class="btn-top"
-            title="Voltar ao início"
-            onclick="scrollToTop(event)"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M18 15l-6-6-6 6" />
-            </svg>
-          </a>
-        </div>
-      </div>
+    <footer class="footer-container">
+      <p>&copy; 2026 Andrea Sousa. Todos os direitos reservados.</p>
+      <p>
+        Desenvolvido com <span class="heart">&hearts;</span> focado em
+        Performance de Dados.
+      </p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
