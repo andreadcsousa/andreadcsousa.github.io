@@ -1,0 +1,1245 @@
+/* ==========================================================================
+   VARIÁVEIS GLOBAIS E RESET REGRAS
+   ========================================================================== */
+:root {
+  --primary-color: #51e5ff;
+  --primary-hover: #38c3db;
+  --bg-dark: #121212;
+  --bg-light: #171717;
+  --bg-tab-inactive: #131313;
+  --border-color: #242424;
+  --text-gray: #a3a3a3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #02fbfa;
+  border-radius: 8px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-dark);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.grid-layout {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   HEADER & NAVEGAÇÃO
+   ========================================================================== */
+header {
+  background: var(--bg-light);
+  border-bottom: 1px solid var(--border-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+header nav h1 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+
+header nav .nav-logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+header nav .nav-logo:hover {
+  color: var(--primary-color);
+}
+
+header .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+header .nav-list li {
+  margin-left: 40px;
+}
+
+header .nav-list li a {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header .nav-list li a:hover {
+  color: var(--primary-color);
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px;
+  transition: 0.3s;
+}
+
+/* ==========================================================================
+   SEÇÃO HERO
+   ========================================================================== */
+#s-home {
+  padding: 140px 0 80px 0;
+  background-color: var(--bg-dark);
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+#home-container-text {
+  flex: 1.2;
+}
+
+.main-hero-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 4.2rem;
+  line-height: 1.25;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.main-hero-title span {
+  color: var(--primary-color);
+}
+
+.hero-description-box p {
+  font-size: 1.6rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.hero-description-box p strong {
+  color: #ffffff;
+}
+
+#home-container-image {
+  flex: 0.8;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-illustration-placeholder {
+  width: 100%;
+  max-width: 380px;
+  height: 320px;
+  background: linear-gradient(135deg, #1f1f2e 0%, #121212 100%);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+/* ==========================================================================
+   PAINEL ESTILO NAVEGADOR
+   ========================================================================== */
+.about-section-header {
+  margin-bottom: 40px;
+}
+
+.about-section-header h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  color: #ffffff;
+}
+
+.about-section-header .section-subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--text-gray);
+  margin-top: 8px;
+}
+
+#s-about {
+  padding: 80px 0;
+  background-color: var(--bg-dark);
+}
+
+.browser-window {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.browser-header-tabs {
+  display: flex;
+  background-color: #0f0f0f;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.browser-tab-btn {
+  flex: 1;
+  background-color: var(--bg-tab-inactive);
+  border: none;
+  border-right: 1px solid var(--border-color);
+  color: var(--text-gray);
+  padding: 18px 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.browser-tab-btn:last-child {
+  border-right: none;
+}
+
+.browser-tab-btn:hover {
+  color: #fff;
+  background-color: #161616;
+}
+
+.browser-tab-btn.active {
+  background-color: var(--bg-light);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.browser-body-content {
+  padding: 45px;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.browser-body-content::-webkit-scrollbar {
+  width: 6px;
+}
+.browser-body-content::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 4px;
+}
+
+.browser-pane {
+  display: none;
+  height: 100%;
+}
+
+.browser-pane.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   [ABA 1]: PROFILE SOBRE MIM
+   ========================================================================== */
+.tab-sobre-layout {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+
+.sidebar-profile {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+/* Proporção vertical fixa de cartão de identificação */
+.photo-placeholder-vertical img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem ficar distorcida ou esticada */
+  border-radius: 7px; /* Acompanha levemente o arredondamento das bordas do container */
+}
+
+.profile-social-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.social-icon-btn {
+  color: var(--primary-color);
+  flex: 1;
+  height: 50px;
+  background-color: #1d1d1d;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon-btn:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--border-color);
+}
+
+.text-profile-content {
+  flex: 1;
+}
+
+.text-profile-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.text-profile-content p {
+  font-size: 1.5rem;
+  line-height: 1.65;
+  color: #d1d1d1;
+  margin-bottom: 14px;
+}
+
+.container-btn-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.btn-cv-inverse {
+  background-color: var(--primary-color);
+  color: #000000;
+  border: 2px solid var(--primary-color);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cv-inverse:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* ==========================================================================
+   [ABA 2]: COMPETÊNCIAS
+   ========================================================================== */
+.skills-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.skill-card-box {
+  background-color: #161616;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+}
+
+.skill-card-box h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.skill-card-box p {
+  font-size: 1.35rem;
+  color: #bebebe;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.tools-tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.tool-tag {
+  background-color: #222222;
+  color: #e0e0e0;
+  font-size: 1.15rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #2d2d2d;
+}
+
+.skills-action-container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-skills-cta {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 12px 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-skills-cta:hover {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+/* ==========================================================================
+   [ABA 3]: EXPERIÊNCIA
+   ========================================================================= */
+.timeline-section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+.horizontal-timeline-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.horizontal-timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.horizontal-timeline-node {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  z-index: 2;
+}
+
+.node-marker {
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-light);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  transition: background-color 0.3s;
+}
+
+.horizontal-timeline-node:hover .node-marker {
+  background-color: var(--primary-color);
+}
+
+.node-date {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.node-info h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.node-info p {
+  font-size: 1.3rem;
+  color: var(--text-gray);
+  margin-bottom: 8px;
+}
+
+.node-info .open-modal-link {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   [ABA 4]: EDUCAÇÃO
+   ========================================================================== */
+.education-grid-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.education-column h2 {
+  font-size: 2rem;
+  font-family: "Red Hat Display", sans-serif;
+  margin-bottom: 20px;
+}
+
+.languages-spacing-title {
+  margin-top: 35px;
+}
+
+.education-list-items li,
+.certifications-list-items li {
+  font-size: 1.45rem;
+  line-height: 1.5;
+  color: #d1d1d1;
+  margin-bottom: 12px;
+}
+
+.education-list-items li strong {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   SISTEMA DE POP-UPS / MODAIS OVERLAY
+   ========================================================================== */
+.custom-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-modal-body {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  padding: 35px;
+  border-radius: 8px;
+  max-width: 480px;
+  width: 90%;
+  position: relative;
+}
+
+.custom-modal-body h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.custom-modal-body p {
+  font-size: 1.45rem;
+  color: #d1d1d1;
+  line-height: 1.6;
+}
+
+.close-modal-x {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+/* Seção Reserva de Projetos */
+#s-projects {
+  padding: 40px 0;
+}
+
+/* ==========================================================================
+   MÍDIA QUERIES - RESPONSIVIDADE INTERFACE
+   ========================================================================== */
+@media (max-width: 992px) {
+  .browser-body-content {
+    height: auto; /* Permite expansão flexível em telas mobile */
+  }
+  .skills-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .horizontal-timeline-container {
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 20px;
+  }
+  .horizontal-timeline-container::before {
+    display: none; /* Desativa linha horizontal em telas verticais */
+  }
+  .education-grid-split {
+    grid-template-columns: 1fr;
+  }
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+  #home-container-image {
+    display: none;
+  }
+  .tab-sobre-layout {
+    flex-direction: column;
+  }
+}
+
+/* ==========================================================================\
+   SEÇÃO DE PROJETOS
+   ========================================================================== */
+#s-projects {
+  width: 100%;
+  background-color: var(--bg-dark);
+  padding: 100px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--text-gray);
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+#s-projects h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  color: #fff;
+}
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.filter-btn {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-gray);
+  padding: 10px 24px;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--bg-dark);
+  border-color: var(--primary-color);
+  font-weight: 500;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+  margin-bottom: 56px;
+}
+
+.project-card {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #333;
+}
+
+.project-img-wrapper {
+  width: 100%;
+  height: 200px;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.project-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-card-content h3 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Red Hat Display", sans-serif;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.project-card-content p {
+  font-size: 1.45rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.project-tags span {
+  font-size: 1.2rem;
+  background-color: #242424;
+  color: #d1d1d1;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.project-link {
+  font-size: 1.45rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.btn-see-more {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: #fff;
+  padding: 14px 32px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-see-more:hover {
+  background-color: #242424;
+  border-color: #444;
+}
+
+/* ==========================================================================\
+   SEÇÃO TECH STACK
+   ========================================================================== */
+#s-stack {
+  width: 100%;
+  background-color: var(--bg-dark);
+  padding: 100px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.stack-section-header {
+  margin-bottom: 48px;
+}
+
+.stack-section-header h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.stack-section-header .section-subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--text-gray);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.stack-container {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* Lado Esquerdo: Grid de Quadradinhos Simétricos */
+.stack-list-grid {
+  flex: 1.2;
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  gap: 12px;
+  justify-content: center;
+  align-content: start;
+}
+
+.stack-item {
+  width: 80px;
+  height: 80px;
+  background-color: #161616;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-gray);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stack-item svg {
+  width: 28px;
+  height: 28px;
+  transition: all 0.2s ease;
+}
+
+.stack-item:hover,
+.stack-item.active {
+  background-color: #1a1a1a;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(81, 229, 255, 0.1);
+}
+
+/* Lado Direito: O Inspetor Terminal */
+.stack-inspector {
+  flex: 0.8;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.inspector-default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  height: 100%;
+  color: var(--text-gray);
+  font-size: 1.45rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.inspector-pulse {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.4;
+  }
+}
+
+.inspector-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  animation: fadeInFast 0.25s ease;
+}
+
+.inspector-tag-header {
+  background-color: #131313;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.terminal-dot.red {
+  background-color: #ff5f56;
+}
+.terminal-dot.yellow {
+  background-color: #ffbd2e;
+}
+.terminal-dot.green {
+  background-color: #27c93f;
+}
+
+.inspector-tech-title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: "Red Hat Display", sans-serif;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.inspector-body {
+  padding: 24px;
+  font-size: 1.5rem;
+  color: #d1d1d1;
+  line-height: 1.7;
+}
+
+/* Responsividade Refinada */
+@media (max-width: 992px) {
+  .stack-container {
+    flex-direction: column;
+  }
+  .stack-list-grid {
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    max-width: 100%;
+  }
+  .stack-item {
+    width: 100%;
+    height: 75px;
+  }
+  .stack-inspector {
+    min-height: 220px;
+  }
+}
+
+/* ==========================================================================\
+   ESTILIZAÇÃO DO RODAPÉ
+   ========================================================================== */
+.main-footer {
+  width: 100%;
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--border-color);
+  padding: 40px 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Créditos */
+.footer-credits p {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.footer-credits span {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  display: block;
+  margin-top: 4px;
+}
+
+.credit-author-link {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.credit-author-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Alinhamento de Ícones */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-icon-btn {
+  color: var(--text-gray);
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.footer-icon-btn:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(81, 229, 255, 0.1);
+}
+
+/* Botão Voltar ao Topo */
+.btn-top {
+  color: #ffffff;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-top:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-dark);
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-credits {
+    order: 2;
+  }
+
+  .footer-socials {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-back-to-top {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Esconde os botões antigos no celular para não esmagar o layout */
+.browser-header-dropdown {
+  display: none !important;
+}
+
+/* Garante que o botão fique escondido no computador */
+.hamburger {
+  display: none;
+}
+
+.browser-tabs-dropdown {
+  display: none; /* Garante que fica oculto no desktop */
+  background-color: var(--bg-tab-inactive);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 6px 32px 6px 12px;
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+@media (max-width: 768px) {
+  /* Exibe o botão hambúrguer */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  /* Transforma a sua lista atual em uma gaveta lateral */
+  .nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Esconde para o lado direito */
+    width: 260px;
+    height: 100vh;
+    background-color: #161616;
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Quando o menu tiver a classe active, ele desliza para dentro da tela */
+  .nav-list.active {
+    right: 0;
+  }
+
+  /* Transforma o hambúrguer em um "X" quando ativo */
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* ==========================================================================
+     1. AJUSTE DO TÍTULO EM 2 LINHAS (HOME)
+     ========================================================================== */
+  .main-hero-title {
+    font-size: 2.7rem; /* Reduz ligeiramente o tamanho para forçar a quebra em 2 linhas */
+    line-height: 1.3;
+    max-width: 450px; /* Limita a largura máxima para garantir o formato compacto */
+    margin: 0 auto 24px auto; /* Centraliza o bloco do título se o texto estiver centralizado */
+  }
+
+  /* ==========================================================================
+     2. REESTRUTURAÇÃO DAS ABAS DO BROWSER (ABOUT)
+     ========================================================================== */
+  /* Restaura o cabeçalho do browser para o tamanho padrão original */
+  .browser-header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  /* Esconde os botões antigos no celular para não esmagar o layout */
+  .browser-header-tabs {
+    display: none !important;
+  }
+
+  /* Exibe e estiliza o menu suspenso bonitinho apenas no celular */
+  .browser-tabs-dropdown {
+    display: block;
+    background-color: var(--bg-tab-inactive);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 6px 32px 6px 12px;
+    font-size: 1.4rem;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    cursor: pointer;
+    width: 100%; /* Ajuste a largura para caber ao lado das bolinhas */
+    padding: 10px 32px 10px 12px; /* Aumenta o padding para melhor toque */
+
+    /* Remove a seta padrão feia do navegador e coloca uma estilizada */
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'><path d='M1 1L5 5L9 1' stroke='%2351e5ff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+
+  /* Garante que o container interno não fique apertado */
+  .browser-body {
+    padding: 24px;
+  }
+}
