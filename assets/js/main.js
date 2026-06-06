@@ -1,3 +1,22 @@
+// Seleciona os elementos do Menu Hambúrguer
+const hamburger = document.querySelector(".hamburger");
+const navList = document.querySelector(".nav-list");
+const navLinks = document.querySelectorAll(".nav-list a");
+
+// Abre ou fecha o menu ao clicar no ícone
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navList.classList.toggle("active");
+});
+
+// Fecha o menu automaticamente quando o usuário clicar em qualquer link (âncora)
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navList.classList.remove("active");
+  });
+});
+
 /**
  * ==========================================================================
  * INTERNA ALTERNÂNCIA DE ABAS DO PAINEL BROWSER
