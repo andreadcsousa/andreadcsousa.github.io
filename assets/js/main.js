@@ -1,156 +1,179 @@
-document.addEventListener("DOMContentLoaded", () => {
-  /**
-   * ==========================================================================
-   * 1. CONTROLE DO MENU HAMBÚRGUER (MOBILE)
-   * ==========================================================================
-   */
-  const hamburger = document.querySelector(".hamburger");
-  const navList = document.querySelector(".nav-list");
-  const navLinks = document.querySelectorAll(".nav-list a");
-
-  if (hamburger && navList) {
-    // Alterna o estado aberto/fechado do menu ao clicar
-    hamburger.addEventListener("click", () => {
-      const isExpanded = hamburger.getAttribute("aria-expanded") === "true";
-      hamburger.setAttribute("aria-expanded", !isExpanded);
-      hamburger.classList.toggle("active");
-      navList.classList.toggle("active");
-    });
-
-    // Fecha o menu automaticamente ao clicar em qualquer link de ancoragem
-    navLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        hamburger.setAttribute("aria-expanded", "false");
-        hamburger.classList.remove("active");
-        navList.classList.remove("active");
-      });
-    });
-  }
-
-  /**
-   * ==========================================================================
-   * 2. ALTERNÂNCIA DE ABAS INTERATIVAS (MOCKUP DO BROWSER - SOBRE MIM)
-   * ==========================================================================
-   */
-  const tabButtons = document.querySelectorAll(".browser-tab-btn");
+/**
+ * ==========================================================================
+ * INTERNA ALTERNÂNCIA DE ABAS DO PAINEL BROWSER
+ * ==========================================================================
+ */
+function changeSectionTab(evt, paneId) {
+  // 1. Oculta todos os blocos de conteúdo internos
   const panes = document.querySelectorAll(".browser-pane");
+  panes.forEach((pane) => {
+    pane.style.display = "none";
+    pane.classList.remove("active");
+  });
 
-  if (tabButtons.length > 0 && panes.length > 0) {
-    tabButtons.forEach((button) => {
-      button.addEventListener("click", (evt) => {
-        const targetPaneId = button.getAttribute("onclick")
-          ? button.getAttribute("onclick").match(/'([^']+)'/)[1]
-          : null;
+  // 2. Desativa a classe active visual de todos os botões seletores
+  const tabs = document.querySelectorAll(".browser-tab-btn");
+  tabs.forEach((tab) => tab.classList.remove("active"));
 
-        if (targetPaneId) {
-          evt.preventDefault();
-
-          // 1. Desativa todas as abas e esconde todos os painéis
-          tabButtons.forEach((tab) => tab.classList.remove("active"));
-          panes.forEach((pane) => {
-            pane.classList.remove("active");
-            pane.style.display = "none";
-          });
-
-          // 2. Ativa a aba clicada
-          button.classList.add("active");
-
-          // 3. Mostra o painel correspondente com animação
-          const activePane = document.getElementById(targetPaneId);
-          if (activePane) {
-            activePane.style.display = "flex";
-            // Timeout sutil para garantir o gatilho da animação CSS fadeIn
-            setTimeout(() => {
-              activePane.classList.add("active");
-            }, 10);
-          }
-        }
-      });
-    });
+  // 3. Mostra o bloco selecionado e adiciona classe ativa
+  const activePane = document.getElementById(paneId);
+  if (activePane) {
+    // Alinhamento flexivel mantido para as seções internas
+    activePane.style.display = "flex";
+    activePane.classList.add("active");
   }
-
-  /**
-   * ==========================================================================
-   * 3. INSPETOR DINÂMICO DA TECH STACK & FERRAMENTAS
-   * ==========================================================================
-   */
-  const stackItems = document.querySelectorAll(".stack-item");
-  const panelTitle = document.getElementById("tech-title");
-  const panelDesc = document.getElementById("tech-desc");
-
-  // Dicionário de fallback caso queira centralizar os textos ou adicionar novos metadados
-  const techDataFallback = {
-    python: {
-      title: "Python",
-      desc: "Linguagem utilizada para automação de processos, engenharia de dados (ETL), criação de scripts de raspagem de dados (Web Scraping) e análises estatísticas robustas usando Pandas e NumPy.",
-    },
-    sql: {
-      title: "Banco de Dados & SQL",
-      desc: "Domínio técnico na administração, consulta e manipulação de estruturas de dados modernas. Experiência prática consolidada na arquitetura de bancos de dados relacionais e NoSQL, garantindo integridade, otimização de queries, indexação e segurança.",
-    },
-    powerbi: {
-      title: "Power BI & Analytics",
-      desc: "Construção de dashboards executivos de alto impacto voltados para o negócio, aplicando modelagem dimensional avançada (Star Schema), cálculos complexos em DAX e conceitos rigorosos de Data Storytelling.",
-    },
-    databricks: {
-      title: "Databricks & Big Data",
-      desc: "Processamento de dados em larga escala de forma distribuída. Criação de notebooks analíticos e pipelines otimizados integrando ecossistemas de computação em nuvem com PySpark.",
-    },
-    api: {
-      title: "Integrações & APIs",
-      desc: "Desenvolvimento e consumo de APIs RESTful para ingestão automatizada de dados brutos de plataformas externas para data lakes ou armazéns centrais.",
-    },
-    excel: {
-      title: "Planilhas Avançadas",
-      desc: "Modelagem rápida de dados, prototipagem de indicadores chave de performance (KPIs) e suporte tático a áreas de negócio que dependem de estruturas tradicionais.",
-    },
-    scrum: {
-      title: "Metodologias Ágeis",
-      desc: "Gestão técnica de projetos utilizando frameworks como Scrum e Kanban, garantindo entregas incrementais contínuas, alinhamento com stakeholders e eficiência operacional.",
-    },
-  };
-
-  function updateInspector(item) {
-    // Remove o destaque visual de todos os cards do grid e aplica no atual
-    stackItems.forEach((i) => i.classList.remove("active"));
-    item.classList.add("active");
-
-    // Tenta ler do atributo do HTML (data-name/data-desc) ou busca do dicionário acima
-    const techKey = item.getAttribute("data-tech");
-    const attrName = item.getAttribute("data-name");
-    const attrDesc = item.getAttribute("data-desc");
-
-    if (panelTitle && panelDesc) {
-      if (attrName && attrDesc) {
-        panelTitle.textContent = attrName;
-        panelDesc.textContent = attrDesc;
-      } else if (techKey && techDataFallback[techKey]) {
-        panelTitle.textContent = techDataFallback[techKey].title;
-        panelDesc.textContent = techDataFallback[techKey].desc;
-      }
-    }
+  if (evt.currentTarget && evt.currentTarget.classList) {
+    evt.currentTarget.classList.add("active");
   }
+}
 
-  if (stackItems.length > 0) {
-    stackItems.forEach((item) => {
-      // Evento de passar o rato (Desktop)
-      item.addEventListener("mouseenter", () => updateInspector(item));
+/**
+ * ==========================================================================
+ * SISTEMA COMPORTAMENTAL DOS MODAIS DE DETALHES
+ * ==========================================================================
+ */
+function openExpModal(modalId) {
+  const targetModal = document.getElementById(modalId);
+  if (targetModal) {
+    targetModal.style.display = "flex";
+    document.body.style.overflow = "hidden"; // Trava scroll da página de fundo
+  }
+}
 
-      // Evento de toque/clique (Essencial para acessibilidade e Mobile)
-      item.addEventListener("click", () => updateInspector(item));
+function closeExpModal(modalId) {
+  const targetModal = document.getElementById(modalId);
+  if (targetModal) {
+    targetModal.style.display = "none";
+    document.body.style.overflow = "auto"; // Reativa rolagem da viewport
+  }
+}
+
+// Fecha modal caso ocorra clique fora da caixa de diálogo interna
+function closeModalOnOutsideClick(evt, modalId) {
+  if (evt.target.id === modalId) {
+    closeExpModal(modalId);
+  }
+}
+
+/**
+ * ==========================================================================
+ * ATIVAÇÃO MENU TOGGLE MOBILE HAMBURGUER
+ * ==========================================================================
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileMenuBtn = document.querySelector(".mobile-menu");
+  const navList = document.querySelector(".nav-list");
+
+  if (mobileMenuBtn && navList) {
+    mobileMenuBtn.addEventListener("click", () => {
+      navList.classList.toggle("active");
+      mobileMenuBtn.classList.toggle("active");
     });
   }
 });
 
 /**
+ * ==========================================================================\
+ * FILTRO DINÂMICO DA GALERIA DE PROJETOS
  * ==========================================================================
- * 4. ROLAGEM SUAVE ATÉ O TOPO (BACK TO TOP)
+ */
+function filterProjects(type, evt) {
+  // 1. Atualiza o estado ativo nos botões de filtro
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  filterButtons.forEach((btn) => btn.classList.remove("active"));
+  evt.currentTarget.classList.add("active");
+
+  // 2. Filtra os cards baseado no atributo data-type
+  const cards = document.querySelectorAll(".project-card");
+  cards.forEach((card) => {
+    const cardType = card.getAttribute("data-type");
+
+    if (type === "all" || cardType === type) {
+      card.style.display = "flex";
+      // Pequeno efeito fade-in ao reexibir
+      card.style.opacity = "0";
+      setTimeout(() => {
+        card.style.opacity = "1";
+      }, 10);
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+/**
+ * ==========================================================================\
+ * MECANISMO DE INSPEÇÃO DA NUVEM DE FERRAMENTAS (TECH STACK)
+ * ==========================================================================
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  const stackItems = document.querySelectorAll(".stack-item");
+  const defBlock = document.getElementById("inspector-default");
+  const contentBlock = document.getElementById("inspector-content");
+  const titleTarget = document.getElementById("tech-title");
+  const descTarget = document.getElementById("tech-description");
+
+  function activateInspector(item) {
+    // Remove classe ativa de todos e adiciona no atual
+    stackItems.forEach((i) => i.classList.remove("active"));
+    item.classList.add("active");
+
+    // Coleta os metadados dos atributos do HTML
+    const name = item.getAttribute("data-name");
+    const desc = item.getAttribute("data-desc");
+
+    // Injeta os dados no painel e alterna a exibição
+    titleTarget.textContent = name;
+    descTarget.textContent = desc;
+
+    defBlock.style.display = "none";
+    contentBlock.style.display = "flex";
+  }
+
+  stackItems.forEach((item) => {
+    // Ativa ao passar o mouse (desktop)
+    item.addEventListener("mouseenter", () => activateInspector(item));
+
+    // Ativa ao clicar (essencial para acessibilidade e mobile)
+    item.addEventListener("click", () => activateInspector(item));
+  });
+});
+
+/**
+ * ==========================================================================\
+ * ROLAGEM SUAVE ATÉ O TOPO DA PÁGINA
  * ==========================================================================
  */
 function scrollToTop(evt) {
-  if (evt) evt.preventDefault();
+  evt.preventDefault();
+
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 }
+
+/* ==========================================================================
+   ADICIONE ESTA LÓGICA NO FINAL DO SEU ARQUIVO MAIN.JS
+   ========================================================================== */
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navList = document.querySelector(".nav-list");
+  const navLinks = document.querySelectorAll(".nav-list a");
+
+  if (hamburger && navList) {
+    // Liga/Desliga as classes ao clicar no hambúrguer
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navList.classList.toggle("active");
+    });
+
+    // Fecha a gaveta quando um link do menu é clicado
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navList.classList.remove("active");
+      });
+    });
+  }
+});
