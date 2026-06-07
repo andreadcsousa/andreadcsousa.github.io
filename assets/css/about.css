@@ -1,0 +1,487 @@
+/* ==========================================================================
+   PAINEL ESTILO NAVEGADOR
+   ========================================================================== */
+.about-section-header {
+  margin-bottom: 40px;
+}
+
+.about-section-header h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  color: #ffffff;
+}
+
+.about-section-header .section-subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--text-gray);
+  margin-top: 8px;
+}
+
+#s-about {
+  padding: 80px 0;
+  background-color: var(--bg-dark);
+}
+
+.browser-window {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.browser-header-tabs {
+  display: flex;
+  background-color: #0f0f0f;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.browser-tab-btn {
+  flex: 1;
+  background-color: var(--bg-tab-inactive);
+  border: none;
+  border-right: 1px solid var(--border-color);
+  color: var(--text-gray);
+  padding: 18px 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.browser-tab-btn:last-child {
+  border-right: none;
+}
+
+.browser-tab-btn:hover {
+  color: #fff;
+  background-color: #161616;
+}
+
+.browser-tab-btn.active {
+  background-color: var(--bg-light);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.browser-body-content {
+  padding: 45px;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.browser-body-content::-webkit-scrollbar {
+  width: 6px;
+}
+.browser-body-content::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 4px;
+}
+
+.browser-pane {
+  display: none;
+  height: 100%;
+}
+
+.browser-pane.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   [ABA 1]: PROFILE SOBRE MIM
+   ========================================================================== */
+.tab-sobre-layout {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+
+.sidebar-profile {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+/* Proporção vertical fixa de cartão de identificação */
+.photo-placeholder-vertical img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.profile-social-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.social-icon-btn {
+  color: var(--primary-color);
+  flex: 1;
+  height: 50px;
+  background-color: #1d1d1d;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon-btn:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--border-color);
+}
+
+.text-profile-content {
+  flex: 1;
+}
+
+.text-profile-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.text-profile-content p {
+  font-size: 1.5rem;
+  line-height: 1.65;
+  color: #d1d1d1;
+  margin-bottom: 14px;
+}
+
+.container-btn-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.btn-cv-inverse {
+  background-color: var(--primary-color);
+  color: #000000;
+  border: 2px solid var(--primary-color);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cv-inverse:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* ==========================================================================
+   [ABA 2]: COMPETÊNCIAS
+   ========================================================================== */
+.skills-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.skill-card-box {
+  background-color: #161616;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+}
+
+.skill-card-box h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.skill-card-box p {
+  font-size: 1.35rem;
+  color: #bebebe;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.tools-tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.tool-tag {
+  background-color: #222222;
+  color: #e0e0e0;
+  font-size: 1.15rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #2d2d2d;
+}
+
+.skills-action-container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-skills-cta {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 12px 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-skills-cta:hover {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+/* ==========================================================================
+   [ABA 3]: EXPERIÊNCIA
+   ========================================================================= */
+.timeline-section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+.horizontal-timeline-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.horizontal-timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.horizontal-timeline-node {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  z-index: 2;
+}
+
+.node-marker {
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-light);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  transition: background-color 0.3s;
+}
+
+.horizontal-timeline-node:hover .node-marker {
+  background-color: var(--primary-color);
+}
+
+.node-date {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.node-info h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.node-info p {
+  font-size: 1.3rem;
+  color: var(--text-gray);
+  margin-bottom: 8px;
+}
+
+.node-info .open-modal-link {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   [ABA 4]: EDUCAÇÃO
+   ========================================================================== */
+.education-grid-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.education-column h2 {
+  font-size: 2rem;
+  font-family: "Red Hat Display", sans-serif;
+  margin-bottom: 20px;
+}
+
+.languages-spacing-title {
+  margin-top: 35px;
+}
+
+.education-list-items li,
+.certifications-list-items li {
+  font-size: 1.45rem;
+  line-height: 1.5;
+  color: #d1d1d1;
+  margin-bottom: 12px;
+}
+
+.education-list-items li strong {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   SISTEMA DE POP-UPS / MODAIS OVERLAY
+   ========================================================================== */
+.custom-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-modal-body {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  padding: 35px;
+  border-radius: 8px;
+  max-width: 480px;
+  width: 90%;
+  position: relative;
+}
+
+.custom-modal-body h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.custom-modal-body p {
+  font-size: 1.45rem;
+  color: #d1d1d1;
+  line-height: 1.6;
+}
+
+.close-modal-x {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   MÍDIA QUERIES - RESPONSIVIDADE INTERFACE
+   ========================================================================== */
+@media (max-width: 992px) {
+  .browser-body-content {
+    height: auto;
+  }
+  .skills-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .horizontal-timeline-container {
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 20px;
+  }
+  .horizontal-timeline-container::before {
+    display: none;
+  }
+  .education-grid-split {
+    grid-template-columns: 1fr;
+  }
+  .tab-sobre-layout {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Restaura o cabeçalho do browser para o tamanho padrão original */
+  .browser-header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  /* Esconde os botões antigos no celular para não esmagar o layout */
+  .browser-header-tabs {
+    display: none !important;
+  }
+
+  /* Esconde os botões antigos no celular para não esmagar o layout */
+  .browser-header-dropdown {
+    display: none !important;
+  }
+
+  /* Exibe e estiliza o menu suspenso bonitinho apenas no celular */
+  .browser-tabs-dropdown {
+    display: block;
+    background-color: var(--bg-tab-inactive);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 6px 32px 6px 12px;
+    font-size: 1.4rem;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 32px 10px 12px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'><path d='M1 1L5 5L9 1' stroke='%2351e5ff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+
+  /* Garante que o container interno não fique apertado */
+  .browser-body {
+    padding: 24px;
+  }
+}

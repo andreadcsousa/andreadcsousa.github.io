@@ -1,0 +1,168 @@
+/* ==========================================================================
+   HEADER & NAVEGAÇÃO
+   ========================================================================== */
+header {
+  background: var(--bg-light);
+  border-bottom: 1px solid var(--border-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+header nav h1 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+
+header nav .nav-logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+header nav .nav-logo:hover {
+  color: var(--primary-color);
+}
+
+header .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+header .nav-list li {
+  margin-left: 40px;
+}
+
+header .nav-list li a {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header .nav-list li a:hover {
+  color: var(--primary-color);
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px;
+  transition: 0.3s;
+}
+
+/* Garante que o botão fique escondido no computador */
+.hamburger {
+  display: none;
+}
+
+.browser-tabs-dropdown {
+  display: none; /* Garante que fica oculto no desktop */
+  background-color: var(--bg-tab-inactive);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 6px 32px 6px 12px;
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+@media (max-width: 768px) {
+  /* Exibe o botão hambúrguer */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  /* Transforma a sua lista atual em uma gaveta lateral */
+  .nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Esconde para o lado direito */
+    width: 260px;
+    height: 100vh;
+    background-color: #161616;
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Quando o menu tiver a classe active, ele desliza para dentro da tela */
+  .nav-list.active {
+    right: 0;
+  }
+
+  /* Força os itens da lista (li) a usarem a largura total e limpa margens/paddings */
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Força os links (a) a se comportarem como blocos 100% centralizados */
+  .nav-list a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Transforma o hambúrguer em um "X" quando ativo */
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

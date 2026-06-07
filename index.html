@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ícone do site -->
     <link
       rel="icon"
       type="image/svg+xml"
@@ -21,6 +22,7 @@
   </head>
 
   <body>
+    <!-- Cabeçalho: Nome e barra de navegação -->
     <header>
       <div class="grid-layout">
         <nav>
@@ -36,6 +38,7 @@
             <span class="bar"></span>
             <span class="bar"></span>
           </button>
+          <!-- Lista de navegação -->
           <ul class="nav-list">
             <li><a href="#s-home">Início</a></li>
             <li><a href="#s-about">Perfil</a></li>
@@ -52,10 +55,12 @@
         <div class="grid-layout">
           <div id="home">
             <div id="home-container-text">
+              <!-- Título principal -->
               <h2 class="main-hero-title">
                 Da Complexidade dos <span>Dados</span><br />
                 à Clareza da <span>Decisão</span>.
               </h2>
+              <!-- Descrição do hero -->
               <div class="hero-description-box">
                 <p>
                   Olá! Sou <strong>Andrea Sousa</strong>, especialista em
@@ -70,6 +75,7 @@
                 </p>
               </div>
             </div>
+            <!-- Imagem de destaque -->
             <div id="home-container-image">
               <img
                 src="assets/image/illustration.svg"
@@ -84,6 +90,7 @@
       <section id="s-about">
         <div class="grid-layout">
           <div class="about-section-header">
+            <!-- Título e descrição da seção -->
             <h2>Perfil Profissional</h2>
             <p class="section-subtitle">
               Visão detalhada sobre minhas competências técnicas, trajetória na
@@ -91,7 +98,7 @@
             </p>
           </div>
           <div class="browser-window">
-            <!-- Abas -->
+            <!-- Menu de abas para telas maiores -->
             <div class="browser-header-tabs">
               <button
                 class="browser-tab-btn active"
@@ -119,6 +126,7 @@
               </button>
             </div>
 
+            <!-- Menu suspenso para telas menores -->
             <select
               class="browser-tabs-dropdown"
               onchange="changeSectionTab(event, this.value)"
@@ -135,9 +143,12 @@
                 <div class="tab-sobre-layout">
                   <div class="sidebar-profile">
                     <div class="photo-placeholder-vertical">
+                      <!-- Imagem de perfil -->
                       <img src="assets/image/perfil.png" alt="Foto de perfil" />
                     </div>
+                    <!-- Ícones de contato -->
                     <div class="profile-social-icons">
+                      <!-- Ícone de email -->
                       <a
                         href="mailto:andrea.dcsousa@gmail.com"
                         class="social-icon-btn"
@@ -161,6 +172,7 @@
                           <path d="M16 4l-4 4l-4 -4" />
                           <path d="M4 6.5l8 7.5l8 -7.5" /></svg
                       ></a>
+                      <!-- Ícone do LinkedIn -->
                       <a
                         href="https://www.linkedin.com/in/andrea-dcsousa/"
                         class="social-icon-btn"
@@ -183,6 +195,7 @@
                           <path d="M12 16l0 -5" />
                           <path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg
                       ></a>
+                      <!-- Ícone do GitHub -->
                       <a
                         href="https://github.com/andreadcsousa"
                         class="social-icon-btn"
@@ -203,6 +216,7 @@
                           />
                         </svg>
                       </a>
+                      <!-- Ícone do WhatsApp -->
                       <a
                         href="https://wa.me/5548988801574"
                         class="social-icon-btn"
@@ -227,6 +241,7 @@
                     </div>
                   </div>
 
+                  <!-- Apresentação: Resumo profissional -->
                   <div class="text-profile-content">
                     <h2>Sobre mim</h2>
                     <p>
@@ -250,6 +265,7 @@
                       isso, empenho-me em construir a base técnica necessária
                       para que o negócio possa planejar o futuro com segurança.
                     </p>
+                    <!-- Botão para acessar o currículo -->
                     <div class="container-btn-right">
                       <a
                         class="btn-cv-inverse"
@@ -279,6 +295,7 @@
                       <span class="tool-tag">Spark</span>
                     </div>
                   </div>
+
                   <!-- Bloco 2 -->
                   <div class="skill-card-box">
                     <h3>📊 MODELAGEM & ANALYTICS BI</h3>
@@ -294,6 +311,7 @@
                       <span class="tool-tag">Métricas</span>
                     </div>
                   </div>
+
                   <!-- Bloco 3 -->
                   <div class="skill-card-box">
                     <h3>🛠️ AUTOMAÇÃO & SCRAPING</h3>
@@ -310,9 +328,10 @@
                     </div>
                   </div>
                 </div>
+                <!-- Botão de acesso à seção de projetos -->
                 <div class="skills-action-container">
                   <a href="#s-projects" class="btn-skills-cta"
-                    >Visualizar Projetos Práticos</a
+                    >Ver projetos práticos</a
                   >
                 </div>
               </div>
@@ -387,18 +406,20 @@
                     <h2>Formação Acadêmica</h2>
                     <ul class="education-list-items">
                       <li>
-                        Pós em Ciência de Dados e Big Data (PUC Minas, 10/2026)
+                        Especialização em Ciência de Dados e Big Data (PUC
+                        Minas, 10/2026)
                       </li>
                       <li>
-                        Pós em Docência do Ensino Superior (UNIFACS, 08/2021)
+                        Especialização em Docência do Ensino Superior (UNIFACS,
+                        08/2021)
                       </li>
                       <li>Bacharelado em Administração (UNIFTC, 06/2019)</li>
                     </ul>
                     <h2 class="languages-spacing-title">Idiomas</h2>
                     <ul class="education-list-items">
                       <li>
-                        <strong>Inglês:</strong> Leitura (B1) / Compreensão Oral
-                        (A2)
+                        <strong>Inglês:</strong> Leitura (B1 Intermediário) /
+                        Compreensão Oral (A2 Básico)
                       </li>
                     </ul>
                   </div>
@@ -406,13 +427,23 @@
                     <h2>Cursos e Certificações</h2>
                     <ul class="certifications-list-items">
                       <li>
-                        Google Data Analytics Professional (Coursera, 2026)
+                        Google Data Analytics Professional Certificate
+                        (Coursera, 2026)
                       </li>
-                      <li>Python, SQL, Power BI e Spark (Alura, 2022-2025)</li>
-                      <li>Academy Accreditation (Databricks, 2024)</li>
-                      <li>Excel e Power BI para Análise (Preditiva, 2023)</li>
                       <li>
-                        Trilha de Dados: Programa Desenvolve (Alura, 2023)
+                        Formação em Python, SQL, Power BI e Spark (Alura,
+                        2022-2025)
+                      </li>
+                      <li>
+                        Academy Accreditation: Databricks Fundamentals
+                        (Databricks, 2024)
+                      </li>
+                      <li>
+                        Excel e Power BI para Análise de Dados (Preditiva, 2023)
+                      </li>
+                      <li>
+                        Trilha de Dados: Programa Desenvolve (Alura & Boticário,
+                        2023)
                       </li>
                       <li>Big Data Fundamentos (Data Science Academy, 2022)</li>
                     </ul>
@@ -427,12 +458,14 @@
       <!-- ==================== SEÇÃO 3: PROJETOS EM DADOS ==================== -->
       <section id="s-projects">
         <div class="grid-layout">
+          <!-- Título e descrição da seção -->
           <h2>Meus Projetos</h2>
           <p class="section-subtitle">
             Vitrine das soluções de dados, análises estatísticas e automações
             que desenvolvi.
           </p>
 
+          <!-- Filtros de projeto -->
           <div class="project-filters">
             <button
               class="filter-btn active"
@@ -451,10 +484,15 @@
             </button>
           </div>
 
+          <!-- Projetos recentes-->
           <div class="projects-grid">
+            <!-- Projeto CATWEB -->
             <div class="project-card" data-type="bi">
               <div class="project-img-wrapper">
-                <img src="assets/image/pagina1.jpg" alt="Dashboard CAT" />
+                <img
+                  src="assets/image/projeto_catweb.jpg"
+                  alt="Dashboard CAT"
+                />
               </div>
               <div class="project-card-content">
                 <h3>Comunicação de Acidentes de Trabalho (CAT)</h3>
@@ -480,10 +518,11 @@
               </div>
             </div>
 
+            <!-- Projeto COMEX -->
             <div class="project-card" data-type="python">
               <div class="project-img-wrapper">
                 <img
-                  src="assets/image/1695162481294.jpeg"
+                  src="assets/image/projeto_comex.jpeg"
                   alt="Workshop PrograMaria"
                 />
               </div>
@@ -507,9 +546,10 @@
             </div>
           </div>
 
+          <!-- Outros projetos-->
           <div class="see-more-container">
             <a href="#" class="btn-see-more" rel="noopener" target="_blank">
-              Ver repositório completo no Notion
+              Ver mais projetos
             </a>
           </div>
         </div>
@@ -519,6 +559,7 @@
       <section id="s-stack">
         <div class="grid-layout">
           <div class="stack-section-header">
+            <!-- Título e descrição da seção -->
             <h2>Tech Stack & Ferramentas</h2>
             <p class="section-subtitle">
               O ecossistema técnico e as metodologias que utilizo para
@@ -528,6 +569,7 @@
 
           <div class="stack-container">
             <div class="stack-list-grid">
+              <!-- Python -->
               <div
                 class="stack-item"
                 data-name="Python"
@@ -552,6 +594,7 @@
                 </svg>
               </div>
 
+              <!-- PySpark -->
               <div
                 class="stack-item"
                 data-name="PySpark"
@@ -565,6 +608,7 @@
                 </svg>
               </div>
 
+              <!-- SQL -->
               <div
                 class="stack-item"
                 data-name="SQL"
@@ -590,6 +634,7 @@
                 </svg>
               </div>
 
+              <!-- BigQuery -->
               <div
                 class="stack-item"
                 data-name="BigQuery"
@@ -614,6 +659,7 @@
                 </svg>
               </div>
 
+              <!-- Databricks -->
               <div
                 class="stack-item"
                 data-name="Databricks"
@@ -634,9 +680,10 @@
                 </svg>
               </div>
 
+              <!-- Azure -->
               <div
                 class="stack-item"
-                data-name="Azure"
+                data-name="Azure Cloud"
                 data-desc="Ambiente de computação em nuvem utilizado para hospedar infraestruturas modernas de dados, bancos na nuvem e repositórios analíticos."
               >
                 <svg
@@ -653,6 +700,7 @@
                 </svg>
               </div>
 
+              <!-- Banco de Dados -->
               <div
                 class="stack-item"
                 data-name="Banco de Dados"
@@ -673,6 +721,7 @@
                 </svg>
               </div>
 
+              <!-- Azure DevOps -->
               <div
                 class="stack-item"
                 data-name="Azure DevOps"
@@ -686,6 +735,7 @@
                 </svg>
               </div>
 
+              <!-- Pipelines ETL/ELT -->
               <div
                 class="stack-item"
                 data-name="Pipelines ETL/ELT"
@@ -705,6 +755,7 @@
                 </svg>
               </div>
 
+              <!-- Web Scraping -->
               <div
                 class="stack-item"
                 data-name="Web Scraping"
@@ -721,6 +772,7 @@
                 </svg>
               </div>
 
+              <!-- Integração de APIs -->
               <div
                 class="stack-item"
                 data-name="Integração de APIs"
@@ -742,6 +794,7 @@
                 </svg>
               </div>
 
+              <!-- Modelagem de Dados -->
               <div
                 class="stack-item"
                 data-name="Modelagem de Dados"
@@ -763,6 +816,7 @@
                 </svg>
               </div>
 
+              <!-- Power BI -->
               <div
                 class="stack-item"
                 data-name="Power BI"
@@ -783,9 +837,10 @@
                 </svg>
               </div>
 
+              <!-- Data Studio (Looker) -->
               <div
                 class="stack-item"
-                data-name="Data Studio"
+                data-name="Data Studio (Looker)"
                 data-desc="Criação ágil de relatórios, conexões rápidas via ecossistema Google e consolidação de visualizações operacionais diretas para suporte na tomada de decisão imediata."
               >
                 <svg
@@ -799,9 +854,10 @@
                 </svg>
               </div>
 
+              <!-- Tableau Public -->
               <div
                 class="stack-item"
-                data-name="Tableau"
+                data-name="Tableau Public"
                 data-desc="Plataforma robusta corporativa utilizada para mapeamento visual, exploração profunda de bases de dados complexas e distribuição segura de visuais analíticos."
               >
                 <svg
@@ -815,6 +871,7 @@
                 </svg>
               </div>
 
+              <!-- Streamlit -->
               <div
                 class="stack-item"
                 data-name="Streamlit"
@@ -831,6 +888,7 @@
                 </svg>
               </div>
 
+              <!-- Excel/Sheets -->
               <div
                 class="stack-item"
                 data-name="Excel/Sheets"
@@ -855,6 +913,7 @@
                 </svg>
               </div>
 
+              <!-- Scrum/Kanban -->
               <div
                 class="stack-item"
                 data-name="Scrum/Kanban"
@@ -880,6 +939,7 @@
               </div>
             </div>
 
+            <!-- Exibe detalhes da stack -->
             <div class="stack-inspector">
               <div class="inspector-default" id="inspector-default">
                 <div class="inspector-pulse"></div>
@@ -912,6 +972,7 @@
     </main>
 
     <!-- ==================== MODAIS DE ATIVIDADES ==================== -->
+    <!-- PrograMaria: Descrição das atividades -->
     <div
       id="modal-programaria"
       class="custom-modal-overlay"
@@ -945,6 +1006,7 @@
       </div>
     </div>
 
+    <!-- Fiesc: Descrição das atividades -->
     <div
       id="modal-fiesc"
       class="custom-modal-overlay"
@@ -975,6 +1037,7 @@
       </div>
     </div>
 
+    <!-- Neotrust: Descrição das atividades -->
     <div
       id="modal-neotrust"
       class="custom-modal-overlay"
@@ -1005,6 +1068,7 @@
       </div>
     </div>
 
+    <!-- Carambola: Descrição das atividades -->
     <div
       id="modal-carambola"
       class="custom-modal-overlay"
@@ -1035,6 +1099,7 @@
 
     <footer class="main-footer">
       <div class="grid-layout footer-container">
+        <!-- Créditos de criação -->
         <div class="footer-credits">
           <p>&copy; 2026 Andrea Sousa. Todos os direitos reservados.</p>
           <span>
@@ -1049,6 +1114,7 @@
           </span>
         </div>
 
+        <!-- Ícones de contato -->
         <div class="footer-socials">
           <a
             href="mailto:andrea.dcsousa@gmail.com"
@@ -1179,6 +1245,7 @@
           </a>
         </div>
 
+        <!-- Botão de voltar ao topo -->
         <div class="footer-back-to-top">
           <a
             href="#"
@@ -1204,6 +1271,7 @@
       </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <!-- Ações da página -->
+    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>

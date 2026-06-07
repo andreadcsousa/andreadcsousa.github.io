@@ -1,0 +1,115 @@
+/* ==========================================================================
+   ESTILIZAÇÃO DO RODAPÉ
+   ========================================================================== */
+.main-footer {
+  width: 100%;
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--border-color);
+  padding: 40px 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Créditos */
+.footer-credits p {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.footer-credits span {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  display: block;
+  margin-top: 4px;
+}
+
+.credit-author-link {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.credit-author-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Alinhamento de Ícones */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-icon-btn {
+  color: var(--text-gray);
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.footer-icon-btn:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(81, 229, 255, 0.1);
+}
+
+/* Botão Voltar ao Topo */
+.btn-top {
+  color: #ffffff;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-top:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-dark);
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-credits {
+    order: 2;
+  }
+
+  .footer-socials {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-back-to-top {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
