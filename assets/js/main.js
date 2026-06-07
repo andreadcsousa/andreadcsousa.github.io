@@ -3,6 +3,7 @@
  * PORTFÓLIO - SCRIPTS CENTRAIS (ORQUESTRADOR)
  * =========================================================== */
 
+// Caminhos corrigidos de forma relativa para o GitHub Pages encontrar os arquivos na mesma pasta
 import { initNav } from "./nav.js";
 import { changeSectionTab } from "./tabs.js";
 import { filterProjects } from "./projects.js";
@@ -14,7 +15,7 @@ import {
 import { initStackInspector } from "./stack.js";
 import { scrollToTop } from "./scroll.js";
 
-// disponibiliza funções para o HTML
+// Disponibiliza as funções para o HTML conseguir chamá-las no onclick
 window.changeSectionTab = changeSectionTab;
 window.openExpModal = openExpModal;
 window.closeExpModal = closeExpModal;
