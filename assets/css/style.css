@@ -1177,6 +1177,25 @@ header .nav-list li a:hover {
     right: 0;
   }
 
+  /* 1. Força os itens da lista (li) a usarem a largura total e limpa margens/paddings */
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 2. Força os links (a) a se comportarem como blocos 100% centralizados */
+  .nav-list a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   /* Transforma o hambúrguer em um "X" quando ativo */
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
