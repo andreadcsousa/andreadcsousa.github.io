@@ -17,6 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Red+Hat+Display:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Ícones do Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <!-- Folha de Estilo Principal -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -473,77 +478,255 @@
             >
               Todos
             </button>
-            <button class="filter-btn" onclick="filterProjects('bi', event)">
-              Dashboards & BI
+            <button
+              class="filter-btn"
+              onclick="filterProjects('data-engineering', event)"
+            >
+              Engenharia & ETL
             </button>
             <button
               class="filter-btn"
-              onclick="filterProjects('python', event)"
+              onclick="filterProjects('data-analysis', event)"
             >
-              Python & Analytics
+              Análise de Dados
+            </button>
+            <button
+              class="filter-btn"
+              onclick="filterProjects('business-intelligence', event)"
+            >
+              Business Intelligence (BI)
             </button>
           </div>
 
           <!-- Projetos recentes-->
           <div class="projects-grid">
-            <!-- Projeto CATWEB -->
-            <div class="project-card" data-type="bi">
+            <!-- Projeto DADOSFERA -->
+            <article
+              class="project-card"
+              data-category="data-engineering data-analysis business-intelligence"
+            >
               <div class="project-img-wrapper">
                 <img
-                  src="assets/image/projeto_catweb.jpg"
-                  alt="Dashboard CAT"
+                  src="assets/image/projeto_dadosfera.jpg"
+                  alt="Case Técnico - Plataforma de Dados com IA"
                 />
               </div>
               <div class="project-card-content">
-                <h3>Comunicação de Acidentes de Trabalho (CAT)</h3>
+                <h3>Case Técnico: Plataforma de Dados com IA (DADOSFERA)</h3>
                 <p>
-                  Realização de ETL para tratamento, padronização e criação de
-                  dicionários de dados. Visualização estratégica e análise de
-                  tendências no Power BI.
+                  Construção de uma PoC escalável para e-commerce processando
+                  1,4M de registros. Implementação de arquitetura de dados em
+                  camadas (RAW à Curated) na Dadosfera SaaS, enriquecimento
+                  semântico de catálogo usando GenAI (OpenAI API) e
+                  desenvolvimento de Data App interativo.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>GenAI / LLM</span>
+                  <span>Streamlit</span>
+                  <span>Metabase</span>
+                  <span>Modelagem Dimensional</span>
+                </div>
+                <a
+                  href="https://github.com/andreadcsousa/andrea_sousa_DDF_TECH_022026"
+                  rel="noopener"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i> Ver no GitHub
+                </a>
+              </div>
+            </article>
+
+            <!-- Projeto JAARCONSULT -->
+            <article
+              class="project-card"
+              data-category="business-intelligence data-analysis"
+            >
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/image/projeto_jaarconsult.jpg"
+                  alt="Dashboard de Análise Comercial e Eficiência de Promoções no Power BI"
+                />
+              </div>
+              <div class="project-card-content">
+                <h3>Case Técnico: Análise de Promoções (JAAR CONSULT)</h3>
+                <p>
+                  Desenvolvimento de um ecossistema analítico completo no Power
+                  BI para avaliar o impacto de campanhas promocionais na
+                  rentabilidade do varejo. Inclui reestruturação de modelo para
+                  Star Schema, métricas avançadas em DAX e governança com RLS
+                  Dinâmico.
+                </p>
+                <div class="project-tags">
+                  <span>Power BI</span>
+                  <span>DAX</span>
+                  <span>Modelagem de Dados</span>
+                  <span>RLS Dinâmico</span>
+                  <span>Star Schema</span>
+                </div>
+
+                <a
+                  href="https://github.com/andreadcsousa/andrea_sousa_JAAR_PBI_032026"
+                  rel="noopener"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Ver no GitHub
+                </a>
+              </div>
+            </article>
+
+            <!-- Projeto VENA -->
+            <article
+              class="project-card"
+              data-category="data-engineering data-analysis"
+            >
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/image/projeto_vena.jpg"
+                  alt="Painel de Demonstração de Resultado de Exercício e Estrutura de ETL"
+                />
+              </div>
+              <div class="project-card-content">
+                <h3>
+                  Case Técnico: Otimização ETL e Análise Financeira (VENA)
+                </h3>
+                <p>
+                  Auditoria e correção de bugs em pipelines de dados legados no
+                  Pentaho (PDI), refatoração completa do fluxo de transformações
+                  utilizando Python (Pandas) e modelagem de relatórios
+                  financeiros de DRE com análise vertical/horizontal via SQLite
+                  e Power BI.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>Pentaho PDI</span>
+                  <span>SQLite</span>
+                  <span>SQL</span>
+                  <span>Power BI</span>
+                </div>
+
+                <a
+                  href="https://github.com/andreadcsousa/andrea_sousa_VENA_DRE_122024"
+                  rel="noopener"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Ver no GitHub
+                </a>
+              </div>
+            </article>
+
+            <!-- Projeto CATWEB -->
+            <article
+              class="project-card"
+              data-category="data-engineering data-analysis business-intelligence"
+            >
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/image/projeto_catweb.jpg"
+                  alt="Dashboard CAT - Análise de Acidentes de Trabalho"
+                />
+              </div>
+              <div class="project-card-content">
+                <h3>Projeto: ETL com Acidentes de Trabalho (CATWEB)</h3>
+                <p>
+                  Desenvolvimento de pipeline de Data Quality e ETL em Python
+                  para saneamento de dados públicos truncados. Aplicação de
+                  engenharia de atributos, modelagem dimensional com tabelas do
+                  eSocial e criação de dashboard estratégico no Power BI.
                 </p>
                 <div class="project-tags">
                   <span>Python</span>
                   <span>Pandas</span>
+                  <span>Regex</span>
+                  <span>Modelagem de Dados</span>
                   <span>Power BI</span>
-                  <span>ETL</span>
                 </div>
                 <a
                   href="https://github.com/andreadcsousa/projeto_acidentes-trabalho_python_pbi"
                   rel="noopener"
                   target="_blank"
                   class="project-link"
-                >
-                  Acessar Projeto
+                  ><i class="fab fa-github"></i> Ver no GitHub
                 </a>
               </div>
-            </div>
+            </article>
 
-            <!-- Projeto COMEX -->
-            <div class="project-card" data-type="python">
+            <!-- Projeto FIESC -->
+            <article
+              class="project-card"
+              data-category="data-analysis business-intelligence"
+            >
               <div class="project-img-wrapper">
                 <img
-                  src="assets/image/projeto_comex.jpeg"
-                  alt="Workshop PrograMaria"
+                  src="assets/image/projeto_fiesc.jpg"
+                  alt="Painel de Análise de Mercado de Trabalho e Profissionais STEAM em Santa Catarina"
                 />
               </div>
               <div class="project-card-content">
-                <h3>Python para Coleta e Análise de Dados Públicos</h3>
+                <h3>Case Técnico: Análise de Profissionais STEAM (FIESC)</h3>
                 <p>
-                  Script focado em automação, coleta (web scraping),
-                  processamento e análise descritiva de dados públicos do
-                  comércio exterior (COMEX).
+                  Projeto consultivo de People Analytics desenvolvido para o
+                  Observatório da FIESC. Investigação de hipóteses sobre
+                  escassez de talentos, turnover e comportamento salarial de
+                  profissionais de Tecnologia e Engenharia em SC, utilizando
+                  microdados do Novo CAGED.
                 </p>
                 <div class="project-tags">
                   <span>Python</span>
                   <span>Pandas</span>
-                  <span>Scraping</span>
-                  <span>Colab</span>
+                  <span>Power BI</span>
+                  <span>People Analytics</span>
+                  <span>Inteligência de Mercado</span>
                 </div>
-                <a href="#" rel="noopener" target="_blank" class="project-link">
-                  Acessar Projeto
+
+                <a
+                  href="https://github.com/andreadcsousa/projeto_analise-mercado-steam_caged_python"
+                  rel="noopener"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Ver no GitHub
                 </a>
               </div>
-            </div>
+            </article>
+
+            <!-- Projeto COMEX -->
+            <article
+              class="project-card"
+              data-category="data-engineering data-analysis"
+            >
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/image/projeto_comex.jpeg"
+                  alt="Interface gráfica e dados do projeto de Comércio Exterior"
+                />
+              </div>
+              <div class="project-card-content">
+                <h3>Workshop: Coleta e Análise de Dados Públicos (COMEX)</h3>
+                <p>
+                  Desenvolvimento de uma solução automatizada para web scraping,
+                  ingestão e processamento de dados brutos de Importação e
+                  Exportação. O pipeline realiza o download dinâmico de bases
+                  governamentais e estrutura os dados para consumo analítico.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>Pandas</span>
+                  <span>BeautifulSoup</span>
+                  <span>Web Scraping</span>
+                  <span>Google Colab</span>
+                </div>
+                <a
+                  href="https://github.com/andreadcsousa/projeto_comercio-exterior_scraping_python"
+                  rel="noopener"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i> Ver no GitHub
+                </a>
+              </div>
+            </article>
           </div>
 
           <!-- Outros projetos-->

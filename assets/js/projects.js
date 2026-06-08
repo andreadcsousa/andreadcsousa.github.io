@@ -13,9 +13,16 @@ export function filterProjects(type, evt) {
   const cards = document.querySelectorAll(".project-card");
 
   cards.forEach((card) => {
-    const cardType = card.getAttribute("data-type");
+    // 1. Pegamos a string de categorias e limpamos espaços nas pontas com .trim()
+    const cardCategoriesStr = (card.getAttribute("data-category") || "").trim();
 
-    if (type === "all" || cardType === type) {
+    // 2. Criamos o array dividindo por qualquer sequência de espaços ou quebras de linha (\s+)
+    const cardCategoriesArray = cardCategoriesStr.split(/\s+/);
+
+    // 3. Checamos se a categoria clicada está presente no array limpo
+    const hasCategory = cardCategoriesArray.includes(type);
+
+    if (type === "all" || hasCategory) {
       card.style.display = "flex";
 
       card.style.opacity = "0";

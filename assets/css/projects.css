@@ -69,7 +69,6 @@
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
   border-color: #333;
 }
 
@@ -136,27 +135,35 @@
   font-weight: 600;
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .project-link:hover {
   color: var(--primary-hover);
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.project-link i {
+  margin-right: 8px;
 }
 
 .btn-see-more {
-  display: inline-block;
+  display: block;
   background-color: transparent;
   border: 1px solid var(--border-color);
   color: #fff;
+  margin: 0 auto;
   padding: 14px 32px;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 4px;
   transition: all 0.3s ease;
+  text-decoration: none;
+  width: max-content;
 }
 
 .btn-see-more:hover {
-  background-color: #242424;
-  border-color: #444;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
