@@ -167,3 +167,20 @@
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+  /* Força os botões de filtro a quebrarem a linha no mobile em vez de esticarem a tela */
+  .project-filters {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+    padding: 0 20px;
+  }
+
+  /* Faz o grid de cards se ajustar ao espaço real da tela do celular */
+  .projects-grid {
+    grid-template-columns: 1fr; /* Um card por linha no mobile */
+    gap: 24px;
+    padding: 0 20px;
+  }
+}

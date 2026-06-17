@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ícone do site -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2351e5ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 16 4-4-4-4'/%3E%3Cpath d='m6 8-4 4 4 4'/%3E%3Cpath d='m14.5 4-5 16'/%3E%3C/svg%3E"
+    />
+    <title>Andrea Sousa - Projetos</title>
+    <!-- Fontes do Projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Red+Hat+Display:wght@400..700&family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ícones do Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Estilos para Highlight.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css"
+    />
+    <!-- Folha de Estilo Principal -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Folha de Estilo da Página -->
+    <link rel="stylesheet" href="assets/css/projects-page.css" />
+  </head>
+
+  <body id="projects-page">
+    <!-- Cabeçalho da página -->
+    <header>
+      <div class="grid-layout">
+        <nav class="projects-nav">
+          <h1>&lt; Andrea Sousa /&gt;</h1>
+
+          <a href="index.html" class="btn-back-home">
+            <i class="fas fa-arrow-left"></i>
+            <span>Voltar para Home</span>
+
+            <i class="fas fa-house home-icon"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="grid-layout" style="padding-top: 120px; padding-bottom: 80px">
+      <!-- ==================== SEÇÃO: VITRINE DE PROJETOS ==================== -->
+      <section id="s-projects" style="border: none; padding: 0">
+        <!-- Título e descrição da seção -->
+        <h2>Meus Projetos</h2>
+        <p class="section-subtitle">
+          Vitrine das soluções de dados, análises estatísticas e automações que
+          desenvolvi.
+        </p>
+
+        <!-- Filtros de projeto Avançados (Dropdowns) -->
+        <nav class="portfolio-dropdown-menu">
+          <ul>
+            <!-- Categoria de Projeto -->
+            <li>
+              Categoria <i class="fa fa-angle-down"></i>
+              <ul class="dropdown-submenu">
+                <li
+                  onclick="
+                    setDropdownFilter('category', 'all', 'Categoria', event)
+                  "
+                >
+                  Todos as categorias
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter('category', 'codigo', 'Código', event)
+                  "
+                >
+                  Código
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter('category', 'painel', 'Painel', event)
+                  "
+                >
+                  Painel
+                </li>
+              </ul>
+            </li>
+
+            <!-- Área de Atuação -->
+            <li>
+              Área <i class="fa fa-angle-down"></i>
+              <ul class="dropdown-submenu">
+                <li onclick="setDropdownFilter('area', 'all', 'Area', event)">
+                  Todas as áreas
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter('area', 'data-analysis', 'Área', event)
+                  "
+                >
+                  Análise de Dados
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter(
+                      'area',
+                      'business-intelligence',
+                      'Business Intelligence',
+                      event,
+                    )
+                  "
+                >
+                  Business Intelligence
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter(
+                      'area',
+                      'data-engineering',
+                      'Engenharia de Dados',
+                      event,
+                    )
+                  "
+                >
+                  Engenharia de Dados
+                </li>
+              </ul>
+            </li>
+
+            <!-- Setor de Negócio -->
+            <li>
+              Negócio <i class="fa fa-angle-down"></i>
+              <ul class="dropdown-submenu">
+                <li
+                  onclick="
+                    setDropdownFilter('business', 'all', 'Negócio', event)
+                  "
+                >
+                  Todos os setores
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter('business', 'comercial', 'Comercial')
+                  "
+                >
+                  Comercial / Vendas
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter(
+                      'business',
+                      'e-commerce',
+                      'E-commerce',
+                      event,
+                    )
+                  "
+                >
+                  E-commerce
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter(
+                      'business',
+                      'financeiro',
+                      'Financeiro',
+                      event,
+                    )
+                  "
+                >
+                  Financeiro
+                </li>
+                <li onclick="setDropdownFilter('business', 'rh', 'RH', event)">
+                  Recursos Humanos
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter(
+                      'business',
+                      'saude',
+                      'Saúde & Segurança',
+                      event,
+                    )
+                  "
+                >
+                  Saúde & Segurança
+                </li>
+              </ul>
+            </li>
+
+            <!-- Tipo de Projeto -->
+            <li>
+              Tipo <i class="fa fa-angle-down"></i>
+              <ul class="dropdown-submenu">
+                <li onclick="setDropdownFilter('type', 'all', 'Tipo', event)">
+                  Todos os tipos
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter('type', 'projeto', 'Projeto', event)
+                  "
+                >
+                  Projeto
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter('type', 'case', 'Case Técnico', event)
+                  "
+                >
+                  Case Técnico
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter('type', 'workshop', 'Workshop', event)
+                  "
+                >
+                  Workshop
+                </li>
+                <li
+                  onclick="setDropdownFilter('type', 'estudo', 'Estudo', event)"
+                >
+                  Estudo
+                </li>
+              </ul>
+            </li>
+
+            <!-- Ferramentas Utilizadas -->
+            <li>
+              Ferramenta <i class="fa fa-angle-down"></i>
+              <ul class="dropdown-submenu">
+                <li
+                  onclick="
+                    setDropdownFilter('tool', 'all', 'Ferramenta', event)
+                  "
+                >
+                  Todas as ferramentas
+                </li>
+                <li
+                  onclick="setDropdownFilter('tool', 'python', 'Python', event)"
+                >
+                  Python
+                </li>
+                <li onclick="setDropdownFilter('tool', 'sql', 'SQL', event)">
+                  SQL
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter('tool', 'power-bi', 'Power BI', event)
+                  "
+                >
+                  Power BI
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter('tool', 'streamlit', 'Streamlit', event)
+                  "
+                >
+                  Streamlit
+                </li>
+              </ul>
+            </li>
+
+            <!-- Período de Realização -->
+            <li>
+              Período <i class="fa fa-angle-down"></i>
+              <ul class="dropdown-submenu">
+                <li
+                  onclick="setDropdownFilter('year', 'all', 'Período', event)"
+                >
+                  Todos os anos
+                </li>
+                <li onclick="setDropdownFilter('year', '2026', '2026', event)">
+                  2026
+                </li>
+                <li onclick="setDropdownFilter('year', '2025', '2025', event)">
+                  2025
+                </li>
+                <li onclick="setDropdownFilter('year', '2024', '2024', event)">
+                  2024
+                </li>
+                <li onclick="setDropdownFilter('year', '2023', '2023', event)">
+                  2023
+                </li>
+                <li onclick="setDropdownFilter('year', '2022', '2022', event)">
+                  2022
+                </li>
+                <li onclick="setDropdownFilter('year', '2021', '2021', event)">
+                  2021
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Lista de Projetos -->
+        <div class="projects-list">
+          <!-- 1. Projeto DADOSFERA -->
+          <article
+            class="project-flip-container"
+            data-category="codigo"
+            data-area="data-engineering data-analysis business-intelligence"
+            data-business="e-commerce"
+            data-type="case"
+            data-tool="python streamlit"
+            data-year="2026"
+            data-date="2026-02-15"
+          >
+            <input
+              type="checkbox"
+              id="flip-toggle-dadosfera"
+              class="flip-toggle"
+            />
+            <div class="project-card-inner">
+              <!-- FRENTE DO CARD -->
+              <div class="card-face card-front">
+                <!-- Título e Botão -->
+                <div class="card-controls-front">
+                  <span class="mini-project-title"
+                    >Plataforma de Dados com IA (DADOSFERA)
+                  </span>
+                  <label
+                    for="flip-toggle-dadosfera"
+                    class="btn-flip"
+                    title="Ver detalhes do caso técnico"
+                  >
+                    <i class="fas fa-info-circle"></i>
+                    Ver Case Técnico
+                  </label>
+                </div>
+                <!-- Código ou Painel-->
+                <div class="project-media-wrapper codemirror-dark">
+                  <pre><code class="language-python"># PoC Escalável - Ingestão e Enriquecimento de Catálogo com GenAI
+                    
+import dadosfera
+from openai import OpenAI
+
+def process_ecommerce_catalog(dataframe):
+    # Processando 1.4M de registros através das camadas RAW -> Trusted -> Curated
+    catalog_curated = dataframe.filter(["product_id", "raw_description"])
+
+    # Enriquecimento Semântico via LLM
+    client = OpenAI(api_key="sk-...")
+
+    return enrich_metadata_with_llm(client, catalog_curated)
+                  </code></pre>
+                </div>
+              </div>
+              <!-- VERSO DO CARD -->
+              <div class="card-face card-back">
+                <div class="project-info-back">
+                  <!-- Cabeçalho -->
+                  <div class="project-header-back">
+                    <div class="project-top-row">
+                      <span class="project-date">Fevereiro de 2026</span>
+
+                      <label for="flip-toggle-dadosfera" class="btn-flip-back">
+                        <i class="fas fa-undo-alt"></i>
+                        Voltar ao Painel
+                      </label>
+                    </div>
+
+                    <h3>
+                      Case Técnico: Plataforma de Dados com IA (DADOSFERA)
+                    </h3>
+                  </div>
+
+                  <!-- Conteúdo -->
+                  <div class="project-context">
+                    <h4>Situação</h4>
+                    <p>
+                      Necessidade de estruturar uma Prova de Conceito (PoC) para
+                      um e-commerce contendo volumetria expressiva de 1,4M de
+                      registros, sem taxonomia definida no catálogo.
+                    </p>
+                    <h4>Ação</h4>
+                    <p>
+                      Implementação de arquitetura moderna de dados em camadas
+                      (RAW à Curated) dentro do ecossistema Dadosfera SaaS,
+                      utilizando pipelines Python integrados à API da OpenAI
+                      para categorização semântica automática.
+                    </p>
+                    <h4>Resultado</h4>
+                    <p>
+                      Criação de um catálogo enriquecido e um Data App
+                      interativo em Streamlit/Metabase, provando a viabilidade
+                      de tagueamento inteligente em escala.
+                    </p>
+                  </div>
+
+                  <!-- Rodapé -->
+                  <div class="project-footer-back">
+                    <div class="project-tags">
+                      <span>Python</span>
+                      <span>GenAI / LLM </span>
+                      <span>Streamlit</span>
+                      <span>Metabase </span>
+                      <span>Modelagem Dimensional</span>
+                    </div>
+
+                    <a
+                      href="https://github.com/andreadcsousa/andrea_sousa_DDF_TECH_022026"
+                      rel="noopener"
+                      target="_blank"
+                      class="github-icon-only-link"
+                      title="Ver no GitHub"
+                    >
+                      <i class="fab fa-github"> </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Projeto JAAR -->
+          <article
+            class="project-flip-container"
+            data-category="painel"
+            data-area="business-intelligence data-analysis"
+            data-business="comercial"
+            data-type="case"
+            data-tool="power-bi"
+            data-year="2026"
+            data-date="2026-03-16"
+          >
+            <input type="checkbox" id="flip-toggle-jaar" class="flip-toggle" />
+            <div class="project-card-inner">
+              <!-- FRENTE DO CARD -->
+              <div class="card-face card-front">
+                <!-- Título e Botão -->
+                <div class="card-controls-front">
+                  <span class="mini-project-title"
+                    >Análise de Promoções (JAAR CONSULT)
+                  </span>
+                  <label
+                    for="flip-toggle-jaar"
+                    class="btn-flip"
+                    title="Ver detalhes do caso técnico"
+                  >
+                    <i class="fas fa-info-circle"></i>
+                    Ver Case Técnico
+                  </label>
+                </div>
+                <!-- Código ou Painel -->
+                <div class="project-media-wrapper">
+                  <iframe
+                    title="Dashboard JAAR CONSULT"
+                    src="URL_DO_SEU_EMBED_DO_POWERBI_AQUI"
+                    allowfullscreen="true"
+                  ></iframe>
+                </div>
+              </div>
+              <!-- VERSO DO CARD -->
+              <div class="card-face card-back">
+                <div class="project-info-back">
+                  <!-- Cabeçalho -->
+                  <div class="project-header-back">
+                    <div class="project-top-row">
+                      <span class="project-date">Março de 2026</span>
+
+                      <label for="flip-toggle-jaar" class="btn-flip-back">
+                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
+                      </label>
+                    </div>
+
+                    <h3>Case Técnico: Análise de Promoções (JAAR CONSULT)</h3>
+                  </div>
+
+                  <!-- Conteúdo -->
+                  <div class="project-context">
+                    <h4>Situação</h4>
+                    <p>
+                      A diretoria comercial não conseguia rastrear quais
+                      campanhas promocionais de varejo de fato geravam margem ou
+                      quais canibalizavam o lucro operacional.
+                    </p>
+                    <h4>Ação</h4>
+                    <p>
+                      Modelagem dimensional completa baseada em Star Schema,
+                      construção de cálculos complexos e contextuais em DAX para
+                      isolar o efeito preço e implementação de Row-Level
+                      Security dinâmico.
+                    </p>
+                    <h4>Resultado</h4>
+                    <p>
+                      Entrega de um ecossistema analítico de ponta a ponta que
+                      revelou gargalos crônicos na margem, viabilizando ajustes
+                      preventivos nas campanhas subsequentes.
+                    </p>
+                  </div>
+
+                  <!-- Rodapé -->
+                  <div class="project-footer-back">
+                    <div class="project-tags">
+                      <span>Power BI</span>
+                      <span>DAX </span>
+                      <span>Modelagem de Dados</span>
+                      <span>RLS Dinâmico </span>
+                      <span>Star Schema</span>
+                    </div>
+                    <a
+                      href="https://github.com/andreadcsousa/andrea_sousa_JAAR_PBI_032026"
+                      rel="noopener"
+                      target="_blank"
+                      class="github-icon-only-link"
+                      title="Ver no GitHub"
+                    >
+                      <i class="fab fa-github"> </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Projeto VENA -->
+          <article
+            class="project-flip-container"
+            data-category="codigo"
+            data-area="data-engineering data-analysis business-intelligence"
+            data-business="financeiro"
+            data-type="case"
+            data-tool="python sql"
+            data-year="2024"
+            data-date="2024-12-20"
+          >
+            <input type="checkbox" id="flip-toggle-vena" class="flip-toggle" />
+            <div class="project-card-inner">
+              <!-- FRENTE DO CARD -->
+              <div class="card-face card-front">
+                <!-- Título e Botão -->
+                <div class="card-controls-front">
+                  <span class="mini-project-title"
+                    >Otimização ETL e Análise Financeira (VENA)
+                  </span>
+                  <label
+                    for="flip-toggle-vena"
+                    class="btn-flip"
+                    title="Ver detalhes do caso técnico"
+                  >
+                    <i class="fas fa-info-circle"></i>
+                    Ver Case Técnico
+                  </label>
+                </div>
+                <!-- Código ou Painel -->
+                <div class="project-media-wrapper codemirror-dark">
+                  <pre><code class="language-sql">-- Modelagem e Fechamento de DRE no SQLite via SQL Avançado
+
+WITH RECURSIVE dre_tree AS (
+    SELECT id, conta, pai_id, 0 as nivel
+    FROM plano_contas
+    UNION ALL
+    SELECT c.id, c.conta, c.pai_id, t.nivel + 1
+    FROM plano_contas c
+    JOIN dre_tree t ON c.pai_id = t.id
+)
+SELECT 
+    t.conta,
+    SUM(f.valor) as valor_total,
+    (SUM(f.valor) / (SELECT SUM(valor) FROM fatos WHERE conta_id = 'RECEITA_BRUTA')) * 100 as analise_vertical
+FROM dre_tree t
+LEFT JOIN lancamentos_fatos f ON t.id = f.conta_id
+GROUP BY t.conta;</code></pre>
+                </div>
+              </div>
+              <!-- VERSO DO CARD -->
+              <div class="card-face card-back">
+                <div class="project-info-back">
+                  <!-- Cabeçalho -->
+                  <div class="project-header-back">
+                    <div class="project-top-row">
+                      <span class="project-date">Dezembro de 2024</span>
+
+                      <label
+                        for="flip-toggle-vena"
+                        class="btn-flip-back"
+                        title="Voltar para a Mídia"
+                      >
+                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
+                      </label>
+                    </div>
+
+                    <h3>
+                      Case Técnico: Otimização ETL e Análise Financeira (VENA)
+                    </h3>
+                  </div>
+
+                  <!-- Conteúdo -->
+                  <div class="project-context">
+                    <h4>Situação</h4>
+                    <p>
+                      Existência de gargalos críticos, dados truncados e quebras
+                      constantes em pipelines legados construídos originalmente
+                      no Pentaho PDI.
+                    </p>
+                    <h4>Ação</h4>
+                    <p>
+                      Realização de auditoria técnica minuciosa nos fluxos,
+                      seguida por uma refatoração integral utilizando scripts
+                      Python estruturados com Pandas e SQL para consolidação de
+                      relatórios de DRE corporativos.
+                    </p>
+                    <h4>Resultado</h4>
+                    <p>
+                      Garantia de estabilidade total na carga de dados e
+                      viabilização das análises horizontal e vertical
+                      financeiras via SQLite, prontas para consumo executivo.
+                    </p>
+                  </div>
+
+                  <!-- Rodapé -->
+                  <div class="project-footer-back">
+                    <div class="project-tags">
+                      <span>Python</span>
+                      <span>Pentaho PDI </span>
+                      <span>SQLite</span>
+                      <span>SQL Avançado </span>
+                      <span>Power BI</span>
+                    </div>
+                    <a
+                      href="https://github.com/andreadcsousa/andrea_sousa_VENA_DRE_122024"
+                      rel="noopener"
+                      target="_blank"
+                      class="github-icon-only-link"
+                      title="Ver no GitHub"
+                    >
+                      <i class="fab fa-github"> </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Projeto CATWEB -->
+          <article
+            class="project-flip-container"
+            data-category="painel"
+            data-area="data-engineering data-analysis business-intelligence"
+            data-business="saude rh"
+            data-type="projeto"
+            data-tool="python power-bi"
+            data-year="2025"
+            data-date="2025-08-10"
+          >
+            <input
+              type="checkbox"
+              id="flip-toggle-catweb"
+              class="flip-toggle"
+            />
+            <div class="project-card-inner">
+              <!-- FRENTE DO CARD -->
+              <div class="card-face card-front">
+                <!-- Título e Botão -->
+                <div class="card-controls-front">
+                  <span class="mini-project-title"
+                    >ETL com Acidentes de Trabalho (CATWEB)
+                  </span>
+                  <label
+                    for="flip-toggle-catweb"
+                    class="btn-flip"
+                    title="Ver detalhes do caso técnico"
+                  >
+                    <i class="fas fa-info-circle"></i>
+                    Ver Case Técnico
+                  </label>
+                </div>
+
+                <!-- Código ou Painel-->
+                <div class="project-media-wrapper">
+                  <iframe
+                    title="Dashboard CATWEB"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiYTY4NzVjOGMtODVmZS00NzMzLWFkNTUtMTgwNmJiZTMzYTdmIiwidCI6ImEzZTU3Zjc1LTU5YTktNDFkOS05ZGIwLTA0YmM0ODg2YWY3NyJ9&pageView=fitToPage"
+                    allowfullscreen="true"
+                  ></iframe>
+                </div>
+              </div>
+              <!-- VERSO DO CARD -->
+              <div class="card-face card-back">
+                <div class="project-info-back">
+                  <!-- Cabeçalho -->
+                  <div class="project-header-back">
+                    <div class="project-top-row">
+                      <span class="project-date">Agosto de 2025</span>
+
+                      <label
+                        for="flip-toggle-catweb"
+                        class="btn-flip-back"
+                        title="Voltar para o Painel"
+                      >
+                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
+                      </label>
+                    </div>
+
+                    <h3>Projeto: ETL com Acidentes de Trabalho (CATWEB)</h3>
+                  </div>
+
+                  <!-- Conteúdo -->
+                  <div class="project-context">
+                    <h4>Situação</h4>
+                    <p>
+                      Bases governamentais de Comunicação de Acidentes de
+                      Trabalho (CAT) altamente corrompidas, contendo strings
+                      desalinhadas e falta de padronização estrutural.
+                    </p>
+                    <h4>Ação</h4>
+                    <p>
+                      Desenvolvimento de um robusto ecossistema de Data Quality
+                      utilizando expressões regulares (Regex) in Python para
+                      higienização, mapeamento e modelagem dimensional alinhada
+                      aos layouts oficiais do eSocial.
+                    </p>
+                    <h4>Resultado</h4>
+                    <p>
+                      Saneamento completo do histórico bruto e publicação de um
+                      painel estratégico no Power BI focado em engenharia de
+                      segurança e compliance.
+                    </p>
+                  </div>
+
+                  <!-- Rodapé -->
+                  <div class="project-footer-back">
+                    <div class="project-tags">
+                      <span>Python</span>
+                      <span>Pandas</span>
+                      <span>Regex </span>
+                      <span>Modelagem Dimensional</span>
+                      <span>Power BI</span>
+                    </div>
+
+                    <a
+                      href="https://github.com/andreadcsousa/projeto_acidentes-trabalho_python_pbi"
+                      rel="noopener"
+                      target="_blank"
+                      class="github-icon-only-link"
+                      title="Ver no GitHub"
+                    >
+                      <i class="fab fa-github"> </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Projeto FIESC -->
+          <article
+            class="project-flip-container"
+            data-category="painel"
+            data-area="data-analysis business-intelligence"
+            data-business="rh"
+            data-type="case"
+            data-tool="python power-bi"
+            data-year="2023"
+            data-date="2023-03-15"
+          >
+            <input type="checkbox" id="flip-toggle-fiesc" class="flip-toggle" />
+            <div class="project-card-inner">
+              <!-- FRENTE DO CARD -->
+              <div class="card-face card-front">
+                <!-- Título e Botão -->
+                <div class="card-controls-front">
+                  <span class="mini-project-title"
+                    >Análise de Profissionais STEAM (FIESC)
+                  </span>
+                  <label
+                    for="flip-toggle-fiesc"
+                    class="btn-flip"
+                    title="Ver detalhes do caso técnico"
+                  >
+                    <i class="fas fa-info-circle"></i>
+                    Ver Case Técnico
+                  </label>
+                </div>
+
+                <!-- Código ou Painel-->
+                <div class="project-media-wrapper">
+                  <iframe
+                    title="Dashboard FIESC STEAM"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiMzQwZGU4OTItOGQwNC00MGRkLTkyMmMtOTliMWI4YWIzZWEyIiwidCI6ImEzZTU3Zjc1LTU5YTktNDFkOS05ZGIwLTA0YmM0ODg2YWY3NyJ9&pageView=fitToPage"
+                    allowfullscreen="true"
+                  ></iframe>
+                </div>
+              </div>
+              <!-- VERSO DO CARD -->
+              <div class="card-face card-back">
+                <div class="project-info-back">
+                  <!-- Cabeçalho -->
+                  <div class="project-header-back">
+                    <div class="project-top-row">
+                      <span class="project-date">Março de 2023</span>
+
+                      <label
+                        for="flip-toggle-fiesc"
+                        class="btn-flip-back"
+                        title="Voltar para o Painel"
+                      >
+                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
+                      </label>
+                    </div>
+
+                    <h3>
+                      Case Técnico: Análise de Profissionais STEAM (FIESC)
+                    </h3>
+                  </div>
+
+                  <!-- Conteúdo -->
+                  <div class="project-context">
+                    <h4>Situação</h4>
+                    <p>
+                      Necessidade do Observatório do Trabalho de mapear os
+                      vetores de atração, comportamento salarial e rotatividade
+                      na indústria para as áreas de Engenharia e Tecnologia.
+                    </p>
+                    <h4>Ação</h4>
+                    <p>
+                      Extração e mineração avançada de microdados públicos do
+                      Novo CAGED utilizando Python para testar hipóteses
+                      estruturais sobre retenção de capital humano e evasão de
+                      mão de obra em Santa Catarina.
+                    </p>
+                    <h4>Resultado</h4>
+                    <p>
+                      Geração de insumos preditivos e descritivos profundos
+                      consolidados em relatórios visuais dinâmicos para
+                      subsidiar tomadas de decisões governamentais e
+                      empresariais no estado.
+                    </p>
+                  </div>
+
+                  <!-- Rodapé -->
+                  <div class="project-footer-back">
+                    <div class="project-tags">
+                      <span>Python</span>
+                      <span>Pandas</span>
+                      <span>Power BI </span>
+                      <span>People Analytics </span>
+                      <span>Inteligência de Mercado</span>
+                    </div>
+                    <a
+                      href="https://github.com/andreadcsousa/andrea_sousa_FIESC_STEAM_032023"
+                      rel="noopener"
+                      target="_blank"
+                      class="github-icon-only-link"
+                      title="Ver no GitHub"
+                    >
+                      <i class="fab fa-github"> </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Projeto COMEX -->
+          <article
+            class="project-flip-container"
+            data-category="codigo"
+            data-area="data-engineering data-analysis"
+            data-business="comercial"
+            data-type="workshop"
+            data-tool="python"
+            data-year="2025"
+            data-date="2025-05-10"
+          >
+            <input type="checkbox" id="flip-toggle-comex" class="flip-toggle" />
+            <div class="project-card-inner">
+              <!-- FRENTE DO CARD -->
+              <div class="card-face card-front">
+                <!-- Título e Botão -->
+                <div class="card-controls-front">
+                  <span class="mini-project-title"
+                    >Coleta e Análise de Dados Públicos (COMEX)
+                  </span>
+                  <label
+                    for="flip-toggle-comex"
+                    class="btn-flip"
+                    title="Ver detalhes do caso técnico"
+                  >
+                    <i class="fas fa-info-circle"></i>
+                    Ver Case Técnico
+                  </label>
+                </div>
+                <!-- Código ou Painel-->
+                <div class="project-media-wrapper codemirror-dark">
+                  <pre><code class="language-python"># Data Scraping Automatizado de Indicadores Econômicos Governamentais
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+def scrape_comex_stat_portal():
+    url = "https://www.gov.br/produtividade-e-comercio-exterior/dados-abertos"
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    
+    # Localização dinâmica dos arquivos zip de importação/exportação
+    download_links = [a['href'] for a in soup.find_all('a', href=True) if '.csv' in a['href']]
+    return download_links</code></pre>
+                </div>
+              </div>
+              <!-- VERSO DO CARD -->
+              <div class="card-face card-back">
+                <div class="project-info-back">
+                  <!-- Cabeçalho -->
+                  <div class="project-header-back">
+                    <div class="project-top-row">
+                      <span class="project-date">Maio de 2025</span>
+
+                      <label
+                        for="flip-toggle-comex"
+                        class="btn-flip-back"
+                        title="Voltar para a Mídia"
+                      >
+                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
+                      </label>
+                    </div>
+
+                    <h3>
+                      Workshop: Coleta e Análise de Dados Públicos (COMEX)
+                    </h3>
+                  </div>
+
+                  <!-- Conteúdo -->
+                  <div class="project-context">
+                    <h4>Situação</h4>
+                    <p>
+                      Falta de barramento ou APIs públicas consolidadas para
+                      extração automatizada de métricas e volumes nacionais
+                      agregados de Importações e Exportações.
+                    </p>
+                    <h4>Ação</h4>
+                    <p>
+                      Construção de uma automação ponta a ponta (Web Scraping)
+                      em Python utilizando as bibliotecas Requests e
+                      BeautifulSoup para minerar os portais federais e mapear os
+                      arquivos base.
+                    </p>
+                    <h4>Resultado</h4>
+                    <p>
+                      Desenvolvimento de um pipeline de ingestão programática
+                      estável rodando em Google Colab, reduzindo o tempo de
+                      coleta manual de dados econômicos a zero.
+                    </p>
+                  </div>
+
+                  <!-- Rodapé -->
+                  <div class="project-footer-back">
+                    <div class="project-tags">
+                      <span>Python</span>
+                      <span>Pandas </span>
+                      <span>BeautifulSoup</span>
+                      <span>Web Scraping </span>
+                      <span>Google Colab</span>
+                    </div>
+
+                    <a
+                      href="https://github.com/andreadcsousa/projeto_comercio-exterior_scraping_python"
+                      rel="noopener"
+                      target="_blank"
+                      class="github-icon-only-link"
+                      title="Ver no GitHub"
+                    >
+                      <i class="fab fa-github"> </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="grid-layout footer-container">
+        <div class="footer-credits">
+          <p>&copy; 2026 Andrea Sousa. Todos os direitos reservados</p>
+          <span>
+            Feito com amor e café — v1 por
+            <a
+              href="https://www.instagram.com/iuricode/"
+              target="_blank"
+              rel="noopener"
+              class="credit-author-link"
+              >Iuri Silva
+            </a>
+          </span>
+        </div>
+        <div class="footer-socials">
+          <a
+            href="mailto:andrea.dcsousa@gmail.com"
+            class="footer-icon-btn"
+            title="E-mail"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
+              <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />
+              <path d="M16 4l-4 4l-4 -4" />
+              <path d="M4 6.5l8 7.5l8 -7.5" />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="footer-icon-btn"
+            title="LinkedIn"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+              />
+              <path d="M8 11l0 5" />
+              <path d="M8 8l0 .01" />
+              <path d="M12 16l0 -5" />
+              <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/andreadcsousa"
+            target="_blank"
+            class="footer-icon-btn"
+            title="GitHub"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/5548988801574"
+            target="_blank"
+            class="footer-icon-btn"
+            title="WhatsApp"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path
+                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1c90tiVy4G8YJYizITBdFzDrABWYtBab0e4YUPN7XOcg"
+            target="_blank"
+            class="footer-icon-btn"
+            title="Currículo"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+              <path
+                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
+              />
+              <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+              <path d="M13 11l1.5 6l1.5 -6" />
+            </svg>
+          </a>
+        </div>
+        <div class="footer-back-to-top">
+          <a
+            href="#"
+            class="btn-top"
+            title="Voltar ao início"
+            onclick="scrollToTop(event)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 15l-6-6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Ações da página -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script type="module" src="./assets/js/projects-page.js"></script>
+  </body>
+</html>

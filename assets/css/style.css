@@ -3,14 +3,14 @@
    ========================================================== */
 
 /* Configurações Globais e Padrões */
-@import url('global.css');
+@import url("global.css");
 
 /* Estruturas Fixas do Layout */
-@import url('header.css');
-@import url('footer.css');
+@import url("header.css");
+@import url("footer.css");
 
 /* Estilos das Seções (Ordem do HTML) */
-@import url('home.css');
-@import url('about.css');
-@import url('projects.css');
-@import url('stack.css');
+@import url("home.css");
+@import url("about.css");
+@import url("projects.css");
+@import url("stack.css");

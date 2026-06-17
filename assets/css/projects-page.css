@@ -1,0 +1,688 @@
+/* ==========================================================================
+   ESTILIZAÇÃO DA NAVEGAÇÃO - HEADER
+   ========================================================================== */
+
+.projects-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.btn-back-home {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.btn-back-home:hover {
+  color: var(--primary-color);
+}
+
+/* Casinha escondida no desktop */
+.home-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Esconde seta e texto */
+  .btn-back-home .fa-arrow-left,
+  .btn-back-home span {
+    display: none;
+  }
+
+  /* Mostra apenas a casinha */
+  .home-icon {
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO DOS FILTROS - MENU DROPDOWN
+   ========================================================================== */
+
+.portfolio-dropdown-menu {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.portfolio-dropdown-menu > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada botão principal do menu dropdown */
+.portfolio-dropdown-menu > ul > li {
+  background-color: var(--bg-light);
+  color: var(--text-gray);
+  border: 1px solid var(--border-color);
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.portfolio-dropdown-menu > ul > li:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-dark);
+}
+
+.portfolio-dropdown-menu > ul > li i {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+/* Comportamento do Submenu Dropdown */
+.dropdown-submenu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  min-width: 200px;
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  margin-top: 1.8px;
+
+  /* Inicia o menu 8px mais para cima para o efeito de "deslizar" */
+  transform: translateY(-8px);
+
+  /* Cria a transição suave de surgimento e descida */
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Elemento pseudo-classe para fechar o gap físico e eliminar o ponto cego */
+.dropdown-submenu::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background: transparent;
+}
+
+.dropdown-submenu li {
+  padding: 10px 16px;
+  color: var(--text-gray);
+  font-size: 1.2rem;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.dropdown-submenu li:hover {
+  background-color: var(--bg-light);
+  color: var(--primary-color);
+}
+
+/* Garante que o fundo do hover não escape pelos cantos arredondados do menu */
+.dropdown-submenu li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.dropdown-submenu li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Exibe o submenu ao passar o mouse */
+.portfolio-dropdown-menu > ul > li:hover .dropdown-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.portfolio-dropdown-menu > ul > li:hover i {
+  transform: rotate(180deg);
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO FLIP CARD - PROJETOS
+   ========================================================================== */
+
+.projects-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 50px !important;
+  width: 100%;
+}
+
+/* Container de perspectiva 3D */
+.project-flip-container {
+  perspective: 1500px;
+  width: 100%;
+}
+
+/* Esconde o checkbox que controla o flip */
+.flip-toggle {
+  display: none !important;
+}
+
+/* O esqueleto que vai girar */
+.project-card-inner {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  text-align: left;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* Quando o checkbox for marcado, o card gira 180 graus */
+.flip-toggle:checked + .project-card-inner {
+  transform: rotateY(-180deg);
+}
+
+/* Configurações comuns para as duas faces do card */
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--bg-light);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   FRENTE DO CARD: DASHBOARD OU PAINEL DE CÓDIGO
+   -------------------------------------------------------------------------- */
+.card-front {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.project-media-wrapper {
+  width: 100%;
+  flex-grow: 1;
+  background-color: var(--bg-dark);
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ocultação da barra inferior e correção das laterais do Power BI */
+.project-media-wrapper iframe {
+  width: 100% !important;
+  /* Fazemos o iframe ficar um pouco mais alto do que o container para empurrar a barra para baixo */
+  height: calc(100% + 61px) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  /* Camufla as faixas cinzentas laterais forçando o fundo do iframe a fundir-se com o preto */
+  background-color: var(--bg-dark) !important;
+  margin-bottom: -61px;
+}
+
+/* Estilização CodeMirror/IDE integrada com o fundo do seu site */
+.project-media-wrapper.codemirror-dark {
+  padding: 28px;
+  overflow-y: auto;
+  background-color: var(--bg-dark) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.project-media-wrapper.codemirror-dark pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.project-media-wrapper.codemirror-dark code {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: #f8f8f2;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.project-media-wrapper.codemirror-dark .hljs {
+  background: transparent !important;
+  font-family: "Fira Code", monospace !important;
+}
+
+/* REALCE DE SINTAXE (Syntax Highlighting) */
+.project-media-wrapper.codemirror-dark .comment {
+  color: #6272a4 !important;
+  font-style: italic;
+}
+
+.project-media-wrapper.codemirror-dark .keyword {
+  color: #ff79c6 !important;
+  font-weight: 600;
+}
+
+.project-media-wrapper.codemirror-dark .function {
+  color: #50fa7b !important;
+}
+
+.project-media-wrapper.codemirror-dark .string {
+  color: #f1fa8c !important;
+}
+
+.project-media-wrapper.codemirror-dark .number {
+  color: #bd93f9 !important;
+}
+
+/* Barra inferior de controle (Frente do Card) */
+.card-controls-front {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #151515;
+  border-top: 1px solid var(--border-color);
+}
+
+.mini-project-title {
+  font-size: 1.6rem;
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+/* Botão "Ver Case" */
+.btn-flip {
+  background-color: var(--border-color);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  font-size: 1.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-flip:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-dark);
+}
+
+/* --------------------------------------------------------------------------
+   VERSO DO CARD: CASE ANALÍTICO (SITUAÇÃO, AÇÃO, RESULTADO)
+   -------------------------------------------------------------------------- */
+.card-back {
+  transform: rotateY(-180deg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.project-info-back {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.project-date {
+  font-size: 1.3rem !important;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-header-back h3 {
+  font-size: 2.2rem !important;
+  color: #ffffff !important;
+  font-family: "Red Hat Display", sans-serif;
+  margin-bottom: 30px;
+}
+
+.project-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin: 0 !important;
+}
+
+.project-tags span {
+  font-size: 1.2rem !important;
+  background-color: var(--border-color) !important;
+  color: #d1d1d1 !important;
+  padding: 5px 12px !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.project-tags span:hover {
+  background-color: var(--primary-hover) !important;
+  color: var(--bg-dark) !important;
+  transform: translateY(-2px);
+}
+
+.project-context h4 {
+  font-size: 1.7rem !important;
+  color: var(--primary-color) !important;
+  margin-top: 18px !important;
+  margin-bottom: 6px !important;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.project-context p {
+  font-size: 1.5rem !important;
+  color: var(--text-gray) !important;
+  line-height: 1.6 !important;
+}
+
+.github-icon-only-link {
+  font-size: 3.2rem !important;
+  color: var(--text-gray) !important;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease !important;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none !important;
+}
+
+.github-icon-only-link:hover {
+  color: var(--primary-color) !important;
+  transform: scale(1.1);
+}
+
+.project-footer-back {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  margin-top: auto !important;
+  padding-top: 20px;
+}
+
+.btn-flip-back {
+  background-color: var(--border-color);
+  color: var(--primary-color);
+  border: 1px solid #333;
+  padding: 8px 16px;
+  font-size: 1.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-flip-back:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-dark);
+}
+
+/* Customização fina da barra de rolagem dos blocos de código */
+.project-media-wrapper.codemirror-dark::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.project-media-wrapper.codemirror-dark::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+.project-media-wrapper.codemirror-dark::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+.project-media-wrapper.codemirror-dark::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Customização fina e unificada da barra de rolagem (Frente e Verso dos Cards) */
+.project-media-wrapper.codemirror-dark::-webkit-scrollbar,
+.project-context::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.project-media-wrapper.codemirror-dark::-webkit-scrollbar-track,
+.project-context::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+.project-media-wrapper.codemirror-dark::-webkit-scrollbar-thumb,
+.project-context::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+.project-media-wrapper.codemirror-dark::-webkit-scrollbar-thumb:hover,
+.project-context::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* ==========================================================================
+   MOBILE
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Evita scroll horizontal */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .grid-layout,
+  .projects-list,
+  .project-flip-container {
+    max-width: 100%;
+  }
+
+  .project-card-inner {
+    height: 350px;
+  }
+
+  .card-face {
+    height: 350px;
+  }
+
+  /* Frente */
+  .card-controls-front {
+    padding: 14px 18px;
+  }
+
+  .card-front {
+    /* Quando o card virar, a frente não pode roubar o toque */
+    pointer-events: auto;
+  }
+  .flip-toggle:checked + .project-card-inner .card-front {
+    pointer-events: none !important; /* Desativa a frente quando o verso estiver ativo */
+  }
+
+  /* Garante que o verso receba o scroll */
+  .flip-toggle:checked + .project-card-inner .card-back {
+    pointer-events: auto !important;
+    visibility: visible !important;
+  }
+
+  .flip-toggle:checked + .project-card-inner .project-media-wrapper iframe,
+  .flip-toggle:checked + .project-card-inner .project-media-wrapper {
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+
+  .mini-project-title {
+    font-size: 1.4rem;
+    max-width: calc(100% - 70px);
+  }
+
+  /* Oculta texto do botão */
+  .btn-flip {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .btn-flip i {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+
+  /* Verso */
+  .card-back {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    padding: 20px;
+  }
+
+  /* Área de conteúdo com scroll */
+  .project-context {
+    flex: 1 1 auto !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    pointer-events: auto !important;
+    padding-bottom: 20px !important;
+    padding-right: 10px;
+  }
+
+  /* Footer sempre visível */
+  .project-info-back {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .project-header-back {
+    flex: 0 0 auto;
+  }
+
+  /* Menor espaço entre cards */
+  .projects-list {
+    gap: 30px !important;
+  }
+
+  .project-header-back h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.9rem !important;
+  }
+
+  .project-footer-back {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: #141414 !important;
+    z-index: 2 !important;
+    border-top: 1px solid #262626 !important;
+    padding: 15px 20px !important;
+    margin: 0 !important;
+  }
+
+  /* Oculta texto do botão voltar */
+  .btn-flip-back {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .btn-flip-back i {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+
+  /* Remove sombras e destaques de toque */
+  .btn-flip,
+  .btn-flip-back,
+  label,
+  a,
+  .github-icon-only-link,
+  .footer-icon-btn,
+  .btn-top,
+  .portfolio-dropdown-menu li {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    box-shadow: none !important;
+  }
+
+  .btn-flip:focus,
+  .btn-flip-back:focus,
+  label:focus,
+  a:focus,
+  .github-icon-only-link:focus,
+  .footer-icon-btn:focus,
+  .btn-top:focus {
+    outline: none;
+    box-shadow: none !important;
+  }
+
+  /* GitHub alinhado */
+  .github-icon-only-link {
+    font-size: 3rem !important;
+  }
+
+  /* Código */
+  .project-media-wrapper.codemirror-dark {
+    padding: 18px;
+  }
+
+  .project-media-wrapper.codemirror-dark code {
+    font-size: 1.2rem;
+  }
+
+  /* Tags */
+  .project-tags {
+    gap: 6px !important;
+  }
+
+  .project-tags span {
+    font-size: 1.1rem !important;
+  }
+
+  /* Filtros */
+
+  .portfolio-dropdown-menu > ul {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .portfolio-dropdown-menu > ul > li {
+    font-size: 1.2rem;
+    padding: 10px 14px;
+  }
+}
