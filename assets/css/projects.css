@@ -184,3 +184,32 @@
     padding: 0 20px;
   }
 }
+
+/* ==========================================================================
+   BLOCO DE CONTEXTO DE NEGÓCIO (ADICIONADO PARA O INDEX DINÂMICO)
+   ========================================================================== */
+.project-business-context {
+  margin: 15px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Espaçamento equilibrado entre as linhas de texto */
+}
+
+.project-business-context p {
+  font-size: 1.4rem; /* Alinhado com o padrão de texto do seu projects.css */
+  line-height: 1.5;
+  color: var(--text-gray); /* Usa a sua variável padrão de cinza */
+  margin: 0;
+}
+
+/* Estilo para destacar as palavras Situação, Ação e Resultado */
+.project-business-context .context-label {
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: var(--primary-color); /* Usa o azul/ciano do seu tema */
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-right: 4px;
+}

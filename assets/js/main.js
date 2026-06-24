@@ -14,6 +14,7 @@ import {
 } from "./modals.js";
 import { initStackInspector } from "./stack.js";
 import { scrollToTop } from "./scroll.js";
+import { initRecentProjects } from "./recent-projects.js";
 
 // Disponibiliza as funções para o HTML conseguir chamá-las no onclick
 window.changeSectionTab = changeSectionTab;
@@ -26,4 +27,5 @@ window.scrollToTop = scrollToTop;
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
   initStackInspector();
+  initRecentProjects();
 });

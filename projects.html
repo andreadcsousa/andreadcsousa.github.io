@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
+  <!-- Configurações da página -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,8 +51,8 @@
       </div>
     </header>
 
+    <!-- ==================== VITRINE DE PROJETOS ==================== -->
     <main class="grid-layout" style="padding-top: 120px; padding-bottom: 80px">
-      <!-- ==================== SEÇÃO: VITRINE DE PROJETOS ==================== -->
       <section id="s-projects" style="border: none; padding: 0">
         <!-- Título e descrição da seção -->
         <h2>Meus Projetos</h2>
@@ -63,135 +64,6 @@
         <!-- Filtros de projeto Avançados (Dropdowns) -->
         <nav class="portfolio-dropdown-menu">
           <ul>
-            <!-- Categoria de Projeto -->
-            <li>
-              Categoria <i class="fa fa-angle-down"></i>
-              <ul class="dropdown-submenu">
-                <li
-                  onclick="
-                    setDropdownFilter('category', 'all', 'Categoria', event)
-                  "
-                >
-                  Todos as categorias
-                </li>
-                <li
-                  onclick="
-                    setDropdownFilter('category', 'codigo', 'Código', event)
-                  "
-                >
-                  Código
-                </li>
-                <li
-                  onclick="
-                    setDropdownFilter('category', 'painel', 'Painel', event)
-                  "
-                >
-                  Painel
-                </li>
-              </ul>
-            </li>
-
-            <!-- Área de Atuação -->
-            <li>
-              Área <i class="fa fa-angle-down"></i>
-              <ul class="dropdown-submenu">
-                <li onclick="setDropdownFilter('area', 'all', 'Area', event)">
-                  Todas as áreas
-                </li>
-                <li
-                  onclick="
-                    setDropdownFilter('area', 'data-analysis', 'Área', event)
-                  "
-                >
-                  Análise de Dados
-                </li>
-                <li
-                  onclick="
-                    setDropdownFilter(
-                      'area',
-                      'business-intelligence',
-                      'Business Intelligence',
-                      event,
-                    )
-                  "
-                >
-                  Business Intelligence
-                </li>
-                <li
-                  onclick="
-                    setDropdownFilter(
-                      'area',
-                      'data-engineering',
-                      'Engenharia de Dados',
-                      event,
-                    )
-                  "
-                >
-                  Engenharia de Dados
-                </li>
-              </ul>
-            </li>
-
-            <!-- Setor de Negócio -->
-            <li>
-              Negócio <i class="fa fa-angle-down"></i>
-              <ul class="dropdown-submenu">
-                <li
-                  onclick="
-                    setDropdownFilter('business', 'all', 'Negócio', event)
-                  "
-                >
-                  Todos os setores
-                </li>
-                <li
-                  onclick="
-                    setDropdownFilter('business', 'comercial', 'Comercial')
-                  "
-                >
-                  Comercial / Vendas
-                </li>
-                <li
-                  onclick="
-                    setDropdownFilter(
-                      'business',
-                      'e-commerce',
-                      'E-commerce',
-                      event,
-                    )
-                  "
-                >
-                  E-commerce
-                </li>
-                <li
-                  onclick="
-                    setDropdownFilter(
-                      'business',
-                      'financeiro',
-                      'Financeiro',
-                      event,
-                    )
-                  "
-                >
-                  Financeiro
-                </li>
-                <li onclick="setDropdownFilter('business', 'rh', 'RH', event)">
-                  Recursos Humanos
-                </li>
-                <li
-                  onclick="
-                    setDropdownFilter(
-                      'business',
-                      'saude',
-                      'Saúde & Segurança',
-                      event,
-                    )
-                  "
-                >
-                  Saúde & Segurança
-                </li>
-              </ul>
-            </li>
-
             <!-- Tipo de Projeto -->
             <li>
               Tipo <i class="fa fa-angle-down"></i>
@@ -228,38 +100,71 @@
               </ul>
             </li>
 
-            <!-- Ferramentas Utilizadas -->
+            <!-- Setor de Negócio -->
             <li>
-              Ferramenta <i class="fa fa-angle-down"></i>
+              Negócio <i class="fa fa-angle-down"></i>
               <ul class="dropdown-submenu">
                 <li
                   onclick="
-                    setDropdownFilter('tool', 'all', 'Ferramenta', event)
+                    setDropdownFilter('business', 'all', 'Negócio', event)
                   "
                 >
-                  Todas as ferramentas
-                </li>
-                <li
-                  onclick="setDropdownFilter('tool', 'python', 'Python', event)"
-                >
-                  Python
-                </li>
-                <li onclick="setDropdownFilter('tool', 'sql', 'SQL', event)">
-                  SQL
+                  Todos os setores
                 </li>
                 <li
                   onclick="
-                    setDropdownFilter('tool', 'power-bi', 'Power BI', event)
+                    setDropdownFilter(
+                      'business',
+                      'comercial',
+                      'Comercial',
+                      event,
+                    )
                   "
                 >
-                  Power BI
+                  Comercial / Vendas
                 </li>
                 <li
                   onclick="
-                    setDropdownFilter('tool', 'streamlit', 'Streamlit', event)
+                    setDropdownFilter('business', 'economia', 'Economia', event)
                   "
                 >
-                  Streamlit
+                  Economia
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter(
+                      'business',
+                      'financeiro',
+                      'Financeiro',
+                      event,
+                    )
+                  "
+                >
+                  Financeiro
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter(
+                      'business',
+                      'marketing',
+                      'Marketing',
+                      event,
+                    )
+                  "
+                >
+                  Marketing
+                </li>
+                <li
+                  onclick="
+                    setDropdownFilter(
+                      'business',
+                      'emprego',
+                      'Emprego e Renda',
+                      event,
+                    )
+                  "
+                >
+                  Emprego e Renda
                 </li>
               </ul>
             </li>
@@ -276,20 +181,11 @@
                 <li onclick="setDropdownFilter('year', '2026', '2026', event)">
                   2026
                 </li>
-                <li onclick="setDropdownFilter('year', '2025', '2025', event)">
-                  2025
-                </li>
                 <li onclick="setDropdownFilter('year', '2024', '2024', event)">
                   2024
                 </li>
                 <li onclick="setDropdownFilter('year', '2023', '2023', event)">
                   2023
-                </li>
-                <li onclick="setDropdownFilter('year', '2022', '2022', event)">
-                  2022
-                </li>
-                <li onclick="setDropdownFilter('year', '2021', '2021', event)">
-                  2021
                 </li>
               </ul>
             </li>
@@ -298,14 +194,236 @@
 
         <!-- Lista de Projetos -->
         <div class="projects-list">
-          <!-- 1. Projeto DADOSFERA -->
+          <!-- Projeto NOVADRIVE - 20/06/2026 -->
           <article
             class="project-flip-container"
-            data-category="codigo"
-            data-area="data-engineering data-analysis business-intelligence"
-            data-business="e-commerce"
+            data-image="assets/image/projeto_bc_engenheiro.jpg"
+            data-category="painel"
+            data-area="business-intelligence data-analysis data-engineering"
+            data-business="comercial"
+            data-type="estudo"
+            data-tool="sql looker"
+            data-year="2026"
+            data-date="2026-06-20"
+          >
+            <input
+              type="checkbox"
+              id="flip-toggle-novadrive"
+              class="flip-toggle"
+            />
+            <div class="project-card-inner">
+              <!-- FRENTE DO CARD -->
+              <div class="card-face card-front">
+                <!-- Título e Botão -->
+                <div class="card-controls-front">
+                  <span class="mini-project-title"
+                    >Estudo: Bootcamp Engenheiro de Dados (EIA)
+                  </span>
+                  <label
+                    for="flip-toggle-novadrive"
+                    class="btn-flip"
+                    title="Ver detalhes do caso técnico"
+                  >
+                    <i class="fas fa-info-circle"></i>
+                    Ver case
+                  </label>
+                </div>
+                <!-- Código ou Painel -->
+                <div class="looker-media-wrapper project-media-wrapper">
+                  <iframe
+                    src="https://datastudio.google.com/embed/reporting/0ba12f8b-e2da-4c80-a597-fe1cd7ec20f9/page/9so1F"
+                    allowfullscreen="true"
+                  ></iframe>
+                </div>
+              </div>
+              <!-- VERSO DO CARD -->
+              <div class="card-face card-back">
+                <div class="project-info-back">
+                  <!-- Cabeçalho -->
+                  <div class="project-header-back">
+                    <div class="project-top-row">
+                      <span class="project-date">Junho de 2026</span>
+
+                      <label for="flip-toggle-novadrive" class="btn-flip-back">
+                        <i class="fas fa-undo-alt"></i> Voltar ao painel
+                      </label>
+                    </div>
+
+                    <h3>Estudo: Bootcamp Engenheiro de Dados (EIA)</h3>
+                  </div>
+
+                  <!-- Conteúdo -->
+                  <div class="project-context">
+                    <h4>Situação</h4>
+                    <p>
+                      Necessidade de estruturar uma arquitetura moderna de dados
+                      (Modern Data Stack) para a concessionária NovaDrive,
+                      integrando dados transacionais de um banco PostgreSQL em
+                      nuvem a um Data Warehouse analítico, sob regras rígidas de
+                      segurança corporativa (MFA).
+                    </p>
+                    <h4>Ação</h4>
+                    <p>
+                      Configurei um ambiente robusto na AWS EC2 via Docker para
+                      rodar o Apache Airflow, expandi o armazenamento de disco
+                      logicamente via terminal Linux e implementei autenticação
+                      criptográfica por par de chaves RSA (.pub/.p8) para
+                      contornar o MFA do Snowflake. Realizei as transformações
+                      via dbt e conectei ao Looker Studio.
+                    </p>
+                    <h4>Resultado</h4>
+                    <p>
+                      Pipeline 100% automatizado, seguro e orquestrado,
+                      resultando na criação de uma camada de dados analítica
+                      auditável e na entrega de um dashboard executivo de vendas
+                      para tomada de decisões comerciais.
+                    </p>
+                  </div>
+
+                  <!-- Rodapé -->
+                  <div class="project-footer-back">
+                    <div class="project-tags">
+                      <span>PostgreSQL</span>
+                      <span>Infraestrutura (AWS/Docker)</span>
+                      <span>Apache Airflow</span>
+                      <span>Segurança (Chaves RSA)</span>
+                      <span>Snowflake & dbt</span>
+                      <span>Google Data Studio</span>
+                    </div>
+                    <a
+                      href="https://github.com/andreadcsousa/escolaia_bootcamp_dataengineer_looker"
+                      rel="noopener"
+                      target="_blank"
+                      class="github-icon-only-link"
+                      title="Ver no GitHub"
+                    >
+                      <i class="fab fa-github"> </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto JAAR - 21/03/2026 -->
+          <article
+            class="project-flip-container"
+            data-image="assets/image/projeto_jaarconsult.jpg"
+            data-category="painel"
+            data-area="business-intelligence data-analysis"
+            data-business="comercial"
             data-type="case"
-            data-tool="python streamlit"
+            data-tool="power-bi"
+            data-year="2026"
+            data-date="2026-03-21"
+          >
+            <input type="checkbox" id="flip-toggle-jaar" class="flip-toggle" />
+            <div class="project-card-inner">
+              <!-- FRENTE DO CARD -->
+              <div class="card-face card-front">
+                <!-- Título e Botão -->
+                <div class="card-controls-front">
+                  <span class="mini-project-title"
+                    >Case Técnico: Análise de Promoções (JAAR CONSULT)
+                  </span>
+                  <label
+                    for="flip-toggle-jaar"
+                    class="btn-flip"
+                    title="Ver detalhes do caso técnico"
+                  >
+                    <i class="fas fa-info-circle"></i>
+                    Ver case
+                  </label>
+                </div>
+                <!-- Código ou Painel -->
+                <div class="project-media-wrapper card-promo-container">
+                  <img
+                    src="assets/image/projeto_jaarconsult.jpg"
+                    class="img-promo-fit"
+                    alt="Dashboard de Análise Comercial e Eficiência de Promoções no Power BI"
+                  />
+                </div>
+              </div>
+              <!-- VERSO DO CARD -->
+              <div class="card-face card-back">
+                <div class="project-info-back">
+                  <!-- Cabeçalho -->
+                  <div class="project-header-back">
+                    <div class="project-top-row">
+                      <span class="project-date">Março de 2026</span>
+
+                      <label for="flip-toggle-jaar" class="btn-flip-back">
+                        <i class="fas fa-undo-alt"></i> Voltar ao painel
+                      </label>
+                    </div>
+
+                    <h3>Case Técnico: Análise de Promoções (JAAR CONSULT)</h3>
+                  </div>
+
+                  <!-- Conteúdo -->
+                  <div class="project-context">
+                    <h4>Situação</h4>
+                    <p>
+                      Uma grande corporação global de varejo investia
+                      agressivamente em campanhas de marketing e descontos, mas
+                      carecia de rastreabilidade para medir se as promoções
+                      impulsionavam o lucro operacional de forma saudável ou se
+                      estavam apenas canibalizando a margem líquida dos SKUs
+                      líderes.
+                    </p>
+                    <h4>Ação</h4>
+                    <p>
+                      Reestruturei um modelo Snowflake ineficiente para Star
+                      Schema, implementei mais de 10 métricas analíticas e
+                      temporais em DAX para isolar variações de preço/custo sob
+                      diferentes contextos de filtro, desenhei um layout fluido
+                      de duas páginas (Executivo e Tático) e apliquei governança
+                      corporativa via Row-Level Security (RLS) dinâmico por
+                      país.
+                    </p>
+                    <h4>Resultado</h4>
+                    <p>
+                      Entrega de uma solução robusta que mapeou com exatidão a
+                      canibalização orgânica da margem em campanhas com
+                      descontos agressivos e revelou forte concentração de
+                      receita (efeito Curva ABC), munindo os gestores de dados
+                      para tomada de decisões comerciais preventivas.
+                    </p>
+                  </div>
+
+                  <!-- Rodapé -->
+                  <div class="project-footer-back">
+                    <div class="project-tags">
+                      <span>Power BI</span>
+                      <span>DAX </span>
+                      <span>Modelagem de Dados</span>
+                      <span>Star Schema</span>
+                      <span>RLS Dinâmico </span>
+                    </div>
+                    <a
+                      href="https://github.com/andreadcsousa/andrea_sousa_JAAR_PBI_032026"
+                      rel="noopener"
+                      target="_blank"
+                      class="github-icon-only-link"
+                      title="Ver no GitHub"
+                    >
+                      <i class="fab fa-github"> </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto DADOSFERA - 15/02/2026 -->
+          <article
+            class="project-flip-container"
+            data-image="assets/image/projeto_dadosfera.jpg"
+            data-category="painel"
+            data-area="data-engineering data-analysis business-intelligence"
+            data-business="comercial marketing"
+            data-type="case"
+            data-tool="python power-bi"
             data-year="2026"
             data-date="2026-02-15"
           >
@@ -320,7 +438,7 @@
                 <!-- Título e Botão -->
                 <div class="card-controls-front">
                   <span class="mini-project-title"
-                    >Plataforma de Dados com IA (DADOSFERA)
+                    >Case Técnico: Plataforma de Dados com IA (DADOSFERA)
                   </span>
                   <label
                     for="flip-toggle-dadosfera"
@@ -328,25 +446,16 @@
                     title="Ver detalhes do caso técnico"
                   >
                     <i class="fas fa-info-circle"></i>
-                    Ver Case Técnico
+                    Ver case
                   </label>
                 </div>
                 <!-- Código ou Painel-->
-                <div class="project-media-wrapper codemirror-dark">
-                  <pre><code class="language-python"># PoC Escalável - Ingestão e Enriquecimento de Catálogo com GenAI
-                    
-import dadosfera
-from openai import OpenAI
-
-def process_ecommerce_catalog(dataframe):
-    # Processando 1.4M de registros através das camadas RAW -> Trusted -> Curated
-    catalog_curated = dataframe.filter(["product_id", "raw_description"])
-
-    # Enriquecimento Semântico via LLM
-    client = OpenAI(api_key="sk-...")
-
-    return enrich_metadata_with_llm(client, catalog_curated)
-                  </code></pre>
+                <div class="project-media-wrapper">
+                  <iframe
+                    title="Dashboard DADOSFERA"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNjhmNDg5MWMtMGU0Yi00ZjI5LTg5MTMtNTRiNTM5Y2RkOTAzIiwidCI6ImEzZTU3Zjc1LTU5YTktNDFkOS05ZGIwLTA0YmM0ODg2YWY3NyJ9&pageView=fitToPage"
+                    allowfullscreen="true"
+                  ></iframe>
                 </div>
               </div>
               <!-- VERSO DO CARD -->
@@ -359,7 +468,7 @@ def process_ecommerce_catalog(dataframe):
 
                       <label for="flip-toggle-dadosfera" class="btn-flip-back">
                         <i class="fas fa-undo-alt"></i>
-                        Voltar ao Painel
+                        Voltar ao painel
                       </label>
                     </div>
 
@@ -373,21 +482,29 @@ def process_ecommerce_catalog(dataframe):
                     <h4>Situação</h4>
                     <p>
                       Necessidade de estruturar uma Prova de Conceito (PoC) para
-                      um e-commerce contendo volumetria expressiva de 1,4M de
-                      registros, sem taxonomia definida no catálogo.
+                      um e-commerce com volumetria expressiva de 1,4 milhão de
+                      registros (Amazon Products Dataset), cujo catálogo sofria
+                      com falta de padronização, ausência de taxonomia comercial
+                      definida e incapacidade de segmentação para sistemas de
+                      recomendação.
                     </p>
                     <h4>Ação</h4>
                     <p>
-                      Implementação de arquitetura moderna de dados em camadas
-                      (RAW à Curated) dentro do ecossistema Dadosfera SaaS,
-                      utilizando pipelines Python integrados à API da OpenAI
-                      para categorização semântica automática.
+                      Implementei uma arquitetura moderna de dados em camadas
+                      (RAW, Standardized, Enriched e Curated) utilizando a
+                      plataforma Dadosfera SaaS. Desenvolvi pipelines de
+                      processamento em Python integrados à API da OpenAI para
+                      realizar a classificação semântica e o tagueamento
+                      inteligente em lote dos SKUs, além de construir um Data
+                      App interativo.
                     </p>
                     <h4>Resultado</h4>
                     <p>
-                      Criação de um catálogo enriquecido e um Data App
-                      interativo em Streamlit/Metabase, provando a viabilidade
-                      de tagueamento inteligente em escala.
+                      Validação com sucesso da PoC, provando a viabilidade
+                      técnica e financeira de substituição da arquitetura
+                      tradicional por IA em escala, culminando na entrega de um
+                      catálogo 100% enriquecido consumível via Metabase e uma
+                      aplicação funcional em Streamlit.
                     </p>
                   </div>
 
@@ -396,9 +513,9 @@ def process_ecommerce_catalog(dataframe):
                     <div class="project-tags">
                       <span>Python</span>
                       <span>GenAI / LLM </span>
+                      <span>Power BI</span>
                       <span>Streamlit</span>
                       <span>Metabase </span>
-                      <span>Modelagem Dimensional</span>
                     </div>
 
                     <a
@@ -416,117 +533,17 @@ def process_ecommerce_catalog(dataframe):
             </div>
           </article>
 
-          <!-- 2. Projeto JAAR -->
+          <!-- Projeto VENA - 22/12/2024 -->
           <article
             class="project-flip-container"
+            data-image="assets/image/projeto_vena.jpg"
             data-category="painel"
-            data-area="business-intelligence data-analysis"
-            data-business="comercial"
-            data-type="case"
-            data-tool="power-bi"
-            data-year="2026"
-            data-date="2026-03-16"
-          >
-            <input type="checkbox" id="flip-toggle-jaar" class="flip-toggle" />
-            <div class="project-card-inner">
-              <!-- FRENTE DO CARD -->
-              <div class="card-face card-front">
-                <!-- Título e Botão -->
-                <div class="card-controls-front">
-                  <span class="mini-project-title"
-                    >Análise de Promoções (JAAR CONSULT)
-                  </span>
-                  <label
-                    for="flip-toggle-jaar"
-                    class="btn-flip"
-                    title="Ver detalhes do caso técnico"
-                  >
-                    <i class="fas fa-info-circle"></i>
-                    Ver Case Técnico
-                  </label>
-                </div>
-                <!-- Código ou Painel -->
-                <div class="project-media-wrapper">
-                  <iframe
-                    title="Dashboard JAAR CONSULT"
-                    src="URL_DO_SEU_EMBED_DO_POWERBI_AQUI"
-                    allowfullscreen="true"
-                  ></iframe>
-                </div>
-              </div>
-              <!-- VERSO DO CARD -->
-              <div class="card-face card-back">
-                <div class="project-info-back">
-                  <!-- Cabeçalho -->
-                  <div class="project-header-back">
-                    <div class="project-top-row">
-                      <span class="project-date">Março de 2026</span>
-
-                      <label for="flip-toggle-jaar" class="btn-flip-back">
-                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
-                      </label>
-                    </div>
-
-                    <h3>Case Técnico: Análise de Promoções (JAAR CONSULT)</h3>
-                  </div>
-
-                  <!-- Conteúdo -->
-                  <div class="project-context">
-                    <h4>Situação</h4>
-                    <p>
-                      A diretoria comercial não conseguia rastrear quais
-                      campanhas promocionais de varejo de fato geravam margem ou
-                      quais canibalizavam o lucro operacional.
-                    </p>
-                    <h4>Ação</h4>
-                    <p>
-                      Modelagem dimensional completa baseada em Star Schema,
-                      construção de cálculos complexos e contextuais em DAX para
-                      isolar o efeito preço e implementação de Row-Level
-                      Security dinâmico.
-                    </p>
-                    <h4>Resultado</h4>
-                    <p>
-                      Entrega de um ecossistema analítico de ponta a ponta que
-                      revelou gargalos crônicos na margem, viabilizando ajustes
-                      preventivos nas campanhas subsequentes.
-                    </p>
-                  </div>
-
-                  <!-- Rodapé -->
-                  <div class="project-footer-back">
-                    <div class="project-tags">
-                      <span>Power BI</span>
-                      <span>DAX </span>
-                      <span>Modelagem de Dados</span>
-                      <span>RLS Dinâmico </span>
-                      <span>Star Schema</span>
-                    </div>
-                    <a
-                      href="https://github.com/andreadcsousa/andrea_sousa_JAAR_PBI_032026"
-                      rel="noopener"
-                      target="_blank"
-                      class="github-icon-only-link"
-                      title="Ver no GitHub"
-                    >
-                      <i class="fab fa-github"> </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- 3. Projeto VENA -->
-          <article
-            class="project-flip-container"
-            data-category="codigo"
             data-area="data-engineering data-analysis business-intelligence"
             data-business="financeiro"
             data-type="case"
-            data-tool="python sql"
+            data-tool="python sql power-bi"
             data-year="2024"
-            data-date="2024-12-20"
+            data-date="2024-12-22"
           >
             <input type="checkbox" id="flip-toggle-vena" class="flip-toggle" />
             <div class="project-card-inner">
@@ -535,7 +552,7 @@ def process_ecommerce_catalog(dataframe):
                 <!-- Título e Botão -->
                 <div class="card-controls-front">
                   <span class="mini-project-title"
-                    >Otimização ETL e Análise Financeira (VENA)
+                    >Case Técnico: Otimização ETL e Análise Financeira (VENA)
                   </span>
                   <label
                     for="flip-toggle-vena"
@@ -543,28 +560,16 @@ def process_ecommerce_catalog(dataframe):
                     title="Ver detalhes do caso técnico"
                   >
                     <i class="fas fa-info-circle"></i>
-                    Ver Case Técnico
+                    Ver case
                   </label>
                 </div>
                 <!-- Código ou Painel -->
-                <div class="project-media-wrapper codemirror-dark">
-                  <pre><code class="language-sql">-- Modelagem e Fechamento de DRE no SQLite via SQL Avançado
-
-WITH RECURSIVE dre_tree AS (
-    SELECT id, conta, pai_id, 0 as nivel
-    FROM plano_contas
-    UNION ALL
-    SELECT c.id, c.conta, c.pai_id, t.nivel + 1
-    FROM plano_contas c
-    JOIN dre_tree t ON c.pai_id = t.id
-)
-SELECT 
-    t.conta,
-    SUM(f.valor) as valor_total,
-    (SUM(f.valor) / (SELECT SUM(valor) FROM fatos WHERE conta_id = 'RECEITA_BRUTA')) * 100 as analise_vertical
-FROM dre_tree t
-LEFT JOIN lancamentos_fatos f ON t.id = f.conta_id
-GROUP BY t.conta;</code></pre>
+                <div class="project-media-wrapper">
+                  <iframe
+                    title="Dashboard VENA"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiY2RiZTg1NmItMDllZi00M2FjLTgyNTAtYWM5NzYwNjZlZmIyIiwidCI6ImEzZTU3Zjc1LTU5YTktNDFkOS05ZGIwLTA0YmM0ODg2YWY3NyJ9&pageView=fitToPage"
+                    allowfullscreen="true"
+                  ></iframe>
                 </div>
               </div>
               <!-- VERSO DO CARD -->
@@ -580,7 +585,7 @@ GROUP BY t.conta;</code></pre>
                         class="btn-flip-back"
                         title="Voltar para a Mídia"
                       >
-                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
+                        <i class="fas fa-undo-alt"></i> Voltar ao painel
                       </label>
                     </div>
 
@@ -593,22 +598,29 @@ GROUP BY t.conta;</code></pre>
                   <div class="project-context">
                     <h4>Situação</h4>
                     <p>
-                      Existência de gargalos críticos, dados truncados e quebras
-                      constantes em pipelines legados construídos originalmente
-                      no Pentaho PDI.
+                      Desafio técnico para auditar e corrigir uma quebra de
+                      pipeline financeiro onde o Resultado Gerencial final de
+                      uma Demonstração do Resultado do Exercício (DRE) não batia
+                      com os arquivos fontes originais devido a erros ocultos em
+                      um fluxo legado no Pentaho PDI e corrupção de formatos de
+                      data no banco SQLite.
                     </p>
                     <h4>Ação</h4>
                     <p>
-                      Realização de auditoria técnica minuciosa nos fluxos,
-                      seguida por uma refatoração integral utilizando scripts
-                      Python estruturados com Pandas e SQL para consolidação de
-                      relatórios de DRE corporativos.
+                      Realizei uma análise de causa raiz (Root Cause Analysis)
+                      para tratar o campo nulo de data (MesRef), corrigi as
+                      inconsistências de integridade do pipeline de staging do
+                      Pentaho e refatorei de ponta a ponta as transformações
+                      lógicas em scripts Python (Pandas) conectados ao SQLite.
+                      Por fim, montei a DRE com análises verticais e horizontais
+                      estruturadas.
                     </p>
                     <h4>Resultado</h4>
                     <p>
-                      Garantia de estabilidade total na carga de dados e
-                      viabilização das análises horizontal e vertical
-                      financeiras via SQLite, prontas para consumo executivo.
+                      Saneamento completo e validação das regras de negócio
+                      contábeis, garantindo a exatidão matemática do Resultado
+                      Gerencial e gerando um relatório financeiro confiável e
+                      auditável para tomada de decisão executiva.
                     </p>
                   </div>
 
@@ -616,9 +628,9 @@ GROUP BY t.conta;</code></pre>
                   <div class="project-footer-back">
                     <div class="project-tags">
                       <span>Python</span>
-                      <span>Pentaho PDI </span>
+                      <span>Pandas</span>
                       <span>SQLite</span>
-                      <span>SQL Avançado </span>
+                      <span>Pentaho (PDI)</span>
                       <span>Power BI</span>
                     </div>
                     <a
@@ -636,16 +648,17 @@ GROUP BY t.conta;</code></pre>
             </div>
           </article>
 
-          <!-- 4. Projeto CATWEB -->
+          <!-- Projeto CATWEB - 25/07/2024 -->
           <article
             class="project-flip-container"
+            data-image="assets/image/projeto_catweb.jpg"
             data-category="painel"
             data-area="data-engineering data-analysis business-intelligence"
-            data-business="saude rh"
+            data-business="emprego"
             data-type="projeto"
             data-tool="python power-bi"
-            data-year="2025"
-            data-date="2025-08-10"
+            data-year="2024"
+            data-date="2024-07-25"
           >
             <input
               type="checkbox"
@@ -658,7 +671,7 @@ GROUP BY t.conta;</code></pre>
                 <!-- Título e Botão -->
                 <div class="card-controls-front">
                   <span class="mini-project-title"
-                    >ETL com Acidentes de Trabalho (CATWEB)
+                    >Projeto: ETL com Acidentes de Trabalho (CATWEB)
                   </span>
                   <label
                     for="flip-toggle-catweb"
@@ -666,7 +679,7 @@ GROUP BY t.conta;</code></pre>
                     title="Ver detalhes do caso técnico"
                   >
                     <i class="fas fa-info-circle"></i>
-                    Ver Case Técnico
+                    Ver case
                   </label>
                 </div>
 
@@ -685,14 +698,14 @@ GROUP BY t.conta;</code></pre>
                   <!-- Cabeçalho -->
                   <div class="project-header-back">
                     <div class="project-top-row">
-                      <span class="project-date">Agosto de 2025</span>
+                      <span class="project-date">Julho de 2024</span>
 
                       <label
                         for="flip-toggle-catweb"
                         class="btn-flip-back"
                         title="Voltar para o Painel"
                       >
-                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
+                        <i class="fas fa-undo-alt"></i> Voltar ao painel
                       </label>
                     </div>
 
@@ -703,22 +716,30 @@ GROUP BY t.conta;</code></pre>
                   <div class="project-context">
                     <h4>Situação</h4>
                     <p>
-                      Bases governamentais de Comunicação de Acidentes de
-                      Trabalho (CAT) altamente corrompidas, contendo strings
-                      desalinhadas e falta de padronização estrutural.
+                      Iniciativa própria para analisar o histórico nacional de
+                      Comunicação de Acidentes de Trabalho (CAT) a partir de
+                      bases públicas instáveis, que sofrem alterações frequentes
+                      de formato/tipagem ao longo do tempo e possuem campos de
+                      texto truncados (cortados por limite de caracteres),
+                      impossibilitando análises diretas.
                     </p>
                     <h4>Ação</h4>
                     <p>
-                      Desenvolvimento de um robusto ecossistema de Data Quality
-                      utilizando expressões regulares (Regex) in Python para
-                      higienização, mapeamento e modelagem dimensional alinhada
-                      aos layouts oficiais do eSocial.
+                      Desenvolvi um pipeline de higienização e Data Quality em
+                      Python (Pandas) para tratar strings corrompidas e
+                      normalizar os textos truncados através de dicionários
+                      mapeados com as tabelas oficiais do eSocial. Apliquei
+                      Feature Engineering para derivar a idade exata do
+                      trabalhador na data do evento e estruturei um modelo
+                      dimensional de dados.
                     </p>
                     <h4>Resultado</h4>
                     <p>
-                      Saneamento completo do histórico bruto e publicação de um
-                      painel estratégico no Power BI focado em engenharia de
-                      segurança e compliance.
+                      Saneamento completo da base histórica e criação de um
+                      dashboard estratégico e dinâmico no Power BI dividido por
+                      temas (Visão Geral, Perfil do Acidentado e Causas das
+                      Lesões), permitindo o cruzamento ágil de insights para
+                      engenharia de segurança e auditoria de riscos.
                     </p>
                   </div>
 
@@ -747,12 +768,147 @@ GROUP BY t.conta;</code></pre>
             </div>
           </article>
 
-          <!-- 5. Projeto FIESC -->
+          <!-- Projeto COMEX - 09/10/2023 -->
           <article
             class="project-flip-container"
+            data-image="assets/image/projeto_comex.jpeg"
+            data-category="codigo"
+            data-area="data-engineering data-analysis"
+            data-business="economia"
+            data-type="workshop"
+            data-tool="python"
+            data-year="2023"
+            data-date="2023-10-09"
+          >
+            <input type="checkbox" id="flip-toggle-comex" class="flip-toggle" />
+            <div class="project-card-inner">
+              <!-- FRENTE DO CARD -->
+              <div class="card-face card-front">
+                <!-- Título e Botão -->
+                <div class="card-controls-front">
+                  <span class="mini-project-title"
+                    >Workshop: Coleta e Análise de Dados Públicos (COMEX)
+                  </span>
+                  <label
+                    for="flip-toggle-comex"
+                    class="btn-flip"
+                    title="Ver detalhes do caso técnico"
+                  >
+                    <i class="fas fa-info-circle"></i>
+                    Ver case
+                  </label>
+                </div>
+                <!-- Código ou Painel-->
+                <div class="project-media-wrapper codemirror-dark">
+                  <pre><code class="language-python"># instala as bibliotecas de web scraping - https://pypi.org/
+!pip install requests
+!pip install beautifulsoup4
+
+# importa as bibliotecas para fazer requisição http e para extrair dados de arquivos html
+import requests
+from bs4 import BeautifulSoup
+
+# faz a requisição do conteúdo html através da url da página
+url = 'https://www.gov.br/produtividade-e-comercio-exterior/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta'
+r = requests.get(url)
+soup = BeautifulSoup(r.content, "html.parser")
+
+# procura o link no html da página, extraindo e armazenando ele
+link_exportacao = soup.select_one('a[href$="EXP_2022.csv"]')
+exportacao = str(link_exportacao['href']) if link_exportacao else ""
+
+# cria e salva o arquivo na pasta do google drive
+r = requests.get(exportacao, verify=False)
+with open("/content/drive/MyDrive/Comex/exportacao.csv", "wb") as file:
+    file.write(r.content)</code></pre>
+                </div>
+              </div>
+              <!-- VERSO DO CARD -->
+              <div class="card-face card-back">
+                <div class="project-info-back">
+                  <!-- Cabeçalho -->
+                  <div class="project-header-back">
+                    <div class="project-top-row">
+                      <span class="project-date">Outubro de 2023</span>
+
+                      <label
+                        for="flip-toggle-comex"
+                        class="btn-flip-back"
+                        title="Voltar para a Mídia"
+                      >
+                        <i class="fas fa-undo-alt"></i> Voltar ao código
+                      </label>
+                    </div>
+
+                    <h3>
+                      Workshop: Coleta e Análise de Dados Públicos (COMEX)
+                    </h3>
+                  </div>
+
+                  <!-- Conteúdo -->
+                  <div class="project-context">
+                    <h4>Situação</h4>
+                    <p>
+                      Necessidade de extrair inteligência de mercado sobre o
+                      comércio exterior brasileiro de 2022, respondendo a
+                      perguntas críticas (como o balanço de importação vs.
+                      exportação, principais estados líderes, países parceiros,
+                      sazonalidade mensal de cargas e custos logísticos de
+                      frete/seguro) utilizando bases públicas volumosas.
+                    </p>
+                    <h4>Ação</h4>
+                    <p>
+                      Planejamento e condução de um workshop prático no
+                      PrograMaria Summit 2023, demonstrando os três níveis de
+                      captura de dados (download manual, requisição via link
+                      direto e automação via Web Scraping com Requests e
+                      BeautifulSoup), seguido pelo pipeline de tratamento e
+                      consolidação em Pandas e a criação de múltiplos gráficos
+                      analíticos (Plotly e Matplotlib).
+                    </p>
+                    <h4>Resultado</h4>
+                    <p>
+                      Capacitação de profissionais na autonomia de coleta e na
+                      manipulação de microdados brutos em Python, validando
+                      visualmente a resposta às 6 perguntas de negócio propostas
+                      através de gráficos dinâmicos e estruturados diretamente
+                      no Google Colab.
+                    </p>
+                  </div>
+
+                  <!-- Rodapé -->
+                  <div class="project-footer-back">
+                    <div class="project-tags">
+                      <span>Google Colab</span>
+                      <span>Web Scraping </span>
+                      <span>Python</span>
+                      <span>Pandas </span>
+                      <span>BeautifulSoup</span>
+                      <span>Plotly</span>
+                    </div>
+
+                    <a
+                      href="https://github.com/andreadcsousa/projeto_comercio-exterior_scraping_python"
+                      rel="noopener"
+                      target="_blank"
+                      class="github-icon-only-link"
+                      title="Ver no GitHub"
+                    >
+                      <i class="fab fa-github"> </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto FIESC - 15/03/2023 -->
+          <article
+            class="project-flip-container"
+            data-image="assets/image/projeto_fiesc.jpg"
             data-category="painel"
             data-area="data-analysis business-intelligence"
-            data-business="rh"
+            data-business="economia"
             data-type="case"
             data-tool="python power-bi"
             data-year="2023"
@@ -765,7 +921,7 @@ GROUP BY t.conta;</code></pre>
                 <!-- Título e Botão -->
                 <div class="card-controls-front">
                   <span class="mini-project-title"
-                    >Análise de Profissionais STEAM (FIESC)
+                    >Case Técnico: Análise de Profissionais STEAM (FIESC)
                   </span>
                   <label
                     for="flip-toggle-fiesc"
@@ -773,7 +929,7 @@ GROUP BY t.conta;</code></pre>
                     title="Ver detalhes do caso técnico"
                   >
                     <i class="fas fa-info-circle"></i>
-                    Ver Case Técnico
+                    Ver case
                   </label>
                 </div>
 
@@ -799,7 +955,7 @@ GROUP BY t.conta;</code></pre>
                         class="btn-flip-back"
                         title="Voltar para o Painel"
                       >
-                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
+                        <i class="fas fa-undo-alt"></i> Voltar ao painel
                       </label>
                     </div>
 
@@ -812,23 +968,32 @@ GROUP BY t.conta;</code></pre>
                   <div class="project-context">
                     <h4>Situação</h4>
                     <p>
-                      Necessidade do Observatório do Trabalho de mapear os
-                      vetores de atração, comportamento salarial e rotatividade
-                      na indústria para as áreas de Engenharia e Tecnologia.
+                      O Observatório da FIESC recebeu relatos de empresários
+                      industriais indicando extrema dificuldade para contratar e
+                      reter profissionais das áreas de STEAM (Ciência,
+                      Tecnologia, Engenharia e Matemática) em Santa Catarina,
+                      demandando uma validação técnica baseada em dados reais do
+                      Novo CAGED.
                     </p>
                     <h4>Ação</h4>
                     <p>
-                      Extração e mineração avançada de microdados públicos do
-                      Novo CAGED utilizando Python para testar hipóteses
-                      estruturais sobre retenção de capital humano e evasão de
-                      mão de obra em Santa Catarina.
+                      Desenvolvi um estudo consultivo isolando os CBOs das
+                      famílias 20, 21 e 22 (STEAM) usando Python (Pandas) para
+                      criar um pipeline de ETL e análise exploratória sobre o
+                      saldo de movimentações, mapeamento de cargos dominantes e
+                      motivos de desligamento. Em seguida, construí um dashboard
+                      interativo no Power BI segmentado por municípios,
+                      competências temporais (2021-2022) e setores do CNAE.
                     </p>
                     <h4>Resultado</h4>
                     <p>
-                      Geração de insumos preditivos e descritivos profundos
-                      consolidados em relatórios visuais dinâmicos para
-                      subsidiar tomadas de decisões governamentais e
-                      empresariais no estado.
+                      Validação analítica de que o ecossistema mantinha saldo
+                      positivo de contratações (55% de admissões reais),
+                      revelando que o real gargalo do mercado era a retenção
+                      (turnover voluntário), liderado por mais de 20 mil pedidos
+                      de demissão por iniciativa dos próprios profissionais. O
+                      projeto validou minhas competências e garantiu minha
+                      contratação na instituição.
                     </p>
                   </div>
 
@@ -837,129 +1002,12 @@ GROUP BY t.conta;</code></pre>
                     <div class="project-tags">
                       <span>Python</span>
                       <span>Pandas</span>
-                      <span>Power BI </span>
-                      <span>People Analytics </span>
-                      <span>Inteligência de Mercado</span>
+                      <span>Matplotlib</span>
+                      <span>Seaborn</span>
+                      <span>Power BI</span>
                     </div>
                     <a
                       href="https://github.com/andreadcsousa/andrea_sousa_FIESC_STEAM_032023"
-                      rel="noopener"
-                      target="_blank"
-                      class="github-icon-only-link"
-                      title="Ver no GitHub"
-                    >
-                      <i class="fab fa-github"> </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- 6. Projeto COMEX -->
-          <article
-            class="project-flip-container"
-            data-category="codigo"
-            data-area="data-engineering data-analysis"
-            data-business="comercial"
-            data-type="workshop"
-            data-tool="python"
-            data-year="2025"
-            data-date="2025-05-10"
-          >
-            <input type="checkbox" id="flip-toggle-comex" class="flip-toggle" />
-            <div class="project-card-inner">
-              <!-- FRENTE DO CARD -->
-              <div class="card-face card-front">
-                <!-- Título e Botão -->
-                <div class="card-controls-front">
-                  <span class="mini-project-title"
-                    >Coleta e Análise de Dados Públicos (COMEX)
-                  </span>
-                  <label
-                    for="flip-toggle-comex"
-                    class="btn-flip"
-                    title="Ver detalhes do caso técnico"
-                  >
-                    <i class="fas fa-info-circle"></i>
-                    Ver Case Técnico
-                  </label>
-                </div>
-                <!-- Código ou Painel-->
-                <div class="project-media-wrapper codemirror-dark">
-                  <pre><code class="language-python"># Data Scraping Automatizado de Indicadores Econômicos Governamentais
-
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-
-def scrape_comex_stat_portal():
-    url = "https://www.gov.br/produtividade-e-comercio-exterior/dados-abertos"
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    
-    # Localização dinâmica dos arquivos zip de importação/exportação
-    download_links = [a['href'] for a in soup.find_all('a', href=True) if '.csv' in a['href']]
-    return download_links</code></pre>
-                </div>
-              </div>
-              <!-- VERSO DO CARD -->
-              <div class="card-face card-back">
-                <div class="project-info-back">
-                  <!-- Cabeçalho -->
-                  <div class="project-header-back">
-                    <div class="project-top-row">
-                      <span class="project-date">Maio de 2025</span>
-
-                      <label
-                        for="flip-toggle-comex"
-                        class="btn-flip-back"
-                        title="Voltar para a Mídia"
-                      >
-                        <i class="fas fa-undo-alt"></i> Voltar ao Painel
-                      </label>
-                    </div>
-
-                    <h3>
-                      Workshop: Coleta e Análise de Dados Públicos (COMEX)
-                    </h3>
-                  </div>
-
-                  <!-- Conteúdo -->
-                  <div class="project-context">
-                    <h4>Situação</h4>
-                    <p>
-                      Falta de barramento ou APIs públicas consolidadas para
-                      extração automatizada de métricas e volumes nacionais
-                      agregados de Importações e Exportações.
-                    </p>
-                    <h4>Ação</h4>
-                    <p>
-                      Construção de uma automação ponta a ponta (Web Scraping)
-                      em Python utilizando as bibliotecas Requests e
-                      BeautifulSoup para minerar os portais federais e mapear os
-                      arquivos base.
-                    </p>
-                    <h4>Resultado</h4>
-                    <p>
-                      Desenvolvimento de um pipeline de ingestão programática
-                      estável rodando em Google Colab, reduzindo o tempo de
-                      coleta manual de dados econômicos a zero.
-                    </p>
-                  </div>
-
-                  <!-- Rodapé -->
-                  <div class="project-footer-back">
-                    <div class="project-tags">
-                      <span>Python</span>
-                      <span>Pandas </span>
-                      <span>BeautifulSoup</span>
-                      <span>Web Scraping </span>
-                      <span>Google Colab</span>
-                    </div>
-
-                    <a
-                      href="https://github.com/andreadcsousa/projeto_comercio-exterior_scraping_python"
                       rel="noopener"
                       target="_blank"
                       class="github-icon-only-link"
@@ -976,6 +1024,7 @@ def scrape_comex_stat_portal():
       </section>
     </main>
 
+    <!-- Rodapé da página -->
     <footer class="main-footer">
       <div class="grid-layout footer-container">
         <div class="footer-credits">
