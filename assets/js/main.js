@@ -13,7 +13,7 @@ import {
   closeModalOnOutsideClick,
 } from "./modals.js";
 import { initStackInspector } from "./stack.js";
-import { scrollToTop } from "./scroll.js";
+import { initSmoothScroll } from "./scroll.js";
 import { initRecentProjects } from "./recent-projects.js";
 
 // Disponibiliza as funções para o HTML conseguir chamá-las no onclick
@@ -22,10 +22,10 @@ window.openExpModal = openExpModal;
 window.closeExpModal = closeExpModal;
 window.closeModalOnOutsideClick = closeModalOnOutsideClick;
 window.filterProjects = filterProjects;
-window.scrollToTop = scrollToTop;
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
   initStackInspector();
   initRecentProjects();
+  initSmoothScroll();
 });
