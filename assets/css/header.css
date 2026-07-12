@@ -49,7 +49,7 @@ header .nav-list li {
 }
 
 header .nav-list li a {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.6rem;
   text-decoration: none;
   transition: color 0.3s;
@@ -67,18 +67,17 @@ header .nav-list li a:hover {
 .mobile-menu div {
   width: 25px;
   height: 2px;
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 6px;
   transition: 0.3s;
 }
 
-/* Garante que o botão fique escondido no computador */
 .hamburger {
   display: none;
 }
 
 .browser-tabs-dropdown {
-  display: none; /* Garante que fica oculto no desktop */
+  display: none;
   background-color: var(--bg-tab-inactive);
   color: var(--primary-color);
   border: 1px solid var(--border-color);
@@ -93,7 +92,6 @@ header .nav-list li a:hover {
 }
 
 @media (max-width: 768px) {
-  /* Exibe o botão hambúrguer */
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -113,11 +111,10 @@ header .nav-list li a:hover {
     transition: all 0.3s ease;
   }
 
-  /* Transforma a sua lista atual em uma gaveta lateral */
   .nav-list {
     position: fixed;
     top: 0;
-    right: -100%; /* Esconde para o lado direito */
+    right: -100%;
     width: 260px;
     height: 100vh;
     background-color: #161616;
@@ -131,12 +128,10 @@ header .nav-list li a:hover {
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
   }
 
-  /* Quando o menu tiver a classe active, ele desliza para dentro da tela */
   .nav-list.active {
     right: 0;
   }
 
-  /* Força os itens da lista (li) a usarem a largura total e limpa margens/paddings */
   .nav-list li {
     width: 100%;
     text-align: center;
@@ -144,7 +139,6 @@ header .nav-list li a:hover {
     margin: 0 !important;
   }
 
-  /* Força os links (a) a se comportarem como blocos 100% centralizados */
   .nav-list a {
     display: block;
     width: 100%;
@@ -155,7 +149,6 @@ header .nav-list li a:hover {
     margin-right: 0 !important;
   }
 
-  /* Transforma o hambúrguer em um "X" quando ativo */
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }

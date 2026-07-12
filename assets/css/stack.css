@@ -16,7 +16,7 @@
   font-size: 3.6rem;
   text-align: center;
   font-family: "Red Hat Display", sans-serif;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -35,7 +35,7 @@
   align-items: stretch;
 }
 
-/* Lado Esquerdo: Grid de Quadradinhos Simétricos */
+/* Lado Esquerdo */
 .stack-list-grid {
   flex: 1.2;
   display: grid;
@@ -74,7 +74,7 @@
   box-shadow: 0 4px 12px rgba(81, 229, 255, 0.1);
 }
 
-/* Lado Direito: O Inspetor Terminal */
+/* Lado Direito */
 .stack-inspector {
   flex: 0.8;
   background-color: var(--bg-light);
@@ -157,7 +157,7 @@
 }
 
 .inspector-tech-title {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.4rem;
   font-family: "Red Hat Display", sans-serif;
   margin-left: 10px;
@@ -171,7 +171,6 @@
   line-height: 1.7;
 }
 
-/* Responsividade Refinada */
 @media (max-width: 992px) {
   .stack-container {
     flex-direction: column;

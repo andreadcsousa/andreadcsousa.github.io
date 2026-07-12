@@ -17,7 +17,6 @@
   gap: 24px;
 }
 
-/* Créditos */
 .footer-credits p {
   font-size: 1.4rem;
   color: #ffffff;
@@ -43,7 +42,6 @@
   text-decoration: underline;
 }
 
-/* Alinhamento de Ícones */
 .footer-socials {
   display: flex;
   align-items: center;
@@ -70,7 +68,6 @@
   box-shadow: 0 4px 12px rgba(81, 229, 255, 0.1);
 }
 
-/* Botão Voltar ao Topo */
 .btn-top {
   color: #ffffff;
   background-color: var(--bg-dark);

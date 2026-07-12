@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.6rem;
   transition: color 0.3s;
@@ -23,19 +23,16 @@
   color: var(--primary-color);
 }
 
-/* Casinha escondida no desktop */
 .home-icon {
   display: none;
 }
 
 @media (max-width: 768px) {
-  /* Esconde seta e texto */
   .btn-back-home .fa-arrow-left,
   .btn-back-home span {
     display: none;
   }
 
-  /* Mostra apenas a casinha */
   .home-icon {
     display: block;
     font-size: 2rem;
@@ -60,7 +57,6 @@
   margin: 0;
 }
 
-/* Cada botão principal do menu dropdown */
 .portfolio-dropdown-menu > ul > li {
   background-color: var(--bg-light);
   color: var(--text-gray);
@@ -90,7 +86,6 @@
   transition: transform 0.3s ease;
 }
 
-/* Comportamento do Submenu Dropdown */
 .dropdown-submenu {
   opacity: 0;
   visibility: hidden;
@@ -107,17 +102,14 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   margin-top: 1.8px;
 
-  /* Inicia o menu 8px mais para cima para o efeito de "deslizar" */
   transform: translateY(-8px);
 
-  /* Cria a transição suave de surgimento e descida */
   transition:
     opacity 0.3s ease,
     visibility 0.3s ease,
     transform 0.3s ease;
 }
 
-/* Elemento pseudo-classe para fechar o gap físico e eliminar o ponto cego */
 .dropdown-submenu::before {
   content: "";
   position: absolute;
@@ -142,7 +134,6 @@
   color: var(--primary-color);
 }
 
-/* Garante que o fundo do hover não escape pelos cantos arredondados do menu */
 .dropdown-submenu li:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -153,7 +144,6 @@
   border-bottom-right-radius: 5px;
 }
 
-/* Exibe o submenu ao passar o mouse */
 .portfolio-dropdown-menu > ul > li:hover .dropdown-submenu {
   opacity: 1;
   visibility: visible;
@@ -175,18 +165,15 @@
   width: 100%;
 }
 
-/* Container de perspectiva 3D */
 .project-flip-container {
   perspective: 1500px;
   width: 100%;
 }
 
-/* Esconde o checkbox que controla o flip */
 .flip-toggle {
   display: none !important;
 }
 
-/* O esqueleto que vai girar */
 .project-card-inner {
   position: relative;
   width: 100%;
@@ -196,12 +183,10 @@
   transform-style: preserve-3d;
 }
 
-/* Quando o checkbox for marcado, o card gira 180 graus */
 .flip-toggle:checked + .project-card-inner {
   transform: rotateY(-180deg);
 }
 
-/* Configurações comuns para as duas faces do card */
 .card-face {
   position: absolute;
   width: 100%;
@@ -234,21 +219,17 @@
   overflow: hidden;
 }
 
-/* Ocultação da barra inferior e correção das laterais do Power BI */
 .project-media-wrapper iframe {
   width: 100% !important;
-  /* Fazemos o iframe ficar um pouco mais alto do que o container para empurrar a barra para baixo */
   height: calc(100% + 61px) !important;
   position: absolute;
   top: 0;
   left: 0;
   border: none;
-  /* Camufla as faixas cinzentas laterais forçando o fundo do iframe a fundir-se com o preto */
   background-color: var(--bg-dark) !important;
   margin-bottom: -61px;
 }
 
-/* Estilização CodeMirror/IDE integrada com o fundo do seu site */
 .project-media-wrapper.codemirror-dark {
   padding: 28px;
   overflow-y: auto;
@@ -276,7 +257,6 @@
   font-family: "Fira Code", monospace !important;
 }
 
-/* REALCE DE SINTAXE (Syntax Highlighting) */
 .project-media-wrapper.codemirror-dark .comment {
   color: #6272a4 !important;
   font-style: italic;
@@ -299,7 +279,6 @@
   color: #bd93f9 !important;
 }
 
-/* Barra inferior de controle (Frente do Card) */
 .card-controls-front {
   display: flex;
   justify-content: space-between;
@@ -315,7 +294,6 @@
   font-weight: 500;
 }
 
-/* Botão "Ver Case" */
 .btn-flip {
   background-color: var(--border-color);
   color: var(--primary-color);
@@ -335,7 +313,6 @@
   color: var(--bg-dark);
 }
 
-/* Limita o contêiner apenas para este card específico se ele estiver estourando */
 .card-promo-container {
   max-height: 100%;
   overflow: hidden;
@@ -344,14 +321,12 @@
   justify-content: center;
 }
 
-/* Força a imagem a se ajustar perfeitamente ao espaço sem distorcer */
 .img-promo-fit {
   width: 83%;
   height: 100%;
   object-position: top center;
 }
 
-/* Container com a proporção exata do Looker Studio */
 .looker-media-wrapper {
   position: relative;
   width: 82%;
@@ -362,7 +337,6 @@
   background-color: var(--bg-dark) !important;
 }
 
-/* Garante que o iframe acompanha a proporção sem folgas */
 .looker-media-wrapper iframe {
   position: absolute;
   top: 0;
@@ -374,7 +348,6 @@
   background-color: var(--bg-dark) !important;
 }
 
-/* Ajuste para telas menores */
 @media (max-width: 768px) {
   .looker-media-wrapper {
     aspect-ratio: 4 / 3 !important;
@@ -502,7 +475,6 @@
   color: var(--bg-dark);
 }
 
-/* Customização fina da barra de rolagem dos blocos de código */
 .project-media-wrapper.codemirror-dark::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -518,7 +490,6 @@
   background: var(--primary-color);
 }
 
-/* Customização fina e unificada da barra de rolagem (Frente e Verso dos Cards) */
 .project-media-wrapper.codemirror-dark::-webkit-scrollbar,
 .project-context::-webkit-scrollbar {
   width: 6px;
@@ -542,7 +513,6 @@
    MOBILE
    ========================================================================== */
 @media (max-width: 768px) {
-  /* Evita scroll horizontal */
   html,
   body {
     overflow-x: hidden;
@@ -568,14 +538,12 @@
   }
 
   .card-front {
-    /* Quando o card virar, a frente não pode roubar o toque */
     pointer-events: auto;
   }
   .flip-toggle:checked + .project-card-inner .card-front {
-    pointer-events: none !important; /* Desativa a frente quando o verso estiver ativo */
+    pointer-events: none !important;
   }
 
-  /* Garante que o verso receba o scroll */
   .flip-toggle:checked + .project-card-inner .card-back {
     pointer-events: auto !important;
     visibility: visible !important;
@@ -592,7 +560,6 @@
     max-width: calc(100% - 70px);
   }
 
-  /* Oculta texto do botão */
   .btn-flip {
     background: transparent !important;
     border: none !important;
@@ -615,7 +582,6 @@
     padding: 20px;
   }
 
-  /* Área de conteúdo com scroll */
   .project-context {
     flex: 1 1 auto !important;
     overflow-y: auto !important;
@@ -625,7 +591,6 @@
     padding-right: 10px;
   }
 
-  /* Footer sempre visível */
   .project-info-back {
     display: flex;
     flex-direction: column;
@@ -636,7 +601,6 @@
     flex: 0 0 auto;
   }
 
-  /* Menor espaço entre cards */
   .projects-list {
     gap: 30px !important;
   }
@@ -659,7 +623,6 @@
     margin: 0 !important;
   }
 
-  /* Oculta texto do botão voltar */
   .btn-flip-back {
     background: transparent !important;
     border: none !important;
@@ -673,7 +636,6 @@
     color: var(--primary-color);
   }
 
-  /* Remove sombras e destaques de toque */
   .btn-flip,
   .btn-flip-back,
   label,
@@ -698,12 +660,10 @@
     box-shadow: none !important;
   }
 
-  /* GitHub alinhado */
   .github-icon-only-link {
     font-size: 3rem !important;
   }
 
-  /* Código */
   .project-media-wrapper.codemirror-dark {
     padding: 18px;
   }
@@ -712,7 +672,6 @@
     font-size: 1.2rem;
   }
 
-  /* Tags */
   .project-tags {
     gap: 6px !important;
   }
@@ -721,7 +680,6 @@
     font-size: 1.1rem !important;
   }
 
-  /* Filtros */
   .portfolio-dropdown-menu > ul {
     gap: 10px;
     justify-content: center;
@@ -732,7 +690,6 @@
     padding: 10px 14px;
   }
 
-  /* 1. Força a imagem do JAAR e mídias gerais a ocuparem 100% da largura */
   .project-media-wrapper,
   .project-media-wrapper img,
   .card-promo-container,
@@ -743,7 +700,6 @@
     border-radius: 4px;
   }
 
-  /* 2. Corrige o achatamento e remove a barra de rolagem do Looker Studio */
   .looker-media-wrapper {
     width: 100% !important;
     margin: 0 !important;
